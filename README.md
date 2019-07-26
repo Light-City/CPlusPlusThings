@@ -19,6 +19,7 @@
 - [x] [位域那些事](./bit)
 - [x] [extern那些事](./extern)
 - [x] [struct那些事](./struct)
+- [x] [struct与class那些事](./struct_class)
 
 代码运行：
  全部在linux下用vim编写，使用gcc/g++调试！全部可正常运行！

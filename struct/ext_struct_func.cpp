@@ -1,6 +1,6 @@
 #include<iostream>
 #include<stdio.h>
-
+using namespace std;
 struct Base {         
     int v1;
 //    private:   //error!
@@ -10,10 +10,14 @@ struct Base {
     virtual void print(){       
         printf("%s\n","Base");
     };    
+    Base(){cout<<"Base construct"<<endl;};
+    virtual ~Base(){cout<<"Base deconstruct"<<endl;};
 };
 
 struct Derived:Base {         
 
+    Derived(){cout<<"Derived construct"<<endl;};
+    virtual ~Derived(){cout<<"Derived deconstruct"<<endl;};
     public:
         int v2;
     void print(){       
@@ -24,5 +28,6 @@ struct Derived:Base {
 int main() {
     Base *b=new Derived();
     b->print();
+    delete b;
     return 0;
 }
