@@ -15,6 +15,8 @@
 - [x] [vptr_vtable那些事](./vptr_vtable)
 - [x] [virtual那些事](./virtual)
 - [x] [volatile那些事](./volatile)
+- [x] [assert那些事](./assert)
+- [x] [位域那些事](./bit)
 ## 关于作者：
 
 个人公众号：
