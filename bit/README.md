@@ -1,8 +1,8 @@
+## 关于作者：
 
+个人公众号：
 
-[TOC]
-
-
+![](../img/wechat.jpg)
 
 ## Bit field 是什么？
 

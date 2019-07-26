@@ -17,6 +17,7 @@
 - [x] [volatile那些事](./volatile)
 - [x] [assert那些事](./assert)
 - [x] [位域那些事](./bit)
+- [x] [extern那些事](./extern)
 ## 关于作者：
 
 个人公众号：
