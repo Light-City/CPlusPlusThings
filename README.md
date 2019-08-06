@@ -20,6 +20,8 @@
 - [x] [extern那些事](./extern)
 - [x] [struct那些事](./struct)
 - [x] [struct与class那些事](./struct_class)
+- [x] [union那些事](./union)
+- [x] [c实现c++多态](./c_poly)
 
 代码运行：
  全部在linux下用vim编写，使用gcc/g++调试！全部可正常运行！
