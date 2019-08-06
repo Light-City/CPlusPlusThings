@@ -23,6 +23,7 @@
 - [x] [union那些事](./union)
 - [x] [c实现c++多态那些事](./c_poly)
 - [x] [explicit那些事](./explicit)
+- [x] [friend那些事](./friend)
 
 代码运行：
  全部在linux下用vim编写，使用gcc/g++调试！全部可正常运行！
