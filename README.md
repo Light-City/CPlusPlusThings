@@ -25,6 +25,8 @@
 - [x] [explicit那些事](./explicit)
 - [x] [friend那些事](./friend)
 - [x] [using那些事](./using)
+- [x] [::那些事](./::)
+- [x] [enum那些事](./enum)
 
 代码运行：
  全部在linux下用vim编写，使用gcc/g++调试！全部可正常运行！
