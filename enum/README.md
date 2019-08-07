@@ -64,7 +64,7 @@ struct Color1
 };
 ```
 
-具体实现见：[tradition_color.cpp](tradition_color.cpp)
+具体实现见：[classic_practice.cpp](classic_practice.cpp)
 
 ## C++11 的枚举类
 
@@ -102,4 +102,4 @@ enum class Color3:char
 char c3 = static_cast<char>(Color3::RED);
 ```
 
-具体实现见：[tradition_color.cpp](tradition_color.cpp)
+具体实现见：[classic_practice.cpp](classic_practice.cpp)
