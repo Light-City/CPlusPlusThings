@@ -135,3 +135,4 @@ decltype(Func(1)) var13=true;//const bool
 decltype(i++) var14 = i;//int i++返回右值
 ```
 
+学习参考：https://www.cnblogs.com/QG-whz/p/4952980.html
