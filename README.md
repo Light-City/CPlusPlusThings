@@ -27,6 +27,7 @@
 - [x] [using那些事](./using)
 - [x] [::那些事](./::)
 - [x] [enum那些事](./enum)
+- [x] [decltype那些事](./decltype)
 
 代码运行：
  全部在linux下用vim编写，使用gcc/g++调试！全部可正常运行！
