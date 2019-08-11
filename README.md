@@ -29,6 +29,7 @@
 - [x] [enum那些事](./enum)
 - [x] [decltype那些事](./decltype)
 - [x] [引用与指针那些事](./pointer_refer)
+- [x] [宏那些事](./macro)
 
 代码运行：
  全部在linux下用vim编写，使用gcc/g++调试！全部可正常运行！
