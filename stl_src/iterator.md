@@ -10,7 +10,7 @@
 
 上一节指出了迭代器的作用，依旧如下图所示：
 
-![](http://pxz2lirgn.bkt.clouddn.com/rela.png)
+![](https://raw.githubusercontent.com/Light-City/cloudimg/master/rela.png)
 
 迭代器是指向序列元素的指针的一种抽象。通过使用迭代器，我们可以访问序列中的某个元素、改变序列中的某个元素的值、使迭代器向前或向后行走等等。
 
@@ -23,7 +23,7 @@
 - 单向移动读写迭代器 Forward Iterator
 - 双向移动读写迭代器 Bidirectional Iterator
 
-![](http://pxz2lirgn.bkt.clouddn.com/iterator.png)
+![](https://raw.githubusercontent.com/Light-City/cloudimg/master/iterator.png)
 
 例如：我们实现了 advanceII, advanceBI, advanceRAI 分别代表迭代器类型是Input Iterator，Bidirectional Iterator和Random Access Iterator的对应实现。
 
@@ -49,7 +49,7 @@ void advance(Iterator& i) {
 
 下面来进行实现，首先给出一个总体结构图：
 
-![](http://pxz2lirgn.bkt.clouddn.com/itera.png)
+![](https://raw.githubusercontent.com/Light-City/cloudimg/master/itera.png)
 
 定义出下面tag：
 
