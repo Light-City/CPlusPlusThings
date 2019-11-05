@@ -49,11 +49,31 @@
 
 学习资料：https://chenxiaowei.gitbook.io/cpp_concurrency_in_action/
 
+#### 2.4 [STL源码剖析](./stl_src)
+
+**stl源码剖析：gcc4.9.1**
+
+- [array](./stl_src/array.md)
+- [deque](./stl_src/deque.md)
+- [queue and stack](./stl_src/queue_stack.md)
+- [list](./stl_src/list.md)
+- [vector](./stl_src/vector.md)
+- [typename](./stl_src/typename.md)
+- [traits](./stl_src/traits.md)
+- [iterator](./stl_src/iterator.md)
+- [谈谈STL设计之EBO优化](./stl_src/谈谈STL设计之EBO优化.md)
+- [rb_tree](./stl_src/rb_tree.md)
+- [set and multiset](set_multiset.md)
+- [map and multimap](./stl_src/map_multimap.md)
+- [hashtable](./stl_src/hashtable.md)
+- [myhashtable](./stl_src/myhashtable.md)
+- [unordered_map](./stl_src/unordered_map.md)
+
+
 ### 3.代码运行
 
 代码运行：
- 全部在linux下用vim编写，使用gcc/g++调试！全部可正常运行！
-
+    全部在linux下用vim编写，使用gcc/g++调试！全部可正常运行！
 
 ## 关于作者：
 
