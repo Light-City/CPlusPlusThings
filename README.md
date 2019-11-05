@@ -52,7 +52,7 @@ vector<list<int>> // before c++ 11 error error: ‘>>’ should be ‘> >’ wit
 - [Automatic Type Deduction with auto](./c++2.0/auto.cpp)
 - [Uniform Initialization ](./c++2.0/uniform_initialization.cpp)
 - [initializer_list](./c++2.0/initializer.cpp)
-- [explicit for ctors taking more than one argument](./c++2.0/ explicit.cpp)
+- [explicit for ctors taking more than one argument](./c++2.0/explicit.cpp)
 - [range-based for statement](./c++2.0/auto.cpp)
 
 ```cpp

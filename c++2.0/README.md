@@ -17,7 +17,7 @@ vector<list<int>> // before c++ 11 error error: ‘>>’ should be ‘> >’ wit
 
 - [initializer_list](initializer.cpp)
 
-- [explicit for ctors taking more than one argument]( explicit.cpp)
+- [explicit for ctors taking more than one argument](explicit.cpp)
 
 - [range-based for statement](auto.cpp)
 
