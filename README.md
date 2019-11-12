@@ -32,6 +32,12 @@
 - [引用与指针那些事](./basic_content/pointer_refer)
 - [宏那些事](./basic_content/macro)
 
+---
+
+#### 拓展部分：
+
+- [C++中如何将string类型转换为int类型？](./basic_content/extent/string_int.md)
+
 ### 2.进阶部分 
 
 #### 2.1 [effective_c++](./effective_c++)
