@@ -1,8 +1,8 @@
 # C++那些事
 
-## 项目概要
+### 0.项目概要
 
-学习C++内容，包括理论、源码、实践、项目等
+学习C++内容，包括理论、源码、实践、课程代码、项目等
 
 ### 1.基础部分
 
@@ -127,12 +127,25 @@ for(decl:col) {
 - [myhashtable](./stl_src/myhashtable.md)
 - [unordered_map](./stl_src/unordered_map.md)
 
+### 3.学习课程
 
-### 3.代码运行
+#### 3.1 [极客时间《现代C++实战30讲》](https://time.geekbang.org/channel/home)
 
-全部在Ubuntu18.04下用vim编写，使用gcc/g++调试！全部可正常运行！
+- [堆、栈、RAII：C++里该如何管理资源？](./morden_C++_30)
+  - [堆与栈](./morden_C++_30/RAII/heap_stack.cpp)
+  - [RAII](./morden_C++_30/RAII/RAII.cpp)
 
-## 关于作者：
+### 4.代码运行
+
+- **代码环境**
+
+Ubuntu 18.04
+
+- **工具**
+
+CLion  gcc/g++
+
+### 5.关于作者：
 
 个人公众号：
 
