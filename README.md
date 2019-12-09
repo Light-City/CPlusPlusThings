@@ -132,7 +132,8 @@ for(decl:col) {
 #### 3.1 [极客时间《现代C++实战30讲》](https://time.geekbang.org/channel/home)
 
 - [堆、栈、RAII：C++里该如何管理资源？](./morden_C++_30)
-  - [堆与栈](./morden_C++_30/RAII/heap_stack.cpp)
+  - [堆](./morden_C++_30/RAII/heap.cpp)
+  - [栈](./morden_C++_30/RAII/stack.cpp)
   - [RAII](./morden_C++_30/RAII/RAII.cpp)
 
 ### 4.代码运行
