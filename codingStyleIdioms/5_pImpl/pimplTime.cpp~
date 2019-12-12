@@ -1,0 +1,11 @@
+#include "pimplTime.h"
+
+struct X::XImpl {
+    C c;
+    D d;
+}
+
+int main() {
+    X x;
+
+}
