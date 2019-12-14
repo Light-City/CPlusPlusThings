@@ -125,12 +125,15 @@ for(decl:col) {
 
 #### 3.1 [极客时间《现代C++实战30讲》](https://time.geekbang.org/channel/home)
 
-- [堆、栈、RAII：C++里该如何管理资源？](./modern_C++_30)
+- [堆、栈、RAII：C++里该如何管理资源？](./modern_C++_30/RAII)
   - [堆](./modern_++_30/RAII/heap.cpp)
   - [栈](./modern_C++_30/RAII/stack.cpp)
   - [RAII](./modern_C++_30/RAII/RAII.cpp)
 
-
+- [自己动手，实现C++的智能指针](./modern_C++_30/smart_ptr)
+  - [auto_ptr、scope_ptr](./modern_C++_30/smart_ptr/auto_scope.cpp)
+  - [unique_ptr](./modern_C++_30/smart_ptr/unique_ptr.cpp)
+  - [shared_ptr](./modern_C++_30/smart_ptr/shared_ptr.cpp)
 
 ### 4.拓展部分
 
