@@ -129,11 +129,16 @@ for(decl:col) {
   - [堆](./modern_++_30/RAII/heap.cpp)
   - [栈](./modern_C++_30/RAII/stack.cpp)
   - [RAII](./modern_C++_30/RAII/RAII.cpp)
-
 - [自己动手，实现C++的智能指针](./modern_C++_30/smart_ptr)
   - [auto_ptr、scope_ptr](./modern_C++_30/smart_ptr/auto_scope.cpp)
   - [unique_ptr](./modern_C++_30/smart_ptr/unique_ptr.cpp)
   - [shared_ptr](./modern_C++_30/smart_ptr/shared_ptr.cpp)
+- [右值和移动究竟解决了什么问题？](./modern_C++_30/reference)
+  - [左值与右值](./modern_C++_30/reference/reference.cpp)
+  - [延长声明周期](./modern_C++_30/reference/lifetime.cpp)
+  - [引用折叠](./modern_C++_30/reference/collapses.cpp)
+  - [完美转发](./modern_C++_30/reference/forward.cpp)
+  - [不要返回本地变量的引用](./modern_C++_30/reference/don'treturnReference.cpp)
 
 ### 4.拓展部分
 
