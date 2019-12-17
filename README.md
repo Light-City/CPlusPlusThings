@@ -139,6 +139,9 @@ for(decl:col) {
   - [引用折叠](./modern_C++_30/reference/collapses.cpp)
   - [完美转发](./modern_C++_30/reference/forward.cpp)
   - [不要返回本地变量的引用](./modern_C++_30/reference/don'treturnReference.cpp)
+- [容器1](./modern_C++_30/container1)
+- [容器2](./modern_C++_30/container2)
+- [异常](./modern_C++_30/exception)
 
 ### 4.拓展部分
 
