@@ -27,3 +27,11 @@ add_executable(relacontainer container2/relacontainer.cpp)
 add_executable(unorder container2/unorder.cpp)
 add_executable(array container2/array.cpp)
 add_executable(exception exception/exception.cpp)
+
+
+add_executable(returnObj returnObj/returnObj1.cpp)
+add_executable(returnObj_add returnObj/returnObj2.cpp)
+add_executable(returnObj3 returnObj/returnObj3.cpp)
+add_executable(returnObj4 returnObj/returnObj4.cpp)
+add_executable(returnObj5 returnObj/returnObj5.cpp)
+add_executable(rvonrvo returnObj/all.cpp)
