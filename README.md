@@ -142,6 +142,7 @@ for(decl:col) {
 - [容器1](./modern_C++_30/container1)
 - [容器2](./modern_C++_30/container2)
 - [异常](./modern_C++_30/exception)
+- [字面量、静态断言和成员函数说明符](./modern_C++_30/literalAssert)
 - [是不是应该返回对象？](./modern_C++_30/returnObj)
 
 ### 4.拓展部分

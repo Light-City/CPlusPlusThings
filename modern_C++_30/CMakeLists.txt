@@ -35,3 +35,8 @@ add_executable(returnObj3 returnObj/returnObj3.cpp)
 add_executable(returnObj4 returnObj/returnObj4.cpp)
 add_executable(returnObj5 returnObj/returnObj5.cpp)
 add_executable(rvonrvo returnObj/all.cpp)
+
+add_executable(literal literalAssert/literal.cpp)
+add_executable(assert literalAssert/assert.cpp)
+add_executable(default_delete literalAssert/default_delete.cpp)
+add_executable(overridefinal literalAssert/overridefinal.cpp)
