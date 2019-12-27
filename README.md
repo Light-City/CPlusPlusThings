@@ -144,6 +144,7 @@ for(decl:col) {
 - [异常](./modern_C++_30/exception)
 - [字面量、静态断言和成员函数说明符](./modern_C++_30/literalAssert)
 - [是不是应该返回对象？](./modern_C++_30/returnObj)
+- [编译期多态：泛型编程和模板入门](./modern_C++_30/compilerpoly)
 
 ### 4.拓展部分
 
