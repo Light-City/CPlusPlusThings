@@ -163,7 +163,33 @@ for(decl:col) {
 
 - [C++中如何将string类型转换为int类型？](./basic_content/extent/string_int.md)
 
-### 5.代码运行
+### 5.自己写的工具
+
+- [容器快捷输出工具](./tool/output)
+
+对吴老师的代码进行了修改，[点击此处直通代码](./tool/output/output_container.h)
+
+输入：
+
+```cpp
+map<int, int> mp{
+            {1, 1},
+            {2, 4},
+            {3, 9}};
+    cout << mp << endl;
+```
+
+输出结果显示：
+
+```cpp
+{ 1 => 1, 2 => 4, 3 => 9 }
+```
+
+感谢吴老师的代码，原代码：
+
+> https://github.com/adah1972/output_container/blob/master/output_container.h
+
+### 6.代码运行
 
 - **代码环境**
 
@@ -173,7 +199,7 @@ Ubuntu 18.04
 
 CLion  gcc/g++
 
-### 6.关于作者
+### 7.关于作者
 
 个人公众号：
 
