@@ -62,7 +62,3 @@ add_executable(lambda "SFINAE/sfinae paper/lambda.cpp")
 add_executable(is_valid "SFINAE/sfinae paper/is_valid.cpp")
 add_executable(fis_valid "SFINAE/sfinae paper/fis_valid.cpp")
 add_executable(packis_valid "SFINAE/sfinae paper/packis_valid.cpp")
-
-
-add_executable(test3 constexpr/test3.cpp)
-add_executable(sqrt constexpr/sqrt.cpp)
