@@ -145,6 +145,7 @@ for(decl:col) {
 - [字面量、静态断言和成员函数说明符](./modern_C++_30/literalAssert)
 - [是不是应该返回对象？](./modern_C++_30/returnObj)
 - [编译期多态：泛型编程和模板入门](./modern_C++_30/compilerpoly)
+- [译期能做些什么？一个完整的计算世界](./modern_C++_30/compilercompute)
 - [SFINAE：不是错误的替换失败是怎么回事?](./modern_C++_30/SFINAE)
 - [constexpr：一个常态的世界](./modern_C++_30/constexpr)
 
