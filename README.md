@@ -44,25 +44,31 @@
 #### 2.2 [C++2.0新特性](./c++2.0/)
 
 - [Variadic Templates](./c++2.0/variadic)
+
 - Spaces in Template Expressions
 
-```cpp
-vector<list<int> > //ok in each C++ version
-vector<list<int>> // before c++ 11 error error: ‘>>’ should be ‘> >’ within a nested template argument list,c++11后可以正常通过
-```
+  ```cpp
+  vector<list<int> > //ok in each C++ version
+  vector<list<int>> // before c++ 11 error error: ‘>>’ should be ‘> >’ within a nested template argument list,c++11后可以正常通过
+  ```
 
 - [nullptr and nullptr_t](./c++2.0/nullptr.cpp)
+
 - [Automatic Type Deduction with auto](./c++2.0/auto.cpp)
+
 - [Uniform Initialization ](./c++2.0/uniform_initialization.cpp)
+
 - [initializer_list](./c++2.0/initializer.cpp)
+
 - [explicit for ctors taking more than one argument](./c++2.0/explicit.cpp)
+
 - [range-based for statement](./c++2.0/auto.cpp)
 
-```cpp
-for(decl:col) {
-    statement
-}
-```
+  ```cpp
+  for(decl:col) {
+      statement
+  }
+  ```
 
 - [=default,=delete](./c++2.0/default_delete.cpp)
 
@@ -75,14 +81,23 @@ for(decl:col) {
   - [template_template.cpp](./c++2.0/template_template.cpp)
 
 - [template template parameter](./c++2.0/template_template.cpp)
+
 - [type alias](./c++2.0/type_alias.cpp)
+
 - [noexcept](./c++2.0/noexcept.cpp)
+
 - [override](./c++2.0/override.cpp)
+
 - [final](./c++2.0/final.cpp)
+
 - [decltype](./c++2.0/decltype.cpp)
+
 - [lambda](./c++2.0/lambda.cpp)
+
 - [Rvalue reference](./c++2.0/rvalue.cpp)
+
 - [move aware class](./c++2.0/move.cpp)
+
 - 容器-结构与分类
 
   - (1) 序列式容器包括：array(C++2.0新引入),vector,deque,list,forward_list(C++2.0新引入)
@@ -90,9 +105,10 @@ for(decl:col) {
   - (3) 无序容器(C++2.0新引入,更换原先hash_xxx为unordered_xxx)包括：unordered_map/unordered_multimap,unordered_set/unordered_multiset
 
 - [Hash Function](./c++2.0/hash.cpp)
+
 - [tuple](./c++2.0/tuple.cpp)
 
-学习资料：https://www.bilibili.com/video/av51863195?from=search&seid=3610634846288253061
+  学习资料：https://www.bilibili.com/video/av51863195?from=search&seid=3610634846288253061
 
 #### 2.3 [C++并发编程v1](./c++2.0/./concurrency_v1)
 
@@ -148,6 +164,7 @@ for(decl:col) {
 - [译期能做些什么？一个完整的计算世界](./modern_C++_30/compilercompute)
 - [SFINAE：不是错误的替换失败是怎么回事?](./modern_C++_30/SFINAE)
 - [constexpr：一个常态的世界](./modern_C++_30/constexpr)
+- [函数对象和lambda：进入函数式编程](./modern_C++_30/functionLambda)
 
 ### 4.拓展部分
 
@@ -165,31 +182,33 @@ for(decl:col) {
 
 - [C++中如何将string类型转换为int类型？](./basic_content/extent/string_int.md)
 
-### 5.自己写的工具
+### 5.工具篇
 
 - [容器快捷输出工具](./tool/output)
 
-对吴老师的代码进行了修改，[点击此处直通代码](./tool/output/output_container.h)
+  对吴老师的代码进行了修改，[点击此处直通代码](./tool/output/output_container.h)
 
-输入：
+  输入：
 
-```cpp
-map<int, int> mp{
-            {1, 1},
-            {2, 4},
-            {3, 9}};
-    cout << mp << endl;
-```
+  ```cpp
+  map<int, int> mp{
+              {1, 1},
+              {2, 4},
+              {3, 9}};
+      cout << mp << endl;
+  ```
 
-输出结果显示：
+  输出结果显示：
 
-```cpp
-{ 1 => 1, 2 => 4, 3 => 9 }
-```
+  ```cpp
+  { 1 => 1, 2 => 4, 3 => 9 }
+  ```
 
-感谢吴老师的代码，原代码：
+- 像Python一样简单输出
+  - [像Python一样玩C/C++](./tool/像Python一样玩CC++.md)
 
-> https://github.com/adah1972/output_container/blob/master/output_container.h
+- 观察编译过程变化
+  -  [https://cppinsights.io](https://cppinsights.io/)
 
 ### 6.代码运行
 
