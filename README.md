@@ -137,9 +137,22 @@
 - [myhashtable](./stl_src/myhashtable.md)
 - [unordered_map](./stl_src/unordered_map.md)
 
-### 3.学习课程
+## 3.多线程与多进程
 
-#### 3.1 [极客时间《现代C++实战30讲》](https://time.geekbang.org/channel/home)
+### 3.1 Threading In C++
+
+- [介绍](./Threading_In_CPlusPlus/1.thread)
+- [创建线程的五种类型](./Threading_In_CPlusPlus/2.create_type)
+- [Join与Detachs](./Threading_In_CPlusPlus/3.join_detach)
+- [mutex in C++ Threading](./Threading_In_CPlusPlus/4.mutex)
+
+> 学习自：
+>
+> https://www.youtube.com/watch?v=eZ8yKZo-PGw&list=PLk6CEY9XxSIAeK-EAh3hB4fgNvYkYmghp&index=4
+
+### 4.学习课程
+
+#### 4.1 [极客时间《现代C++实战30讲》](https://time.geekbang.org/channel/home)
 
 - [堆、栈、RAII：C++里该如何管理资源？](./modern_C++_30/RAII)
   - [堆](./modern_++_30/RAII/heap.cpp)
@@ -166,9 +179,9 @@
 - [constexpr：一个常态的世界](./modern_C++_30/constexpr)
 - [函数对象和lambda：进入函数式编程](./modern_C++_30/functionLambda)
 
-### 4.拓展部分
+### 5.拓展部分
 
-#### 4.1 [C++惯用法](./codingStyleIdioms)
+#### 5.1 [C++惯用法](./codingStyleIdioms)
 
 ##### 你最喜欢的c++编程风格惯用法是什么?
 
@@ -178,11 +191,11 @@
 - [4.copy and swap](./codingStyleIdioms/4_copy-swap)
 - [5.pImpl(指针指向具体实现)](./codingStyleIdioms/5_pImpl)
 
-#### 4.2 一些问题
+#### 5.2 一些问题
 
 - [C++中如何将string类型转换为int类型？](./basic_content/extent/string_int.md)
 
-### 5.工具篇
+### 6.工具篇
 
 - [容器快捷输出工具](./tool/output)
 
@@ -205,22 +218,24 @@
   ```
 
 - 像Python一样简单输出
-  - [像Python一样玩C/C++](./tool/像Python一样玩CC++.md)
-
+  
+- [像Python一样玩C/C++](./tool/像Python一样玩CC++.md)
+  
 - 观察编译过程变化
+  
   -  [https://cppinsights.io](https://cppinsights.io/)
 
-### 6.代码运行
+### 7.代码运行
 
 - **代码环境**
 
-Ubuntu 18.04
+  Ubuntu 18.04
 
 - **工具**
 
-CLion  gcc/g++
+  CLion  gcc/g++
 
-### 7.关于作者
+### 8.关于作者
 
 个人公众号：
 
