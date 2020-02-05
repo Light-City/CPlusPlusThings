@@ -219,7 +219,7 @@
 
 - 像Python一样简单输出
   
-- [像Python一样玩C/C++](./tool/像Python一样玩CC++.md)
+  - [像Python一样玩C/C++](./tool/像Python一样玩CC++.md)
   
 - 观察编译过程变化
   
