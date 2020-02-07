@@ -137,9 +137,13 @@
 - [myhashtable](./stl_src/myhashtable.md)
 - [unordered_map](./stl_src/unordered_map.md)
 
-## 3.多线程与多进程
+## 3.设计模式
 
-### 3.1 Threading In C++
+- [单例模式](./design_pattern/singleton)
+
+## 4.多线程与多进程
+
+### 4.1 Threading In C++
 
 - [介绍](./Threading_In_CPlusPlus/1.thread)
 - [创建线程的五种类型](./Threading_In_CPlusPlus/2.create_type)
@@ -150,9 +154,9 @@
 >
 > https://www.youtube.com/watch?v=eZ8yKZo-PGw&list=PLk6CEY9XxSIAeK-EAh3hB4fgNvYkYmghp&index=4
 
-### 4.学习课程
+### 5.学习课程
 
-#### 4.1 [极客时间《现代C++实战30讲》](https://time.geekbang.org/channel/home)
+#### 5.1 [极客时间《现代C++实战30讲》](https://time.geekbang.org/channel/home)
 
 - [堆、栈、RAII：C++里该如何管理资源？](./modern_C++_30/RAII)
   - [堆](./modern_++_30/RAII/heap.cpp)
@@ -178,10 +182,11 @@
 - [SFINAE：不是错误的替换失败是怎么回事?](./modern_C++_30/SFINAE)
 - [constexpr：一个常态的世界](./modern_C++_30/constexpr)
 - [函数对象和lambda：进入函数式编程](./modern_C++_30/functionLambda)
+- [内存模型和atomic：理解并发的复杂性](./modern_C++_30/memorymodel_atomic)
 
-### 5.拓展部分
+### 6.拓展部分
 
-#### 5.1 [C++惯用法](./codingStyleIdioms)
+#### 6.1 [C++惯用法](./codingStyleIdioms)
 
 ##### 你最喜欢的c++编程风格惯用法是什么?
 
@@ -191,11 +196,11 @@
 - [4.copy and swap](./codingStyleIdioms/4_copy-swap)
 - [5.pImpl(指针指向具体实现)](./codingStyleIdioms/5_pImpl)
 
-#### 5.2 一些问题
+#### 6.2 一些问题
 
 - [C++中如何将string类型转换为int类型？](./basic_content/extent/string_int.md)
 
-### 6.工具篇
+### 7.工具篇
 
 - [容器快捷输出工具](./tool/output)
 
@@ -225,7 +230,7 @@
   
   -  [https://cppinsights.io](https://cppinsights.io/)
 
-### 7.代码运行
+### 8.代码运行
 
 - **代码环境**
 
@@ -235,7 +240,7 @@
 
   CLion  gcc/g++
 
-### 8.关于作者
+### 9.关于作者
 
 个人公众号：
 
