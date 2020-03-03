@@ -1,4 +1,4 @@
-# this指针与类中的枚举类型
+# this指针那些事
 
 ## 关于作者
 
@@ -87,54 +87,3 @@ int main(){
 会发现编译器把上述的this，变为`const A* const`，这个大家也能想到，因为这个函数是const函数，那么针对const函数，它只能访问const变量与const函数，不能修改其他变量的值，所以需要一个this指向不能修改的变量，那就是`const A*`,又由于本身this是`const`指针，所以就为`const A* const`!
 
 总结：this在成员函数的开始执行前构造，在成员的执行结束后清除。上述的get_age函数会被解析成`get_age(const A * const this)`,`add_age`函数会被解析成`add_age(A* const this,int a)`。在C++中类和结构是只有一个区别的：类的成员默认是private，而结构是public。this是类的指针，如果换成结构，那this就是结构的指针了。
-
-## 2.类中的枚举类型
-
-有时我们希望某些常量只在类中有效。 由于#define 定义的宏常量是全局的，不能达到目的，于是想到实用const 修饰数据成员来实现。而const 数据成员的确是存在的，但其含义却不是我们所期望的。
-
-const 数据成员只在某个对象生存期内是常量，而对于整个类而言却是可变的，因为类可以创建多个对象，不同的对象其 const 数据成员的值可以不同。 
-
-不能在类声明中初始化 const 数据成员。以下用法是错误的，因为类的对象未被创建时，编译器不知道 SIZE 的值是什么。(c++11标准前)
-
-```c++
-class A 
-{
-  const int SIZE = 100;   // 错误，企图在类声明中初始化 const 数据成员 
-  int array[SIZE];  // 错误，未知的 SIZE 
-}; 
-```
-
-正确应该在类的构造函数的初始化列表中进行：
-
-```c++
-class A 
-{
-  A(int size);  // 构造函数 
-  const int SIZE ;    
-}; 
-A::A(int size) : SIZE(size)  // 构造函数的定义
-{ 
-
-} 
-A  a(100); // 对象 a 的 SIZE 值为 100 
-A  b(200); // 对象 b 的 SIZE 值为 200 
-```
-
-怎样才能建立在整个类中都恒定的常量呢？
-
-别指望 const 数据成员了，应该用类中的枚举常量来实现。例如:
-
-```c++
-class Person{
-public:
-    typedef enum {
-        BOY = 0,
-        GIRL
-    }SexType;
-};
-//访问的时候通过，Person::BOY或者Person::GIRL来进行访问。
-```
-
-枚举常量不会占用对象的存储空间，它们在编译时被全部求值。
-
-枚举常量的缺点是：它的隐含数据类型是整数，其最大值有限，且不能表示浮点。
