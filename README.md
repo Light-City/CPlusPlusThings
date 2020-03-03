@@ -176,31 +176,31 @@ C++2.0简称包括C++11/14/17/20。
 
 #### 6.1 [极客时间《现代C++实战30讲》](https://time.geekbang.org/channel/home)
 
-- [堆、栈、RAII：C++里该如何管理资源？](./modern_C++_30/RAII)
+- [堆、栈、RAII：C++里该如何管理资源？](./learn_class/modern_C++_30/RAII)
   - [堆](./modern_++_30/RAII/heap.cpp)
-  - [栈](./modern_C++_30/RAII/stack.cpp)
-  - [RAII](./modern_C++_30/RAII/RAII.cpp)
-- [自己动手，实现C++的智能指针](./modern_C++_30/smart_ptr)
-  - [auto_ptr、scope_ptr](./modern_C++_30/smart_ptr/auto_scope.cpp)
-  - [unique_ptr](./modern_C++_30/smart_ptr/unique_ptr.cpp)
-  - [shared_ptr](./modern_C++_30/smart_ptr/shared_ptr.cpp)
-- [右值和移动究竟解决了什么问题？](./modern_C++_30/reference)
-  - [左值与右值](./modern_C++_30/reference/reference.cpp)
-  - [延长声明周期](./modern_C++_30/reference/lifetime.cpp)
-  - [引用折叠](./modern_C++_30/reference/collapses.cpp)
-  - [完美转发](./modern_C++_30/reference/forward.cpp)
-  - [不要返回本地变量的引用](./modern_C++_30/reference/don'treturnReference.cpp)
-- [容器1](./modern_C++_30/container1)
-- [容器2](./modern_C++_30/container2)
-- [异常](./modern_C++_30/exception)
-- [字面量、静态断言和成员函数说明符](./modern_C++_30/literalAssert)
-- [是不是应该返回对象？](./modern_C++_30/returnObj)
-- [编译期多态：泛型编程和模板入门](./modern_C++_30/compilerpoly)
-- [译期能做些什么？一个完整的计算世界](./modern_C++_30/compilercompute)
-- [SFINAE：不是错误的替换失败是怎么回事?](./modern_C++_30/SFINAE)
-- [constexpr：一个常态的世界](./modern_C++_30/constexpr)
-- [函数对象和lambda：进入函数式编程](./modern_C++_30/functionLambda)
-- [内存模型和atomic：理解并发的复杂性](./modern_C++_30/memorymodel_atomic)
+  - [栈](./learn_class/modern_C++_30/RAII/stack.cpp)
+  - [RAII](./learn_class/modern_C++_30/RAII/RAII.cpp)
+- [自己动手，实现C++的智能指针](./learn_class/modern_C++_30/smart_ptr)
+  - [auto_ptr、scope_ptr](./learn_class/modern_C++_30/smart_ptr/auto_scope.cpp)
+  - [unique_ptr](./learn_class/modern_C++_30/smart_ptr/unique_ptr.cpp)
+  - [shared_ptr](./learn_class/modern_C++_30/smart_ptr/shared_ptr.cpp)
+- [右值和移动究竟解决了什么问题？](./learn_class/modern_C++_30/reference)
+  - [左值与右值](./learn_class/modern_C++_30/reference/reference.cpp)
+  - [延长声明周期](./learn_class/modern_C++_30/reference/lifetime.cpp)
+  - [引用折叠](./learn_class/modern_C++_30/reference/collapses.cpp)
+  - [完美转发](./learn_class/modern_C++_30/reference/forward.cpp)
+  - [不要返回本地变量的引用](./learn_class/modern_C++_30/reference/don'treturnReference.cpp)
+- [容器1](./learn_class/modern_C++_30/container1)
+- [容器2](./learn_class/modern_C++_30/container2)
+- [异常](./learn_class/modern_C++_30/exception)
+- [字面量、静态断言和成员函数说明符](./learn_class/modern_C++_30/literalAssert)
+- [是不是应该返回对象？](./learn_class/modern_C++_30/returnObj)
+- [编译期多态：泛型编程和模板入门](./learn_class/modern_C++_30/compilerpoly)
+- [译期能做些什么？一个完整的计算世界](./learn_class/modern_C++_30/compilercompute)
+- [SFINAE：不是错误的替换失败是怎么回事?](./learn_class/modern_C++_30/SFINAE)
+- [constexpr：一个常态的世界](./learn_class/modern_C++_30/constexpr)
+- [函数对象和lambda：进入函数式编程](./learn_class/modern_C++_30/functionLambda)
+- [内存模型和atomic：理解并发的复杂性](./learn_class/modern_C++_30/memorymodel_atomic)
 
 ### 7.工具篇
 
@@ -236,7 +236,7 @@ map<int, int> mp{
 
 #### 8.1 一些问题
 
-- [C++中如何将string类型转换为int类型？](./basic_content/extent/string_int.md)
+- [C++中如何将string类型转换为int类型？](./extension/some_problem/string_int.md)
 
 ### 9.代码运行
 
