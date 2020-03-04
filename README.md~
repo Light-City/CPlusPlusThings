@@ -1,55 +1,57 @@
-# C++那些事
+# C++ 那些事
 
 
-感谢各位对《C++那些事》的支持，现将内容也同步至网站，可以手机或者网站直接阅读~欢迎大家star，转发，pr。
+感谢各位对《C++ 那些事》的支持，现将内容也同步至网站，可以打开网站直接阅读~欢迎大家 star、转发、PR。
+
+[直通点](https://light-city.club/sc/)
 
 -----------------------
 
 
 ### 0.项目概要
 
-- 中文名：**C++那些事**
+- 中文名：**C++ 那些事**
 - 英文名：**Stories About C Plus Plus**
 
-这是一个适合初学者从<u>**入门到进阶**</u>的仓库，解决了<u>**面试者与学习者**</u>想要<u>**深入C++**</u>及如何<u>**入坑C++**</u>的问题。除此之外，本仓库拓展了更加深入的源码分析，多线程并发等的知识，是一个比较全面的C++学习从入门到进阶提升的仓库。
+这是一个适合初学者从<u>**入门到进阶**</u>的仓库，解决了<u>**面试者与学习者**</u>想要<u>**深入 C++**</u>及如何<u>**入坑 C++**</u>的问题。除此之外，本仓库拓展了更加深入的源码分析，多线程并发等的知识，是一个比较全面的 C++ 学习从入门到进阶提升的仓库。
 
 ### 1.基础进阶
 
-- [const那些事](./basic_content/const)
-- [static那些事](./basic_content/static)
-- [this那些事](./basic_content/this)
-- [inline那些事](./basic_content/inline)
-- [sizeof那些事](./basic_content/sizeof)
+- [const 那些事](./basic_content/const)
+- [static 那些事](./basic_content/static)
+- [this 那些事](./basic_content/this)
+- [inline 那些事](./basic_content/inline)
+- [sizeof 那些事](./basic_content/sizeof)
 - [函数指针那些事](./basic_content/func_pointer)
 - [纯虚函数和抽象类那些事](./basic_content/abstract)
-- [vptr_vtable那些事](./basic_content/vptr_vtable)
-- [virtual那些事](./basic_content/virtual)
-- [volatile那些事](./basic_content/volatile)
-- [assert那些事](./basic_content/assert)
+- [vptr_vtable 那些事](./basic_content/vptr_vtable)
+- [virtual 那些事](./basic_content/virtual)
+- [volatile 那些事](./basic_content/volatile)
+- [assert 那些事](./basic_content/assert)
 - [位域那些事](./basic_content/bit)
-- [extern那些事](./basic_content/extern)
-- [struct那些事](./basic_content/struct)
-- [struct与class那些事](./basic_content/struct_class)
-- [union那些事](./basic_content/union)
-- [c实现c++多态那些事](./basic_content/c_poly)
-- [explicit那些事](./basic_content/explicit)
-- [friend那些事](./basic_content/friend)
-- [using那些事](./basic_content/using)
-- [::那些事](./basic_content/::)
-- [enum那些事](./basic_content/enum)
-- [decltype那些事](./basic_content/decltype)
+- [extern 那些事](./basic_content/extern)
+- [struct 那些事](./basic_content/struct)
+- [struct 与 class 那些事](./basic_content/struct_class)
+- [union 那些事](./basic_content/union)
+- [c 实现 c++ 多态那些事](./basic_content/c_poly)
+- [explicit 那些事](./basic_content/explicit)
+- [friend 那些事](./basic_content/friend)
+- [using 那些事](./basic_content/using)
+- [:: 那些事](./basic_content/::)
+- [enum 那些事](./basic_content/enum)
+- [decltype 那些事](./basic_content/decltype)
 - [引用与指针那些事](./basic_content/pointer_refer)
 - [宏那些事](./basic_content/macro)
 
 ---
 
-### 2.[C++2.0新特性](./c++2.0)
+### 2.[C++2.0 新特性](./c++2.0)
 
 #### 2.0 概况
 
-C++2.0简称包括C++11/14/17/20。
+C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 
-#### 2.1 [C++11新特性](./c++2.0/c++11)
+#### 2.1 [C++11 新特性](./c++2.0/c++11)
 
 - [Variadic Templates](./c++2.0/variadic)
 
@@ -80,8 +82,8 @@ C++2.0简称包括C++11/14/17/20。
 
 - [=default,=delete](./c++2.0/default_delete.cpp)
 
-  如果你自行定义了一个ctor,那么编译器就不会给你一个default ctor
-  如果强制加上=default,就可以重新获得并使用default ctor.
+  如果你自行定义了一个 ctor,那么编译器就不会给你一个 default ctor
+  如果强制加上 =default,就可以重新获得并使用 default ctor.
 
 - Alias(化名)Template(template typedef)
 
@@ -108,9 +110,9 @@ C++2.0简称包括C++11/14/17/20。
 
 - 容器-结构与分类
 
-  - (1) 序列式容器包括：array(C++2.0新引入),vector,deque,list,forward_list(C++2.0新引入)
-  - (2) 关联式容器包括：set/multiset,map/multimap
-  - (3) 无序容器(C++2.0新引入,更换原先hash_xxx为unordered_xxx)包括：unordered_map/unordered_multimap,unordered_set/unordered_multiset
+  - (1) 序列式容器包括：`array`(C++2.0 新引入),`vector`,`deque`,`list`,`forward_list`(C++2.0 新引入)
+  - (2) 关联式容器包括：`set/multiset`,`map/multimap`
+  - (3) 无序容器(C++2.0 新引入,更换原先 `hash_xxx` 为 `unordered_xxx`)包括：`unordered_map/unordered_multimap,unordered_set/unordered_multiset`
 
 - [Hash Function](./c++2.0/hash.cpp)
 
@@ -126,9 +128,9 @@ C++2.0简称包括C++11/14/17/20。
 
 - [单例模式](./design_pattern/singleton)
 
-### 4. [STL源码剖析](./src_analysis/stl)
+### 4. [STL 源码剖析](./src_analysis/stl)
 
-**stl源码剖析：gcc4.9.1**
+**STL 源码剖析：gcc 4.9.1**
 
 - [array](./src_analysis/stl/array.md)
 - [deque](./src_analysis/stl/deque.md)
@@ -138,7 +140,7 @@ C++2.0简称包括C++11/14/17/20。
 - [typename](./src_analysis/stl/typename.md)
 - [traits](./src_analysis/stl/traits.md)
 - [iterator](./src_analysis/stl/iterator.md)
-- [谈谈STL设计之EBO优化](./src_analysis/stl/谈谈STL设计之EBO优化.md)
+- [谈谈 STL 设计之 EBO 优化](./src_analysis/stl/谈谈STL设计之EBO优化.md)
 - [rb_tree](./src_analysis/stl/rb_tree.md)
 - [set and multiset](set_multiset.md)
 - [map and multimap](./src_analysis/stl/map_multimap.md)
@@ -161,16 +163,16 @@ C++2.0简称包括C++11/14/17/20。
 
 - [介绍](./concurrency/Threading_In_CPlusPlus/1.thread)
 - [创建线程的五种类型](./concurrency/Threading_In_CPlusPlus/2.create_type)
-- [Join与Detachs](./concurrency/Threading_In_CPlusPlus/3.join_detach)
+- [Join 与 Detachs](./concurrency/Threading_In_CPlusPlus/3.join_detach)
 - [mutex in C++ Threading](./concurrency/Threading_In_CPlusPlus/4.mutex)
 
 > 学习自：
 >
 > https://www.youtube.com/watch?v=eZ8yKZo-PGw&list=PLk6CEY9XxSIAeK-EAh3hB4fgNvYkYmghp&index=4
 
-### 5. [C++惯用法](./codingStyleIdioms)
+### 5. [C++ 惯用法](./codingStyleIdioms)
 
-##### 你最喜欢的c++编程风格惯用法是什么?
+##### 你最喜欢的 c++ 编程风格惯用法是什么?
 
 - [1.类初始化列表](./codingStyleIdioms/1_classInitializers)
 - [2.枚举类替换命名空间](./codingStyleIdioms/2_enumclass_namespace)
@@ -180,13 +182,13 @@ C++2.0简称包括C++11/14/17/20。
 
 ### 6.学习课程
 
-#### 6.1 [极客时间《现代C++实战30讲》](https://time.geekbang.org/channel/home)
+#### 6.1 [极客时间《现代 C++ 实战 30 讲》](https://time.geekbang.org/channel/home)
 
-- [堆、栈、RAII：C++里该如何管理资源？](./learn_class/modern_C++_30/RAII)
+- [堆、栈、RAII：C++ 里该如何管理资源？](./learn_class/modern_C++_30/RAII)
   - [堆](./modern_++_30/RAII/heap.cpp)
   - [栈](./learn_class/modern_C++_30/RAII/stack.cpp)
   - [RAII](./learn_class/modern_C++_30/RAII/RAII.cpp)
-- [自己动手，实现C++的智能指针](./learn_class/modern_C++_30/smart_ptr)
+- [自己动手，实现 C++ 的智能指针](./learn_class/modern_C++_30/smart_ptr)
   - [auto_ptr、scope_ptr](./learn_class/modern_C++_30/smart_ptr/auto_scope.cpp)
   - [unique_ptr](./learn_class/modern_C++_30/smart_ptr/unique_ptr.cpp)
   - [shared_ptr](./learn_class/modern_C++_30/smart_ptr/shared_ptr.cpp)
@@ -196,8 +198,8 @@ C++2.0简称包括C++11/14/17/20。
   - [引用折叠](./learn_class/modern_C++_30/reference/collapses.cpp)
   - [完美转发](./learn_class/modern_C++_30/reference/forward.cpp)
   - [不要返回本地变量的引用](./learn_class/modern_C++_30/reference/don'treturnReference.cpp)
-- [容器1](./learn_class/modern_C++_30/container1)
-- [容器2](./learn_class/modern_C++_30/container2)
+- [容器 1](./learn_class/modern_C++_30/container1)
+- [容器 2](./learn_class/modern_C++_30/container2)
 - [异常](./learn_class/modern_C++_30/exception)
 - [字面量、静态断言和成员函数说明符](./learn_class/modern_C++_30/literalAssert)
 - [是不是应该返回对象？](./learn_class/modern_C++_30/returnObj)
@@ -205,8 +207,8 @@ C++2.0简称包括C++11/14/17/20。
 - [译期能做些什么？一个完整的计算世界](./learn_class/modern_C++_30/compilercompute)
 - [SFINAE：不是错误的替换失败是怎么回事?](./learn_class/modern_C++_30/SFINAE)
 - [constexpr：一个常态的世界](./learn_class/modern_C++_30/constexpr)
-- [函数对象和lambda：进入函数式编程](./learn_class/modern_C++_30/functionLambda)
-- [内存模型和atomic：理解并发的复杂性](./learn_class/modern_C++_30/memorymodel_atomic)
+- [函数对象和 lambda：进入函数式编程](./learn_class/modern_C++_30/functionLambda)
+- [内存模型和 atomic：理解并发的复杂性](./learn_class/modern_C++_30/memorymodel_atomic)
 
 ### 7.工具篇
 
@@ -230,19 +232,23 @@ map<int, int> mp{
 { 1 => 1, 2 => 4, 3 => 9 }
 ```
 
-#### 7.2 像Python一样简单输出
+#### 7.2 像 Python 一样简单输出（Jupyter Notebook）
 
-- [像Python一样玩C/C++](./tool/像Python一样玩CC++.md)
+- [像 Python 一样玩 C/C++](./tool/像Python一样玩CC++.md)
 
 #### 7.3 观察编译过程变化
 
 -  [https://cppinsights.io](https://cppinsights.io/)
 
+#### 7.4 C++ 的 Debug 工具 dbg-macro
+
+- [C++ 的 Debug 工具 dbg-macro](./tool/C++的Debug工具dbg-macro.md)
+
 ### 8.拓展部分
 
 #### 8.1 一些问题
 
-- [C++中如何将string类型转换为int类型？](./extension/some_problem/string_int.md)
+- [C++ 中如何将 string 类型转换为 int 类型？](./extension/some_problem/string_int.md)
 
 ### 9.代码运行
 
@@ -254,7 +260,28 @@ map<int, int> mp{
 
   CLion  gcc/g++
 
-### 10.关于作者
+### 10.贡献者
+
+<table>
+  <tbody>
+    <tr>
+      <th align="center" style="width: 80px;">
+        <a href="https://github.com/Light-City">
+          <img src="https://avatars2.githubusercontent.com/u/25699850?s=460&v=4" style="width: 50px;"><br>
+          <sub>Francis</sub>
+        </a><br>
+      </th>
+      <th align="center" style="width: 80px;">
+        <a href="https://github.com/ChungZH">
+          <img src="https://avatars1.githubusercontent.com/u/42088872?s=50&v=4" style="width: 50px;"><br>
+          <sub>ChungZH</sub>
+        </a><br>
+      </th>
+    </tr>
+  </tbody>
+</table>
+
+### 11.关于作者
 
 个人公众号：
 

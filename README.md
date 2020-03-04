@@ -267,7 +267,7 @@ map<int, int> mp{
     <tr>
       <th align="center" style="width: 80px;">
         <a href="https://github.com/Light-City">
-          <img src="https://avatars2.githubusercontent.com/u/25699850?s=460&v=4" style="width: 50px;"><br>
+          <img src="https://avatars2.githubusercontent.com/u/25699850?s=50&v=4" style="width: 50px;"><br>
           <sub>Francis</sub>
         </a><br>
       </th>
