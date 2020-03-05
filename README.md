@@ -37,7 +37,7 @@
 - [explicit 那些事](./basic_content/explicit)
 - [friend 那些事](./basic_content/friend)
 - [using 那些事](./basic_content/using)
-- [:: 那些事](./basic_content/::)
+- [:: 那些事](./basic_content/maohao)
 - [enum 那些事](./basic_content/enum)
 - [decltype 那些事](./basic_content/decltype)
 - [引用与指针那些事](./basic_content/pointer_refer)
