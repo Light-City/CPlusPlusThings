@@ -76,7 +76,7 @@ struct Student {
 };
 Student(){}
 Struct Student s; //ok
-Srudent s;  //ok
+Student s;  //ok
 ```
 
 添加同名函数后：
@@ -87,7 +87,7 @@ struct Student {
 };
 Student(){}
 Struct Student s; //ok
-Srudent s;  //error
+Student s;  //error
 ```
 
 > 情形二：使用typedef定义结构体别名
