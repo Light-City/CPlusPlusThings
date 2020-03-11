@@ -158,7 +158,7 @@ int main(){
 
 上述修改ptr指针所指向的值，可以通过非const指针来修改。
 
-最后，当把一个const常量的地址赋值给ptr时候，由于ptr指向的是一个变量，而不是const常量，所以会报错，出现：const int* -> int *错误！
+最后，当把一个const常量的地址赋值给ptr时候，由于ptr指向的是一个变量，而不是const常量，所以会报错，出现：const int`*` -> int `*`错误！
 
 ```c++
 #include<iostream>
@@ -170,7 +170,7 @@ int main(){
 }
 ```
 
-上述若改为 const int *ptr或者改为const int *const ptr，都可以正常！
+上述若改为 const int `*`ptr或者改为const int `*`const ptr，都可以正常！
 
 （3）指向常量的常指针
 
@@ -240,7 +240,7 @@ void StringCopy(char *dst, const char *src);
 void func(const A &a)
 ```
 
-对于非内部数据类型的参数而言，象void func(A a) 这样声明的函数注定效率比较底。因为函数体内将产生A 类型
+对于非内部数据类型的参数而言，象void func(A a) 这样声明的函数注定效率比较低。因为函数体内将产生A 类型
 
 的临时对象用于复制参数a，而临时对象的构造、复制、析构过程都将消耗时间。
 
