@@ -44,7 +44,7 @@
 
 ### 2.实战系列
 
-#### 2.1 10日狂练
+#### 2.1 [10日狂练](./practical_exercises/10_day_practice)
 
 - [x] [day1](./practical_exercises/10_day_practice/day1)
 
@@ -86,7 +86,7 @@
 
 文件与流
 
-#### 2.2 重点实战练习
+#### 2.2 [重点实战练习](./practical_exercises/key_exercises/)
 
 ├── [中括号重载.cpp](./practical_exercises/key_exercises/中括号重载.cpp)
 ├── [时钟++运算符重载.cpp](./practical_exercises/key_exercises/时钟++运算符重载.cpp)
