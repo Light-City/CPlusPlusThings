@@ -37,13 +37,81 @@
 - [explicit 那些事](./basic_content/explicit)
 - [friend 那些事](./basic_content/friend)
 - [using 那些事](./basic_content/using)
-- [:: 那些事](./basic_content/::)
+- [:: 那些事](./basic_content/maohao)
 - [enum 那些事](./basic_content/enum)
 - [decltype 那些事](./basic_content/decltype)
 - [引用与指针那些事](./basic_content/pointer_refer)
 - [宏那些事](./basic_content/macro)
 
----
+### 2.实战系列
+
+#### 2.1 10日狂练
+
+- [x] day1
+
+基本c++语法
+
+- [x] day2
+
+递归、结构体、枚举、静态变量等
+
+- [x] day3
+
+函数
+
+- [x] day4
+
+函数深入
+
+- [x] day5
+
+继承多态
+
+- [x] day6
+
+虚函数、抽象类
+
+- [x] day7
+
+运算符重载
+
+- [x] day8
+
+模板与STL
+
+- [x] day9
+
+异常
+
+- [x] day10
+
+文件与流
+
+#### 2.2 重点实战练习
+
+├── [中括号重载.cpp](./practical_exercises/key_exercises/中括号重载.cpp)
+├── [时钟++运算符重载.cpp](./practical_exercises/key_exercises/时钟++运算符重载.cpp)
+├── [运算符重载之强制转换.cpp](./practical_exercises/key_exercises/运算符重载之强制转换.cpp)
+└── [重载圆括号的时钟.cpp](./practical_exercises/key_exercises/重载圆括号的时钟.cpp)
+
+├── [函数模板.cpp](./practical_exercises/key_exercises/函数模板.cpp)
+
+├── [动态数组.cpp](./practical_exercises/key_exercises/动态数组.cpp)
+
+├── [字典插入与查找.cpp](./practical_exercises/key_exercises/字典插入与查找.cpp)
+
+├── [异常捕获.cpp](./practical_exercises/key_exercises/异常捕获.cpp)
+
+├── [类模板之栈.cpp](./practical_exercises/key_exercises/类模板之栈.cpp)
+
+├── [类模板特化之数组.cpp](./practical_exercises/key_exercises/类模板特化之数组.cpp)
+
+├── [继承与封装.cpp](./practical_exercises/key_exercises/继承与封装.cpp)
+
+├── [读写文件综合题.cpp](./practical_exercises/key_exercises/读写文件综合题.cpp)
+├── [输入输出运算符重载.cpp](./practical_exercises/key_exercises/输入输出运算符重载.cpp)
+├── [输入输出重载.cpp](./practical_exercises/key_exercises/输入输出重载.cpp)
+├── [输出格式.cpp](./practical_exercises/key_exercises/输出格式.cpp)
 
 ### 2.[C++2.0 新特性](./c++2.0)
 
