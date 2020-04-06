@@ -350,7 +350,7 @@ map<int, int> mp{
 
 ### 13.关于作者
 
-个人公众号：
+个人公众号：guangcity
 
 ![](./img/wechat.jpg)
 
