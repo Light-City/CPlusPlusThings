@@ -51,7 +51,7 @@ int ext
  * compile: g++ -o file file2.cpp file1.cpp
  * execute: ./file
  */
-int ext;
+extern int ext;
 int main(){
     std::cout<<(ext+10)<<std::endl;
 }
@@ -61,7 +61,7 @@ int main(){
 
 ```c++
 //extern_file1.cpp
-const int ext=12;
+extern const int ext=12;
 //extern_file2.cpp
 #include<iostream>
 /**
