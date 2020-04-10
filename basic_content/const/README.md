@@ -51,7 +51,7 @@ int ext
  * compile: g++ -o file file2.cpp file1.cpp
  * execute: ./file
  */
-extern int ext;
+int ext;
 int main(){
     std::cout<<(ext+10)<<std::endl;
 }
@@ -61,7 +61,7 @@ int main(){
 
 ```c++
 //extern_file1.cpp
-extern const int ext=12;
+const int ext=12;
 //extern_file2.cpp
 #include<iostream>
 /**
@@ -76,6 +76,7 @@ int main(){
 ```
 
 <p><font style="color:red">小结：可以发现未被const修饰的变量不需要extern显式声明！而const常量需要显式声明extern，并且需要做初始化！因为常量在定义后就不能被修改，所以定义时必须初始化。</font></p>
+
 ## 4.定义常量
 
 ```c++
