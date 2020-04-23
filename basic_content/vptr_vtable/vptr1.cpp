@@ -86,7 +86,7 @@ int main(void)
     Base &p = d; // 基类引用指向派生类实例
     cout<<"基类对象直接调用"<<endl;
     ptr.fun1();
-    cout<<"基类引用指向派生类实例"<<endl;
+    cout<<"基类引用指向基类实例"<<endl;
     pp.fun1(); 
     cout<<"基类指针指向派生类实例并调用虚函数"<<endl;
     pt->fun1();
