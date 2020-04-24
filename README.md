@@ -5,6 +5,9 @@
 
 [直通点](https://light-city.club/sc/)
 
+https://light-city.club/sc/
+
+
 ### 关于作者
 
 个人公众号：guangcity
