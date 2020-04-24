@@ -5,6 +5,14 @@
 
 [直通点](https://light-city.club/sc/)
 
+### 关于作者
+
+个人公众号：guangcity
+
+![](./img/wechat.jpg)
+
+欢迎大家反馈及C++交流，本人在微信创建了C++那些事交流群，优质的C++资源交流区，期待大家关注上面公众号，点击公众号右下角->联系我，拉你入群。
+
 ---
 
 ### 0.项目概要
@@ -347,10 +355,4 @@ map<int, int> mp{
     </tr>
   </tbody>
 </table>
-
-### 13.关于作者
-
-个人公众号：guangcity
-
-![](./img/wechat.jpg)
 
