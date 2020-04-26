@@ -18,6 +18,20 @@ https://light-city.club/sc/
 
 ---
 
+### 项目运行
+
+- **代码环境**
+
+  Ubuntu 18.04
+
+- **工具**
+
+  CLion  gcc/g++
+
+尽量用g++，因为一开始我用的vim写的，所以纯g++，后来用编译器CLion，部分有CMakeLists.txt文件，直接导入就行，后面会更新这个文件包含整个项目，持续关注~
+
+
+
 ### 0.项目概要
 
 - 中文名：**C++ 那些事**
@@ -328,17 +342,7 @@ map<int, int> mp{
 
 - [C++ 中如何将 string 类型转换为 int 类型？](./extension/some_problem/string_int.md)
 
-### 11.代码运行
-
-- **代码环境**
-
-  Ubuntu 18.04
-
-- **工具**
-
-  CLion  gcc/g++
-
-### 12.贡献者
+### 11.贡献者
 
 <table>
   <tbody>
