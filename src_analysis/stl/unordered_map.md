@@ -157,7 +157,7 @@ using __umap_traits = __detail::_Hashtable_traits<_Cache, false, false>;
 template<bool _Cache>
 using __uset_traits = __detail::_Hashtable_traits<_Cache, true, true>;
 ```
-(4) undered_set
+(4) undered_multiset
 
 ```cpp
 template<bool _Cache>
