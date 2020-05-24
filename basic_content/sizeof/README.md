@@ -93,7 +93,7 @@ int main()
 /**
  * @file geninhe.cpp
  * @brief 1.普通单继承,继承就是基类+派生类自身的大小(注意字节对齐)
- * 注意：类的数据成员按其声明顺序加入内存，无访问权限无关，只看声明顺序。
+ * 注意：类的数据成员按其声明顺序加入内存，与访问权限无关，只看声明顺序。
  * 2.虚单继承，派生类继承基类vptr
  * @author 光城
  * @version v1
@@ -134,7 +134,7 @@ class A1
 {
     virtual void fun(){}
 };
-class C1:public A
+class C1:public A1
 {
 };
 
