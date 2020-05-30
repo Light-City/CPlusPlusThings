@@ -12,7 +12,7 @@ https://light-city.club/sc/
 
 个人公众号：guangcity
 
-![](./img/wechat.jpg)
+![](https://light-city.club/sc/assets/images/wechat.jpg)
 
 欢迎大家反馈及C++交流，本人在微信创建了C++那些事交流群，优质的C++资源交流区，期待大家关注上面公众号，点击公众号右下角->联系我，拉你入群。
 
@@ -370,12 +370,12 @@ map<int, int> mp{
 <table>
   <tbody>
     <tr>
-      <th align="center" style="">
-          <img src="./img/alipay.png"><br>
+      <th align="center" style="height=200 width="200">
+          <img src="https://light-city.club/sc/assets/images/alipay.jpg" height="200" width="200" ><br>
           支付宝
       </th>
-      <th align="center" style="">
-          <img src="./img/wechatpay.png"><br>
+      <th align="center" style="height=200 width="200">
+          <img src="https://light-city.club/sc/assets/images/wechat.png" height="200" width="200" ><br>
           微信
       </th>
     </tr>
