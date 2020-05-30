@@ -18,6 +18,8 @@ https://light-city.club/sc/
 
 ---
 
+
+
 ### 项目运行
 
 - **代码环境**
@@ -29,8 +31,6 @@ https://light-city.club/sc/
   CLion  gcc/g++
 
 尽量用g++，因为一开始我用的vim写的，所以纯g++，后来用编译器CLion，部分有CMakeLists.txt文件，直接导入就行，后面会更新这个文件包含整个项目，持续关注~
-
-
 
 ### 0.项目概要
 
@@ -358,6 +358,25 @@ map<int, int> mp{
           <img src="https://avatars1.githubusercontent.com/u/42088872?s=50&v=4" style="width: 50px;"><br>
           <sub>ChungZH</sub>
         </a><br>
+      </th>
+    </tr>
+  </tbody>
+</table>
+
+### 12.赞助我
+
+如果觉得不错，赞助我吧~
+
+<table>
+  <tbody>
+    <tr>
+      <th align="center" style="">
+          <img src="./img/alipay.png"><br>
+          支付宝
+      </th>
+      <th align="center" style="">
+          <img src="./img/wechatpay.png"><br>
+          微信
       </th>
     </tr>
   </tbody>
