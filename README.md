@@ -219,6 +219,7 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 ### 4.设计模式
 
 - [单例模式](./design_pattern/singleton)
+- [生产消费者模式](./design_pattern/producer_consumer)
 
 ### 5. [STL 源码剖析](./src_analysis/stl)
 
