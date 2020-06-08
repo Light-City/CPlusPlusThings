@@ -17,9 +17,9 @@ class DiskNotFound:public FileSysException{
     public:
         char *Where(){return "DiskNotFound...";}
 };
-void main(){
+int main(){
     try{
-         .....  //程序代码
+//         .....  //程序代码
          throw FileSysException();
     }
     catch(DiskNotFound p){cout<<p.Where()<<endl;}
@@ -27,7 +27,7 @@ void main(){
     catch(FileSysException p){cout<<p.Where()<<endl;}
     catch(BasicException p){cout<<p.Where()<<endl;}
     try{
-        .....  //程序代码
+//        .....  //程序代码
          throw DiskNotFound();
     }
     catch(BasicException p){cout<<p.Where()<<endl;}
