@@ -6,11 +6,9 @@
  * @date 2019-07-25
  */
 
-# define NDEBUG
+# define NDEBUG // 忽略断言
 
 #include<assert.h>
-
-
 
 int main(){
     int x=7;
