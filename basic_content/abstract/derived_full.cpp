@@ -21,7 +21,7 @@ class Derived: public Base
 { 
     int y; 
     public: 
-    void fun() { cout << "fun() called"; }  ///< 实现了fun()函数
+    void fun() { cout << "fun() called"; }  // 实现了fun()函数
 }; 
 
 int main(void) 
