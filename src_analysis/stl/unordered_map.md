@@ -9,8 +9,8 @@
 unordered_map与unordered_multimap的源码在`unordered_map.h`这个文件中。
 
 
-## 1.undered_map与unordered_multimap本质区别
-先来看一下undered_map源码：
+## 1.unordered_map与unordered_multimap本质区别
+先来看一下unordered_map源码：
 
 ```cpp
 template<class _Key, class _Tp,
@@ -51,13 +51,13 @@ typename _ExtractKey, typename _Equal,
 typename _H1, typename _H2, typename _Hash,
 typename _RehashPolicy, typename _Traits>
 ```
-默认情况下，undered_map采用：
+默认情况下，unordered_map采用：
 - H1为hash<key>
 - H2为_Mod_range_hashing
 - _Hash为_Default_ranged_hash
 - _RehashPolicy为_Prime_rehash_policy
 - _Traits为_Tr
-对于最后的_Tr,非常重要，因为正是因为这个参数，才有undered_multimap。
+对于最后的_Tr,非常重要，因为正是因为这个参数，才有unordered_multimap。
 具体分析看下面：
 
 
@@ -91,7 +91,7 @@ struct _Hashtable_traits
     using __unique_keys = __bool_constant<_Unique_keys>;
 };
 ```
-看到有三个using，理解为三个typedef，依次表示：hash code缓存与否，是否是常迭代器，是否是唯一的key，再往上回头看，传递进来的是三个模板参数，分别是false,false,true，也验证了undered_map是唯一的key，那么对应的undered_multimap就是不唯一的key，最后一个参数为false。我们翻阅到相应代码如下：
+看到有三个using，理解为三个typedef，依次表示：hash code缓存与否，是否是常迭代器，是否是唯一的key，再往上回头看，传递进来的是三个模板参数，分别是false,false,true，也验证了unordered_map是唯一的key，那么对应的unordered_multimap就是不唯一的key，最后一个参数为false。我们翻阅到相应代码如下：
 
 ```cpp
 /// Base types for unordered_multimap.
@@ -101,8 +101,8 @@ using __ummap_traits = __detail::_Hashtable_traits<_Cache, false, false>;
 
 小结，在上面分析，我们知道了unordered_map与unordered_multimap的本质区别，也发现了如何在底层源码上用一个容器实现两个容器适配器！
 
-## 2.undered_set与unordered_multiset本质区别
-分析同前面一样，先看undered_set:
+## 2.unordered_set与unordered_multiset本质区别
+分析同前面一样，先看unordered_set:
 
 ```cpp
 template<class _Value,
@@ -129,35 +129,35 @@ using __uset_hashtable = _Hashtable<_Value, _Value, _Alloc,
                 __detail::_Default_ranged_hash,
                 __detail::_Prime_rehash_policy, _Tr>;
 ```
-可以看到传递给`_Hashtable_traits`的是false,true,true。对于undered_set来说使用的是const iterator与唯一的key,我们再看一下unordered_multiset：
+可以看到传递给`_Hashtable_traits`的是false,true,true。对于unordered_set来说使用的是const iterator与唯一的key,我们再看一下unordered_multiset：
 
 ```cpp
 template<bool _Cache>
 using __umset_traits = __detail::_Hashtable_traits<_Cache, true, false>;
 ```
-再将两者对比一下，本质就是undered_set不允许key重复，而undered_multiset允许key重复。
+再将两者对比一下，本质就是unordered_set不允许key重复，而unordered_multiset允许key重复。
 
 ## 3.三大结论
 
 现在，我们有了前面基础，依次列出前面四个容器适配器：
 
-(1) undered_map
+(1) unordered_map
 ```cpp
 template<bool _Cache>
 using __umap_traits = __detail::_Hashtable_traits<_Cache, false, true>;
 ```
-(2) undered_multimap
+(2) unordered_multimap
 ```cpp
 template<bool _Cache>
 using __umap_traits = __detail::_Hashtable_traits<_Cache, false, false>;
 ```
-(3) undered_set
+(3) unordered_set
 
 ```cpp
 template<bool _Cache>
 using __uset_traits = __detail::_Hashtable_traits<_Cache, true, true>;
 ```
-(4) undered_multiset
+(4) unordered_multiset
 
 ```cpp
 template<bool _Cache>
@@ -166,13 +166,13 @@ using __uset_traits = __detail::_Hashtable_traits<_Cache, true, false>;
 
 对比后，得出
 
-- 结论1：undered_map与undered_set不允许key重复,而带multi的则允许key重复；
-- 结论2：undered_map与undered_multimap采用的迭代器是iterator，而undered_set与undered_multiset采用的迭代器是const_iterator。
-- 结论3：undered_map与undered_multimap的key是key，value是key+value；而undered_set与undered_multiset的key是Value，Value也是Key。
+- 结论1：unordered_map与unordered_set不允许key重复,而带multi的则允许key重复；
+- 结论2：unordered_map与unordered_multimap采用的迭代器是iterator，而unordered_set与unordered_multiset采用的迭代器是const_iterator。
+- 结论3：unordered_map与unordered_multimap的key是key，value是key+value；而unordered_set与unordered_multiset的key是Value，Value也是Key。
 
 最后一个结论对比看下面(我们看传递给hashtable的第一与第二个参数)：
 
-undered_map与undered_multimap：
+unordered_map与unordered_multimap：
 ```cpp
 using __umap_hashtable = _Hashtable<_Key, 
 std::pair<const _Key, _Tp>,
@@ -182,7 +182,7 @@ __detail::_Mod_range_hashing,
 __detail::_Default_ranged_hash,
 __detail::_Prime_rehash_policy, _Tr>;
 ```
-undered_set与undered_multiset：
+unordered_set与unordered_multiset：
 ```cpp
 template<typename _Value,
 typename _Hash = hash<_Value>,
@@ -196,13 +196,13 @@ __detail::_Default_ranged_hash,
 __detail::_Prime_rehash_policy, _Tr>;
 ```
 
-## 4.undered_map重要函数
+## 4.unordered_map重要函数
 
 > 初始化
 
-可以在下面的构造函数中看到undered_map的默认桶数为10。
+可以在下面的构造函数中看到unordered_map的默认桶数为10。
 
-在undered_map的底层默认采用hasher(),也就是H1,也就是std::hash
+在unordered_map的底层默认采用hasher(),也就是H1,也就是std::hash
 
 ```cpp
 unordered_map(size_type __n = 10,
@@ -319,7 +319,7 @@ clear() noexcept
 ```
 > hash_function
 
-得到该undered_map的hash_function
+得到该unordered_map的hash_function
 ```cpp
 hasher
 hash_function() const
@@ -353,4 +353,4 @@ at(const key_type& __k)
 ```
 除了这些函数还有获取桶，最大桶数、加载因子、rehash等等，就是没有排序，因为hashtable没有提供排序功能。hashtable在查找、删除和插入节点是常数时间，优于RB-Tree红黑树。
 
-同理，unordered_set、unordered_multiset、unordered_multimap与undered_map一样的函数，所以就不阐述了。
+同理，unordered_set、unordered_multiset、unordered_multimap与unordered_map一样的函数，所以就不阐述了。
