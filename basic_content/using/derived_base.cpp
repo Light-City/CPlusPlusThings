@@ -21,7 +21,7 @@ class Base {
         Base():value(20) {}
         virtual ~Base() {}
         void test1() { cout << "Base test1..." << endl; }
-    protected:  //私有
+    private:  //私有
         int value;
 };
 
