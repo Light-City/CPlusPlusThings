@@ -9,7 +9,6 @@
 #include<iostream> 
 using namespace std; 
 
-
 /**
  * @brief 抽象类至少包含一个纯虚函数
  */

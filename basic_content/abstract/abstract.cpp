@@ -7,16 +7,12 @@
  * @date 2019-07-20
  */
 
-
-
-
 #include<iostream>
-
-
 using namespace std;
+
 class A {
 public:
-    virtual void f() = 0;
+    virtual void f() = 0;  // 纯虚函数
     void g(){ this->f(); }
     A(){}
 };
