@@ -38,7 +38,7 @@ static成员函数不属于任何类对象或类实例，所以即使给此函�
 
 （2）**构造函数可以为虚函数吗？**
 
-构造函数不可以声明为虚函数。同时除了inline之外，构造函数不允许使用其它任何关键字。
+构造函数不可以声明为虚函数。同时除了inline|explicit之外，构造函数不允许使用其它任何关键字。
 
 为什么构造函数不可以为虚函数？
 
@@ -86,7 +86,7 @@ static成员函数不属于任何类对象或类实例，所以即使给此函�
 
 - [inline_virtual.cpp](./set3/inline_virtual.cpp)
 
- ## 5.RTTI与dynamic_cast
+## 5.RTTI与dynamic_cast
 
 RTTI（Run-Time Type Identification)，通过运行时类型信息程序能够使用[基类](https://baike.baidu.com/item/%E5%9F%BA%E7%B1%BB/9589663)的[指针](https://baike.baidu.com/item/%E6%8C%87%E9%92%88/2878304)或引用来检查这些指针或引用所指的对象的实际[派生类](https://baike.baidu.com/item/%E6%B4%BE%E7%94%9F%E7%B1%BB)型。
 
