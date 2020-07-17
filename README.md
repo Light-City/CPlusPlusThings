@@ -28,9 +28,13 @@ https://light-city.club/sc/
 
   Ubuntu 18.04
 
-- **工具**
+- **编辑工具**
 
-  CLion  gcc/g++
+  CLion  
+
+- **编译器**
+
+> gcc/g++
 
 尽量用g++，因为一开始我用的vim写的，所以纯g++，后来用编译器CLion，部分有CMakeLists.txt文件，直接导入就行，后面会更新这个文件包含整个项目，持续关注~
 
