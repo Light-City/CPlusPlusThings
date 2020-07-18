@@ -27,7 +27,11 @@ void some_core_part_of_algorithm() {
 }
 
 int main() {
-    std::cout << std::this_thread::get_id() << endl;
+    master_thread = std::this_thread::get_id();
+    std::cout << "master_thread: " << master_thread << endl;
+    cout << "master_thread 中运行:" << endl;
+    some_core_part_of_algorithm();
+    cout << "thread 中运行:" << endl;
     thread t(some_core_part_of_algorithm);
     t.join();
     return 0;
