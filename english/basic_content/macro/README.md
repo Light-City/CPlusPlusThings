@@ -1,22 +1,22 @@
-# 宏那些事
+# Story about Macro
 
-## 关于作者：
 
-个人公众号：
 
 ![](../img/wechat.jpg)
 
-## 1.宏中包含特殊符号
+## 1.The macro contains special symbols
 
-分为几种：`#`，`##`，`\`
+Several type：`#`，`##`，`\`
 
-### 1.1 字符串化操作符（#）
+### 1.1 String operator（#）
 
-**在一个宏中的参数前面使用一个#,预处理器会把这个参数转换为一个字符数组**，换言之就是：**#是“字符串化”的意思，出现在宏定义中的#是把跟在后面的参数转换成一个字符串**。
+**Using a # before macro parameter,The preprocessor converts this parameter into an array of characters**，In other words：**# is “stringlize”，The#, which appears in the macro definition, is to convert the following parameter into a string
 
-**注意：其只能用于有传入参数的宏定义中，且必须置于宏定义体中的参数名前。**
+**。
 
-例如：
+**Attention：It can only be used in macro definitions that have passed in parameters, and must be placed before the parameter name in the macro definition body.**
+
+For example：
 
 ```c++
 #define exp(s) printf("test s is:%s\n",s)
@@ -29,7 +29,7 @@ int main() {
     string str = exp2(   bac );
     cout<<str<<" "<<str.size()<<endl;
     /**
-     * 忽略传入参数名前面和后面的空格。
+     * Ignore spaces before and after the passed in parameter name
      */
     string str1 = exp2( asda  bac );
     /**
@@ -41,47 +41,47 @@ int main() {
 }
 ```
 
-上述代码给出了基本的使用与空格处理规则，空格处理规则如下：
+The above code gives the basic use and space handling rules，The space handling rules are as follows：
 
-- 忽略传入参数名前面和后面的空格。
+- Ignore spaces before and after the passed in parameter name
 
 ```c++
 string str = exp2(   bac );
 cout<<str<<" "<<str.size()<<endl;
 ```
 
-输出：
+Output：
 
 ```
 bac 3
 ```
 
-- 当传入参数名间存在空格时，编译器将会自动连接各个子字符串，用每个子字符串之间以一个空格连接，忽略剩余空格。
+- When there are spaces between the input parameter names, the compiler will automatically connect each substring with a space between each substring, ignoring the remaining spaces.
 
 ```c++
 string str1 = exp2( asda  bac );
 cout<<str1<<" "<<str1.size()<<endl;
 ```
 
-输出：
+Output：
 
 ```
 asda bac 8
 ```
 
-### 1.2 符号连接操作符（##）
+### 1.2 Symbolic join operator（##）
 
-**“##”是一种分隔连接方式，它的作用是先分隔，然后进行强制连接。将宏定义的多个形参转换成一个实际参数名。**
+**“##” It's a separate connection. Its function is to separate and then force the connection.Converts multiple parameters defined by a macro to an actual parameter name.**
 
-注意事项：
+Attention：
 
-**（1）当用##连接形参时，##前后的空格可有可无。**
+**（1）When use ## connecting parameters，##The space before and after is optional**
 
-**（2）连接后的实际参数名，必须为实际存在的参数名或是编译器已知的宏定义。**
+**（2）Actual parameter name after connection，Must be an actual parameter name or a macro definition known to the compiler**
 
-**（3）如果##后的参数本身也是一个宏的话，##会阻止这个宏的展开。**
+**（3）If ## the parameter itself is a macro，## will prevent the macro from expanding.**
 
-示例：
+ex：
 
 ```c++
 
@@ -98,11 +98,11 @@ int main() {
 }
 ```
 
-### 1.3 续行操作符（\） 
+### 1.3 Continuation operator（\） 
 
-**当定义的宏不能用一行表达完整时，可以用”\”表示下一行继续此宏的定义。**
+**When the defined macro cannot be expressed completely in one line, you can use "\" to indicate the next line to continue the macro definition **
 
-**注意 \ 前留空格。**
+**Leave a space before \ **
 
 ```c++
 #define MAX(a,b) ((a)>(b) ? (a) \
@@ -113,13 +113,13 @@ int main() {
 }
 ```
 
-上述代码见：[sig_examp.cpp](sig_examp.cpp)
+From：[sig_examp.cpp](sig_examp.cpp)
 
-## 2.do{...}while(0)的使用
+## 2.do{...}while(0)
 
-### 2.1 避免语义曲解
+### 2.1 Avoid semantic misinterpretation
 
-例如：
+Such as ：
 
 ```
 #define fun() f1();f2();
@@ -127,7 +127,7 @@ if(a>0)
 	fun()
 ```
 
-这个宏被展开后就是：
+When this macro is expanded, it will be：
 
 ```
 if(a>0)
@@ -135,11 +135,12 @@ if(a>0)
 	f2();
 ```
 
-本意是a>0执行f1 f2，而实际是f2每次都会执行，所以就错误了。
 
-为了解决这种问题，在写代码的时候，通常可以采用`{}`块。
+In order to solve this problem, when writing code, usually can adopt
 
-如：
+`{}`。
+
+ex：
 
 ```c++
 #define fun() {f1();f2();}
@@ -153,11 +154,12 @@ if(a>0)
 };
 ```
 
-但是会发现上述宏展开后多了一个分号，实际语法不太对。(虽然编译运行没问题，正常没分号)。
+However, you will find that there is a semicolon after the macro is expanded, so the actual syntax is not correct.(Although the compiler runs well, there is no semicolon).
 
-### 2.2避免使用goto控制流
+### 2.2 Avoid using goto to control flow
 
-在一些函数中，我们可能需要在return语句之前做一些清理工作，比如释放在函数开始处由malloc申请的内存空间，使用goto总是一种简单的方法：
+In some functions, we may need to do some cleaning before the return statement, such as releasing the memory space requested by malloc at the beginning of the function. Using goto is always a simple method:
+
 
 ```c++
 int f() {
@@ -177,7 +179,8 @@ END:
 }
 ```
 
-但由于goto不符合软件工程的结构化，而且有可能使得代码难懂，所以很多人都不倡导使用，这个时候我们可以使用do{...}while(0)来做同样的事情：
+However, because go to does not conform to the structure of software engineering and may make the code difficult to understand, many people do not advocate using goto. At this time, we can use do {...} while (0) to do the same thing
+
 
 ```c++
 int ff() {
@@ -198,20 +201,21 @@ int ff() {
 }
 ```
 
-这里将函数主体部分使用do{...}while(0)包含起来，使用break来代替goto，后续的清理工作在while之后，现在既能达到同样的效果，而且代码的可读性、可维护性都要比上面的goto代码好的多了。
+The main part of function using do{...}while(0),using break instead of goto.The subsequent cleaning is after while. Now we can achieve the same effect, and the readability and maintainability of the code are better than the goto code above
 
-### 2.3 避免由宏引起的警告
+### 2.3 Avoid warnings caused by macros
 
-内核中由于不同架构的限制，很多时候会用到空宏，。在编译的时候，这些空宏会给出warning，为了避免这样的warning，我们可以使用do{...}while(0)来定义空宏：
+
+Due to the limitation of different architectures in the kernel，Empty macros are often used. While compiling，These empty macros give warning. In order to avoid warning，we could use do{...}while(0) to define empty macro：
 
 ```
 #define EMPTYMICRO do{}while(0)
 ```
 
-### 2.4 **定义单一的函数块来完成复杂的操作**
+### 2.4 **Define a single function block to perform complex operations**
 
-如果你有一个复杂的函数，变量很多，而且你不想要增加新的函数，可以使用do{...}while(0)，将你的代码写在里面，里面可以定义变量而不用考虑变量名会同函数之前或者之后的重复。
-这种情况应该是指一个变量多处使用（但每处的意义还不同），我们可以在每个do-while中缩小作用域，比如：
+If you have a complex function. There are many variables，And you don't want to add new functions。You could use do {...}while(0)，Write your code in it. You can define variables without considering the repetition of variable names and functions.
+This should mean that a variable is used in multiple place(But the meaning of each is different)，We can narrow down the scope in each do while，for example：
 
 ```c++
 int fc()
@@ -226,7 +230,7 @@ int fc()
 }
 ```
 
-上述代码见：[do_while.cpp](do_while.cpp)
+From：[do_while.cpp](do_while.cpp)
 
-学习文章：<https://www.cnblogs.com/lizhenghn/p/3674430.html>
+Article：<https://www.cnblogs.com/lizhenghn/p/3674430.html>
 
