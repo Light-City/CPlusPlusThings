@@ -1,20 +1,19 @@
-# 友元函数与友元类
+# Friend and Friend Class
 
-## 关于作者：
+## About Author：
 
-个人公众号：
 
 ![](../img/wechat.jpg)
 
-## 0.概述
+## 0.Summary
 
-友元提供了一种 普通函数或者类成员函数 访问另一个类中的私有或保护成员 的机制。也就是说有两种形式的友元：
+Friends provide a mechanism for ordinary functions or class member functions to access private or protected members in another class.In other words, there are two forms of friends:
 
-（1）友元函数：普通函数对一个访问某个类中的私有或保护成员。
+（1）Friend Function：Ordinary functions access a private or protected member of a class.
 
-（2）友元类：类A中的成员函数访问类B中的私有或保护成员
+（2）Friend Class：Member functions in class a access private or protected members in class B
 
-优点：提高了程序的运行效率。
+Advantages: improve the efficiency of the program.
 
 缺点：破坏了类的封装性和数据的透明性。
 
@@ -65,16 +64,15 @@ int main()
 }
 ```
 
-## 2.友元类
-友元类的声明在该类的声明中，而实现在该类外。
+## 2.Friend Class
+The declaration of a friend class is in the declaration of the class, and the implementation is outside the class.
 
 ```
-friend class <友元类名>;
+friend class <friend class name>;
 ```
 
-类B是类A的友元，那么类B可以直接访问A的私有成员。
-
-具体代码见：[friend_class.cpp](friend_class.cpp)
+Class B is a friend of class A, so class B can directly access private members of A.
+Code：[friend_class.cpp](friend_class.cpp)
 ```c++
 #include <iostream>
 
@@ -107,9 +105,8 @@ int main()
 ```
 
 
-## 3.注意
-- 友元关系没有继承性
-假如类B是类A的友元，类C继承于类A，那么友元类B是没办法直接访问类C的私有或保护成员。
-
-- 友元关系没有传递性
-假如类B是类A的友元，类C是类B的友元，那么友元类C是没办法直接访问类A的私有或保护成员，也就是不存在“友元的友元”这种关系。
+## 3.Attention
+- Friendship has no inheritance
+If class B is a friend of class A and class C inherits from Class A, then friend class B cannot directly access private or protected members of class C.
+- Friendship is not transitive
+If class B is a friend of class A and class C is a friend of class B, then friend class C cannot directly access private or protected members of class A, that is, there is no such relationship as "friend of friend".
