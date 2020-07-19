@@ -1,26 +1,25 @@
-# assert那些事
+# Things about assert
 
-## 关于作者：
+## About Author：
 
-个人公众号：
 
 ![](../img/wechat.jpg)
 
 
 
-## 1.第一个断言案例
+## 1.First assertion case
 
-断言，**是宏，而非函数**。
+assert，**is macro，rather than function**。
 
-assert 宏的原型定义在 <assert.h>（C）、<cassert>（C++）中。其作用是如果它的条件返回错误，则终止程序执行。
+assert The prototype of a macro is defined in  <assert.h>（C）、<cassert>（C++）.If its condition returns an error，Program execution is terminated.
 
-可以通过定义 `NDEBUG` 来关闭 assert，**但是需要在源代码的开头，include <assert.h> 之前。**
+You can close assert by defining 'ndebug', **But it needs to be at the beginning of the source code，before include <assert.h>.**
 
 ```c
 void assert(int expression);
 ```
 
-> 代码样例：[assert.c](./assert.c)
+> Code Example：[assert.c](./assert.c)
 ```c
 #include <stdio.h> 
 #include <assert.h> 
@@ -41,21 +40,20 @@ int main()
     return 0; 
 } 
 ```
-输出：
+Output：
 ```c
 assert: assert.c:13: main: Assertion 'x==7' failed.
 ```
-可以看到输出会把源码文件，行号错误位置，提示出来！
 
-## 2.断言与正常错误处理
+## 2.Assertion and normal error handling
 
-+ 断言主要用于检查逻辑上不可能的情况。
++ Assertions are mainly used to check for logically impossible situations.
 
->例如，它们可用于检查代码在开始运行之前所期望的状态，或者在运行完成后检查状态。与正常的错误处理不同，断言通常在运行时被禁用。
+>For example, they can be used to check the state that code expects before it starts to run, or after the run is complete. Unlike normal error handling, assertions are usually disabled at run time.
 
-+ 忽略断言，在代码开头加上：
++ Ignore the assertion and add at the beginning of the code：
 ```c++
-#define NDEBUG          // 加上这行，则 assert 不可用
+#define NDEBUG          // Adding this line，then you do not need the assert
 ```
 
-> 样例代码：[ignore_assert.c](./ignore_assert.c)
+> Code Example：[ignore_assert.c](./ignore_assert.c)
