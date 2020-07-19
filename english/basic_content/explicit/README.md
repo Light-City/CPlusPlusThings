@@ -1,16 +1,15 @@
-# explicit(显式)关键字那些事
+# Things about explicit
 
-## 关于作者：
+## About Author：
 
-个人公众号：
 
 ![](../img/wechat.jpg)
 
-- explicit 修饰构造函数时，可以防止隐式转换和复制初始化
-- explicit 修饰转换函数时，可以防止隐式转换，但按语境转换除外
+- explicit When decorating a constructor, you can prevent implicit conversion and copy initialization
+- explicit When modifying a conversion function, you can prevent implicit conversion, except for context conversion
 
 
-代码参见:[.explicit.cpp](./explicit.cpp)
+Code :[.explicit.cpp](./explicit.cpp)
 
-参考链接：
+Reference Link：
 > https://stackoverflow.com/questions/4600295/what-is-the-meaning-of-operator-bool-const
