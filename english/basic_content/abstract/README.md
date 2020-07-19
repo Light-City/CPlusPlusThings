@@ -1,40 +1,42 @@
-# 纯虚函数和抽象类
+# Pure virtual functions and abstract classes
 
-## 关于作者：
+## About Author：
 
-个人公众号：
+
 
 ![](../img/wechat.jpg)
 
-## 1.纯虚函数与抽象类
+## 1.Pure virtual function and abstract class
 
-C++中的纯虚函数(或抽象函数)是我们没有实现的虚函数！我们只需声明它! 通过声明中赋值0来声明纯虚函数！
+
+Pure virtual functions (or abstract functions) in C + + are virtual functions that we have not implemented!We just need to state it! 
+example:
 ```cpp
-// 抽象类
+// abstract class
 Class A {
 public: 
-    virtual void show() = 0; // 纯虚函数
+    virtual void show() = 0; // pure virtual function
     /* Other members */
 }; 
 ```
 
- * 纯虚函数：没有函数体的虚函数
- * 抽象类：包含纯虚函数的类
+ * Pure virtual function: virtual function without function body
+ * Abstract classes: classes containing pure virtual functions
 
-抽象类只能作为基类来派生新类使用，不能创建抽象类的对象,抽象类的指针和引用->由抽象类派生出来的类的对象！
+Abstract classes can only be used as base classes to derive new classes. Objects, pointers and references of abstract classes cannot be created->An object of a class derived from an abstract class!
 
-> 代码样例：[test.cpp](./test.cpp)、[pure_virtual.cpp](./pure_virtual.cpp)
+> Code example：[test.cpp](./test.cpp)、[pure_virtual.cpp](./pure_virtual.cpp)
 
-## 2.实现抽象类
+## 2.Implement abstract classes
 
-抽象类中：在成员函数内可以调用纯虚函数，在构造函数/析构函数内部不能使用纯虚函数。
+Abstract class：Pure virtual functions can be called within member functions.Pure virtual functions cannot be used inside constructors / destructors.
 
-如果一个类从抽象类派生而来，它必须实现了基类中的所有纯虚函数，才能成为非抽象类。
+If a class derives from an abstract class, it must implement all pure virtual functions in the base class to become a non abstract class.
 ```cpp
-// A为抽象类
+// A is abstract class
 class A {
 public:
-    virtual void f() = 0;  // 纯虚函数
+    virtual void f() = 0;  // pure virtual function
     void g(){ this->f(); }
     A(){}  // 构造函数
 };
@@ -45,13 +47,13 @@ public:
 };
 ```
 
-> 代码样例：[abstract.cpp](./abstract.cpp)
+> Code Example：[abstract.cpp](./abstract.cpp)
 
-## 3.重要点
+## 3.Key point
 
-- [纯虚函数使一个类变成抽象类](./interesting_facts1.cpp)
+- [Pure virtual functions make a class abstract](./interesting_facts1.cpp)
 ```cpp
-// 抽象类至少包含一个纯虚函数
+// Abstract class contains at least one pure virtual function
 class Base{
 public: 
     virtual void show() = 0; // 纯虚函数
@@ -62,7 +64,7 @@ private:
 }; 
 ```
 
-- [抽象类类型的指针和引用](./interesting_facts2.cpp)
+- [Pointers and references to abstract class types](./interesting_facts2.cpp)
 ```cpp
 class Derived : public Base { 
 public: 
@@ -81,7 +83,7 @@ int main(void)
 }
 ```
 
-- [如果我们不在派生类中覆盖纯虚函数，那么派生类也会变成抽象类](./interesting_facts3.cpp)
+- [If we do not override pure virtual functions in the derived class, the derived class will also become an abstract class](./interesting_facts3.cpp)
 ```cpp
 // Derived为抽象类
 class Derived: public Base 
@@ -91,27 +93,27 @@ public:
 }; 
 ```
 
-- [抽象类可以有构造函数](./interesting_facts4.cpp)
+- [Abstract classes can have constructors](./interesting_facts4.cpp)
 ```cpp
-// 抽象类
+// abstract class
 class Base { 
     protected: 
         int x; 
     public: 
         virtual void fun() = 0; 
-        Base(int i) { x = i; }  // 构造函数
+        Base(int i) { x = i; }  // constructor function
 }; 
 // 派生类
 class Derived: public Base 
 { 
     int y; 
 public: 
-    Derived(int i, int j) : Base(i) { y = j; } // 构造函数
+    Derived(int i, int j) : Base(i) { y = j; } // constructor function
     void fun() { cout << "x = " << x << ", y = " << y; }
 }; 
 ```
 
-- [构造函数不能是虚函数，而析构函数可以是虚析构函数](./interesting_facts5.cpp)
+- [A constructor cannot be a virtual function, and a destructor can be a virtual destructor](./interesting_facts5.cpp)
 ```cpp
 // 抽象类
 class Base  {
@@ -130,11 +132,11 @@ public:
     void func(){cout << "In Derived.func()." << endl;}
 };
 ```
->当基类指针指向派生类对象并删除对象时，我们可能希望调用适当的析构函数。
-> 如果析构函数不是虚拟的，则只能调用基类析构函数。
+>When the base class pointer points to a derived class object and removes the object, we may want to call the appropriate destructor.
+>The destructor can only be called if it is not a virtual destructor.
 
-## 4.完整实例
+## 4.Complete example
 
-抽象类由派生类继承实现！
+Abstract classes are inherited and implemented by derived classes!
 
-> 代码样例：[derived_full.cpp](./derived_full.cpp)
+> Code Example：[derived_full.cpp](./derived_full.cpp)
