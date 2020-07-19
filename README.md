@@ -1,151 +1,124 @@
-# C++ 那些事
+# Stories About C Plus Plus
+
+Thanks for all the support about << Stories About C ++ >>, right now you could open this link(https://light-city.club/sc/) to read this article.
+Any star, retweet or pr will be weclomed.
 
 
-感谢各位对《C++ 那些事》的支持，现将内容也同步至网站，可以打开网站直接阅读~欢迎大家 star、转发、PR。
-
-[直通点](https://light-city.club/sc/)
-
-https://light-city.club/sc/
+-----------------------
 
 
-### 关于作者
+### 0. Directory
 
-公众号已开放两大入口，分别是专辑与菜单，可以直接在微信公众号上阅读《C++那些事》内容，配上该仓库的代码，将会非常的爽，建议大家关注一波。
+- Chinese version：**C++ 那些事**
+- English version：**Stories About C Plus Plus**
 
-个人公众号：guangcity
+This repository meets the need of people who wants to really know about C++, and may help you in the interview. Besides, it also provides
+other details,such as in-depth source code analysis and multi-threaded concurrency. It is a comprehensive C ++ repository from entry to advanced improvement
 
-![](https://light-city.club/sc/assets/images/wechat.jpg)
+### 1.Foundation
 
-欢迎大家反馈及C++交流，本人在微信创建了C++那些事交流群，优质的C++资源交流区，期待大家关注上面公众号，点击公众号右下角->联系我，拉你入群。
+- [Stories About const](./basic_content/const)
+- [Stories About static](./basic_content/static)
+- [Stories about this](./basic_content/this)
+- [Stories About inline](./basic_content/inline)
+- [Stories About sizeof](./basic_content/sizeof)
+- [Stories About pointer of function](./basic_content/func_pointer)
+- [Stories About pure virtual function and abstract](./basic_content/abstract)
+- [Stories About vptr_vtable](./basic_content/vptr_vtable)
+- [Stories About virtual](./basic_content/virtual)
+- [Stories About volatile](./basic_content/volatile)
+- [Stories About assert](./basic_content/assert)
+- [Stories About bit](./basic_content/bit)
+- [Stories About extern](./basic_content/extern)
+- [Stories About struct](./basic_content/struct)
+- [Stories About struct and class](./basic_content/struct_class)
+- [Stories About union](./basic_content/union)
+- [Stories About polymorphism](./basic_content/c_poly)
+- [Stories About explicit](./basic_content/explicit)
+- [Stories About friend](./basic_content/friend)
+- [Stories About using](./basic_content/using)
+- [Stories About :: ](./basic_content/maohao)
+- [Stories About enum](./basic_content/enum)
+- [Stories About decltype](./basic_content/decltype)
+- [Stories About pointer_refer](./basic_content/pointer_refer)
+- [Stories About macro](./basic_content/macro)
 
----
+### 2.Code Samples
 
+#### 2.1 10 Days Practice
 
+- [x] day1
 
-### 项目运行
+Basic Grammar About C ++
+- [x] day2
 
-- **代码环境**
+Recursive、Structor、Enumerate、Static Variable
 
-  Ubuntu 18.04
+- [x] day3
 
-- **工具**
+Function
 
-  CLion  gcc/g++
+- [x] day4
 
-尽量用g++，因为一开始我用的vim写的，所以纯g++，后来用编译器CLion，部分有CMakeLists.txt文件，直接导入就行，后面会更新这个文件包含整个项目，持续关注~
+Thorough About Function 
 
-### 0.项目概要
+- [x] day5
 
-- 中文名：**C++ 那些事**
-- 英文名：**Stories About C Plus Plus**
+Inheritance and Polymorphism 
 
-这是一个适合初学者从<u>**入门到进阶**</u>的仓库，解决了<u>**面试者与学习者**</u>想要<u>**深入 C++**</u>及如何<u>**入坑 C++**</u>的问题。除此之外，本仓库拓展了更加深入的源码分析，多线程并发等的知识，是一个比较全面的 C++ 学习从入门到进阶提升的仓库。
+- [x] day6
 
-### 1.基础进阶
+Vitrual Function、Abstruct 
 
-- [const 那些事](./basic_content/const)
-- [static 那些事](./basic_content/static)
-- [this 那些事](./basic_content/this)
-- [inline 那些事](./basic_content/inline)
-- [sizeof 那些事](./basic_content/sizeof)
-- [函数指针那些事](./basic_content/func_pointer)
-- [纯虚函数和抽象类那些事](./basic_content/abstract)
-- [vptr_vtable 那些事](./basic_content/vptr_vtable)
-- [virtual 那些事](./basic_content/virtual)
-- [volatile 那些事](./basic_content/volatile)
-- [assert 那些事](./basic_content/assert)
-- [位域那些事](./basic_content/bit)
-- [extern 那些事](./basic_content/extern)
-- [struct 那些事](./basic_content/struct)
-- [struct 与 class 那些事](./basic_content/struct_class)
-- [union 那些事](./basic_content/union)
-- [c 实现 c++ 多态那些事](./basic_content/c_poly)
-- [explicit 那些事](./basic_content/explicit)
-- [friend 那些事](./basic_content/friend)
-- [using 那些事](./basic_content/using)
-- [:: 那些事](./basic_content/maohao)
-- [enum 那些事](./basic_content/enum)
-- [decltype 那些事](./basic_content/decltype)
-- [引用与指针那些事](./basic_content/pointer_refer)
-- [宏那些事](./basic_content/macro)
+- [x] day7
 
-### 2.实战系列
+Operator overloading
 
-#### 2.1 [10日狂练](./practical_exercises/10_day_practice)
+- [x] day8
 
-- [x] [day1](practical_exercises/10_day_practice/day1)
+Template And STL
 
-基本c++语法
+- [x] day9
 
-- [x] [day2](practical_exercises/10_day_practice/day2)
+Exception
 
-递归、结构体、枚举、静态变量等
+- [x] day10
 
-- [x] [day3](practical_exercises/10_day_practice/day3)
+File And Stream
 
-函数
+#### 2.2 Practical Exercises
 
-- [x] [day4](practical_exercises/10_day_practice/day4)
+├── [Square brackets overload .cpp](./practical_exercises/key_exercises/中括号重载.cpp)
+├── [Clock++operator overloading.cpp](./practical_exercises/key_exercises/时钟++运算符重载.cpp)
+├── [Mandatory conversion of operator overloading.cpp](./practical_exercises/key_exercises/运算符重载之强制转换.cpp)
+└── [Clock with overloaded parenthesis.cpp](./practical_exercises/key_exercises/重载圆括号的时钟.cpp)
 
-函数深入
+├── [Template of Function.cpp](./practical_exercises/key_exercises/函数模板.cpp)
 
-- [x] [day5](practical_exercises/10_day_practice/day5)
+├── [Dynamic array.cpp](./practical_exercises/key_exercises/动态数组.cpp)
 
-继承多态
+├── [Dictionary insertion and search.cpp](./practical_exercises/key_exercises/字典插入与查找.cpp)
 
-- [x] [day6](practical_exercises/10_day_practice/day6)
+├── [Catch Exception.cpp](./practical_exercises/key_exercises/异常捕获.cpp)
 
-虚函数、抽象类
+├── [Template of Stack.cpp](./practical_exercises/key_exercises/类模板之栈.cpp)
 
-- [x] [day7](practical_exercises/10_day_practice/day7)
+├── [Template of Array.cpp](./practical_exercises/key_exercises/类模板特化之数组.cpp)
 
-运算符重载
+├── [Inheritance And Package.cpp](./practical_exercises/key_exercises/继承与封装.cpp)
 
-- [x] [day8](practical_exercises/10_day_practice/day8)
+├── [Read And Write files.cpp](./practical_exercises/key_exercises/读写文件综合题.cpp)
+├── [Operator Overloading About Input and Output.cpp](./practical_exercises/key_exercises/输入输出运算符重载.cpp)
+├── [Input And Output Overloading.cpp](./practical_exercises/key_exercises/输入输出重载.cpp)
+├── [Input Format.cpp](./practical_exercises/key_exercises/输出格式.cpp)
 
-模板与STL
+### 2.[C++2.0 New Features](./c++2.0)
 
-- [x] [day9](practical_exercises/10_day_practice/day9)
+#### 2.0 Overview
 
-异常
+C++2.0 is an Abbreviation, meaning「modern C++」，including C++11/14/17/20.
 
-- [x] [day10](practical_exercises/10_day_practice/day10)
-
-文件与流
-
-#### 2.2 [重点实战练习](./practical_exercises/key_exercises/)
-
-├── [中括号重载.cpp](./practical_exercises/key_exercises/中括号重载.cpp)
-├── [时钟++运算符重载.cpp](./practical_exercises/key_exercises/时钟++运算符重载.cpp)
-├── [运算符重载之强制转换.cpp](./practical_exercises/key_exercises/运算符重载之强制转换.cpp)
-└── [重载圆括号的时钟.cpp](./practical_exercises/key_exercises/重载圆括号的时钟.cpp)
-
-├── [函数模板.cpp](./practical_exercises/key_exercises/函数模板.cpp)
-
-├── [动态数组.cpp](./practical_exercises/key_exercises/动态数组.cpp)
-
-├── [字典插入与查找.cpp](./practical_exercises/key_exercises/字典插入与查找.cpp)
-
-├── [异常捕获.cpp](./practical_exercises/key_exercises/异常捕获.cpp)
-
-├── [类模板之栈.cpp](./practical_exercises/key_exercises/类模板之栈.cpp)
-
-├── [类模板特化之数组.cpp](./practical_exercises/key_exercises/类模板特化之数组.cpp)
-
-├── [继承与封装.cpp](./practical_exercises/key_exercises/继承与封装.cpp)
-
-├── [读写文件综合题.cpp](./practical_exercises/key_exercises/读写文件综合题.cpp)
-├── [输入输出运算符重载.cpp](./practical_exercises/key_exercises/输入输出运算符重载.cpp)
-├── [输入输出重载.cpp](./practical_exercises/key_exercises/输入输出重载.cpp)
-├── [输出格式.cpp](./practical_exercises/key_exercises/输出格式.cpp)
-
-### 3.[C++2.0 新特性](./c++2.0)
-
-#### 3.0 概况
-
-C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
-
-#### 3.1 [C++11 新特性](./c++2.0/c++11)
+#### 2.1 [C++11 New Features](./c++2.0/c++11)
 
 - [Variadic Templates](./c++2.0/variadic)
 
@@ -153,7 +126,7 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 
   ```cpp
   vector<list<int> > //ok in each C++ version
-  vector<list<int>> // before c++ 11 error error: ‘>>’ should be ‘> >’ within a nested template argument list,c++11后可以正常通过
+  vector<list<int>> // before c++ 11 error error: ‘>>’ should be ‘> >’ within a nested template argument list,version beyond c++ 11 could   compile successfully
   ```
 
 - [nullptr and nullptr_t](./c++2.0/nullptr.cpp)
@@ -176,8 +149,8 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 
 - [=default,=delete](./c++2.0/default_delete.cpp)
 
-  如果你自行定义了一个 ctor,那么编译器就不会给你一个 default ctor
-  如果强制加上 =default,就可以重新获得并使用 default ctor.
+  If you define a ctor by yourself, compiler won't compile the default ctor.
+  If you add =default, you could recatch and use default ctor.
 
 - Alias(化名)Template(template typedef)
 
@@ -202,30 +175,29 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 
 - [move aware class](./c++2.0/move.cpp)
 
-- 容器-结构与分类
+- Container-Struct And Classify
 
-  - (1) 序列式容器包括：`array`(C++2.0 新引入),`vector`,`deque`,`list`,`forward_list`(C++2.0 新引入)
-  - (2) 关联式容器包括：`set/multiset`,`map/multimap`
-  - (3) 无序容器(C++2.0 新引入,更换原先 `hash_xxx` 为 `unordered_xxx`)包括：`unordered_map/unordered_multimap,unordered_set/unordered_multiset`
+  - (1) Serial containers include：`array`(C++2.0 Newly Introduced),`vector`,`deque`,`list`,`forward_list`(C++2.0 Newly Introduced)
+  - (2) Associated containers include：`set/multiset`,`map/multimap`
+  - (3) Unordered container(C++2.0 Newly Introduced,replace `hash_xxx` to `unordered_xxx`) include：`unordered_map/unordered_multimap,unordered_set/unordered_multiset`
 
 - [Hash Function](./c++2.0/hash.cpp)
 
 - [tuple](./c++2.0/tuple.cpp)
 
-  学习资料：https://www.bilibili.com/video/av51863195?from=search&seid=3610634846288253061
+  Learning Material：https://www.bilibili.com/video/av51863195?from=search&seid=3610634846288253061
 
-#### 3.2 C++14/17/20
+### 2.2 C++14/17/20
 
-待更新...
+To Be Continued ...
 
-### 4.设计模式
+### 3.Design Pattern
 
-- [单例模式](./design_pattern/singleton)
-- [生产消费者模式](./design_pattern/producer_consumer)
+- [Singleton pattern](./design_pattern/singleton)
 
-### 5. [STL 源码剖析](./src_analysis/stl)
+### 4. [STL Source Code Analysis](./src_analysis/stl)
 
-**STL 源码剖析：gcc 4.9.1**
+**STL Source Code Analysis：gcc 4.9.1**
 
 - [array](./src_analysis/stl/array.md)
 - [deque](./src_analysis/stl/deque.md)
@@ -235,83 +207,83 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 - [typename](./src_analysis/stl/typename.md)
 - [traits](./src_analysis/stl/traits.md)
 - [iterator](./src_analysis/stl/iterator.md)
-- [谈谈 STL 设计之 EBO 优化](./src_analysis/stl/谈谈STL设计之EBO优化.md)
+- [Talking about STL design and EBO optimization](./src_analysis/stl/谈谈STL设计之EBO优化.md)
 - [rb_tree](./src_analysis/stl/rb_tree.md)
 - [set and multiset](set_multiset.md)
 - [map and multimap](./src_analysis/stl/map_multimap.md)
 - [hashtable](./src_analysis/stl/hashtable.md)
-- [myhashtable](./src_analysis/stl/myhashtable.md)
+- [myhashtable](./src_analysis/stl/myPhashtable.md)
 - [unordered_map](./src_analysis/stl/unordered_map.md)
 
-### 6. [并发编程](./concurrency)
+### 4. [Concurrent Programming](./concurrency)
 
-#### 6.1 C++ Concurrency in Action
+#### 4.1 C++ Concurrency in Action
 
-- [第一章](./concurrency/concurrency_v1/chapter1)
-- [第二章](./concurrency/concurrency_v1/chapter2)
+- [Chapter One](./concurrency/concurrency_v1/chapter1)
+- [Chapter Two](./concurrency/concurrency_v1/chapter2)
 
-学习资料：https://chenxiaowei.gitbook.io/cpp_concurrency_in_action/
+Learning materials: https://chenxiaowei.gitbook.io/cpp_concurrency_in_action/
 
-#### 6.2 多线程与多进程
+#### 4.2 Multithreading And Multiprocess
 
-##### 6.2.1 Threading In C++
+##### 4.2.1 Threading In C++
 
-- [介绍](./concurrency/Threading_In_CPlusPlus/1.thread)
-- [创建线程的五种类型](./concurrency/Threading_In_CPlusPlus/2.create_type)
-- [Join 与 Detachs](./concurrency/Threading_In_CPlusPlus/3.join_detach)
+- [Introduction](./concurrency/Threading_In_CPlusPlus/1.thread)
+- [Five Types of Thread Creation](./concurrency/Threading_In_CPlusPlus/2.create_type)
+- [Join And Detachs](./concurrency/Threading_In_CPlusPlus/3.join_detach)
 - [mutex in C++ Threading](./concurrency/Threading_In_CPlusPlus/4.mutex)
 
-> 学习自：
+> From：
 >
 > https://www.youtube.com/watch?v=eZ8yKZo-PGw&list=PLk6CEY9XxSIAeK-EAh3hB4fgNvYkYmghp&index=4
 
-### 7. [C++ 惯用法](./codingStyleIdioms)
+### 5. [C++ Conventional method](./codingStyleIdioms)
 
-##### 你最喜欢的 c++ 编程风格惯用法是什么?
+##### What is your favorite custom for c ++ programming style?
 
-- [1.类初始化列表](./codingStyleIdioms/1_classInitializers)
-- [2.枚举类替换命名空间](./codingStyleIdioms/2_enumclass_namespace)
-- [3.RAII(资源获取即初始化)](./codingStyleIdioms/3_RAII)
-- [4.copy and swap](./codingStyleIdioms/4_copy-swap)
-- [5.pImpl(指针指向具体实现)](./codingStyleIdioms/5_pImpl)
+- [1.ClassInitializers](./codingStyleIdioms/1_classInitializers)
+- [2.Replace Enumclass with Namespace](./codingStyleIdioms/2_enumclass_namespace)
+- [3.RAII(Resource Acquisition Initialization)](./codingStyleIdioms/3_RAII)
+- [4.Copy and Swap](./codingStyleIdioms/4_copy-swap)
+- [5.pImpl(Pointer Implement)](./codingStyleIdioms/5_pImpl)
 
-### 8.学习课程
+### 6.Learning Courses
 
-#### 8.1 [极客时间《现代 C++ 实战 30 讲》](https://time.geekbang.org/channel/home)
+#### 6.1 [Chinese Name:极客时间《现代 C++ 实战 30 讲》](https://time.geekbang.org/channel/home)
 
-- [堆、栈、RAII：C++ 里该如何管理资源？](./learn_class/modern_C++_30/RAII)
-  - [堆](./modern_++_30/RAII/heap.cpp)
-  - [栈](./learn_class/modern_C++_30/RAII/stack.cpp)
+- [heap、stack、RAII：How to manage resources for C ++ ?](./learn_class/modern_C++_30/RAII)
+  - [heap](./modern_++_30/RAII/heap.cpp)
+  - [stack](./learn_class/modern_C++_30/RAII/stack.cpp)
   - [RAII](./learn_class/modern_C++_30/RAII/RAII.cpp)
-- [自己动手，实现 C++ 的智能指针](./learn_class/modern_C++_30/smart_ptr)
+- [Implementing smart pointers for C ++](./learn_class/modern_C++_30/smart_ptr)
   - [auto_ptr、scope_ptr](./learn_class/modern_C++_30/smart_ptr/auto_scope.cpp)
   - [unique_ptr](./learn_class/modern_C++_30/smart_ptr/unique_ptr.cpp)
   - [shared_ptr](./learn_class/modern_C++_30/smart_ptr/shared_ptr.cpp)
-- [右值和移动究竟解决了什么问题？](./learn_class/modern_C++_30/reference)
-  - [左值与右值](./learn_class/modern_C++_30/reference/reference.cpp)
-  - [延长声明周期](./learn_class/modern_C++_30/reference/lifetime.cpp)
-  - [引用折叠](./learn_class/modern_C++_30/reference/collapses.cpp)
-  - [完美转发](./learn_class/modern_C++_30/reference/forward.cpp)
-  - [不要返回本地变量的引用](./learn_class/modern_C++_30/reference/don'treturnReference.cpp)
-- [容器 1](./learn_class/modern_C++_30/container1)
-- [容器 2](./learn_class/modern_C++_30/container2)
-- [异常](./learn_class/modern_C++_30/exception)
-- [字面量、静态断言和成员函数说明符](./learn_class/modern_C++_30/literalAssert)
-- [是不是应该返回对象？](./learn_class/modern_C++_30/returnObj)
-- [编译期多态：泛型编程和模板入门](./learn_class/modern_C++_30/compilerpoly)
-- [译期能做些什么？一个完整的计算世界](./learn_class/modern_C++_30/compilercompute)
-- [SFINAE：不是错误的替换失败是怎么回事?](./learn_class/modern_C++_30/SFINAE)
-- [constexpr：一个常态的世界](./learn_class/modern_C++_30/constexpr)
-- [函数对象和 lambda：进入函数式编程](./learn_class/modern_C++_30/functionLambda)
-- [内存模型和 atomic：理解并发的复杂性](./learn_class/modern_C++_30/memorymodel_atomic)
+- [What exactly does r value and move solve？](./learn_class/modern_C++_30/reference)
+  - [L value and R value](./learn_class/modern_C++_30/reference/reference.cpp)
+  - [Extend the declaration cycle](./learn_class/modern_C++_30/reference/lifetime.cpp)
+  - [Reference folding](./learn_class/modern_C++_30/reference/collapses.cpp)
+  - [Perfect forward](./learn_class/modern_C++_30/reference/forward.cpp)
+  - [Do not return Reference](./learn_class/modern_C++_30/reference/don'treturnReference.cpp)
+- [Container 1](./learn_class/modern_C++_30/container1)
+- [Container 2](./learn_class/modern_C++_30/container2)
+- [Exception](./learn_class/modern_C++_30/exception)
+- [Literal、Static Assertion And Member Function Specifier](./learn_class/modern_C++_30/literalAssert)
+- [Return Object？](./learn_class/modern_C++_30/returnObj)c
+- [Getting started with generic programming and templates](./learn_class/modern_C++_30/compilerpoly)
+- [A whole Compiler Compute World](./learn_class/modern_C++_30/compilercompute)
+- [SFINAE：What is it if it is not replace error?](./learn_class/modern_C++_30/SFINAE)
+- [constexpr：A Normal World](./learn_class/modern_C++_30/constexpr)
+- [Function object and Lambda：functionLambda](./learn_class/modern_C++_30/functionLambda)
+- [Memory Model and Atomic：Understangding the complexity of concurrency](./learn_class/modern_C++_30/memorymodel_atomic)
 
-### 9.工具篇
+### 7.Tools
 
-#### 9.1 [容器快捷输出工具](./tool/output)
+#### 7.1 [Container shortcut output tool](./tool/output)
 
-对吴老师的代码进行了修改，[点击此处直通代码](./tool/output/output_container.h)
+Modified the code, [Click here for the code](./tool/output/output_container.h)
 
-输入：
+Input：
 
 ```cpp
 map<int, int> mp{
@@ -321,31 +293,42 @@ map<int, int> mp{
     cout << mp << endl;
 ```
 
-输出结果显示：
+Output：
 
 ```cpp
 { 1 => 1, 2 => 4, 3 => 9 }
 ```
 
-#### 9.2 像 Python 一样简单输出（Jupyter Notebook）
+#### 7.2 Output Like Python（Jupyter Notebook）
 
-- [像 Python 一样玩 C/C++](./tool/像Python一样玩CC++.md)
+- [How to output like python in C/C++](./tool/像Python一样玩CC++.md)
 
-#### 9.3 观察编译过程变化
+#### 7.3 Observe the changes in the compilation process
 
 -  [https://cppinsights.io](https://cppinsights.io/)
 
-#### 9.4 C++ 的 Debug 工具 dbg-macro
+#### 7.4 Debug Tools For C ++：dbg-macro
 
-- [C++ 的 Debug 工具 dbg-macro](./tool/C++的Debug工具dbg-macro.md)
+- [Debug Tool: dbg-macro](./tool/C++的Debug工具dbg-macro.md)
 
-### 10.拓展部分
+### 8.Expansion
 
-#### 10.1 一些问题
+#### 8.1 Other Problems
+- [How to convert string to in C ++？](./extension/some_problem/string_int.md)
 
-- [C++ 中如何将 string 类型转换为 int 类型？](./extension/some_problem/string_int.md)
 
-### 11.贡献者
+### 9.Circumstance
+
+
+- **Running Circumstance**
+
+  Ubuntu 18.04
+
+- **IDE**
+
+  CLion  gcc/g++
+
+### 10.Contributor
 
 <table>
   <tbody>
@@ -366,22 +349,8 @@ map<int, int> mp{
   </tbody>
 </table>
 
-### 12.赞助我
+### 11.About The Writer
 
-如果觉得不错，赞助我吧~
+个人公众号：
 
-<table>
-  <tbody>
-    <tr>
-      <th align="center" style="height=200 width="200">
-          <img src="https://light-city.club/sc/assets/images/alipay.jpg" height="200" width="200" ><br>
-          支付宝
-      </th>
-      <th align="center" style="height=200 width="200">
-          <img src="https://light-city.club/sc/assets/images/wechat.png" height="200" width="200" ><br>
-          微信
-      </th>
-    </tr>
-  </tbody>
-</table>
-
+![](./img/wechat.jpg)
