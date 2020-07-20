@@ -2,87 +2,93 @@
 
 ## 关于作者：
 
-个人公众号：
+：
 
 ![](../img/wechat.jpg)
 
-## 1.引用与指针
+## 1.References and pointers
 
-总论：
+Conclusion：
 
-| 引用         | 指针         |
-| ------------ | ------------ |
-| 必须初始化   | 可以不初始化 |
-| 不能为空     | 可以为空     |
-| 不能更换目标 | 可以更换目标 |
+| Reference         | Pointer              |
+| ------------ | ------------              |
+| Must be initialized   | No initialization is allowed    |
+| cannot be empty     | could be empty     |
+| Target cannot be changed | 可以更换目标   |
 
-> 引用必须初始化，而指针可以不初始化。
+> References must be initialized, and pointers can be uninitialized
 
-我们在定义一个引用的时候必须为其指定一个初始值，但是指针却不需要。
+When we define a reference, we must specify an initial value for it, but the pointer does not
 
 ```c++
-int &r;    //不合法，没有初始化引用
-int *p;    //合法，但p为野指针，使用需要小心
+int &r;    //Illegal, no initialization reference
+int *p;    //It is legal, but p is a wild pointer. You should be careful when using it
 ```
 
-> 引用不能为空，而指针可以为空。
+> Reference cannot be null and pointer can be null
 
-由于引用不能为空，所以我们在使用引用的时候不需要测试其合法性，而在使用指针的时候需要首先判断指针是否为空指针，否则可能会引起程序崩溃。
-
+Since the reference cannot be null, we do not need to test its validity when using a reference. When using a pointer, we need to first judge whether the pointer is a null pointer, otherwise it may cause the program to crash.
 ```c++
 void test_p(int* p)
 {
-  	if(p != null_ptr)    //对p所指对象赋值时需先判断p是否为空指针
+  	if(p != null_ptr)    //
     	*p = 3;
     return;
 }
 void test_r(int& r)
 {
-    r = 3;    //由于引用不能为空，所以此处无需判断r的有效性就可以对r直接赋值
+    r = 3;    //
     return;
 }
 ```
 
-> 引用不能更换目标
+> References cannot change targets
 
-指针可以随时改变指向，但是引用只能指向初始化时指向的对象，无法改变。
+
+
+The pointer can be changed at any time, but the reference can only point to the object pointed to during initialization, and cannot be changed.
+
 
 ```
 int a = 1;
 int b = 2;
 
-int &r = a;    //初始化引用r指向变量a
-int *p = &a;   //初始化指针p指向变量a
+int &r = a;    //
+int *p = &a;   //
 
-p = &b;        //指针p指向了变量b
-r = b;         //引用r依然指向a，但a的值变成了b
+p = &b;        //
+r = b;         //引
 ```
 
-## 2.引用
+## 2.Reference
 
-#### 左值引用
+#### lvalue reference
 
-常规引用，一般表示对象的身份。
+General reference, which generally represents the identity of an object.
 
-#### 右值引用
 
-右值引用就是必须绑定到右值（一个临时对象、将要销毁的对象）的引用，一般表示对象的值。
+#### rvalue reference
 
-右值引用可实现转移语义（Move Sementics）和精确传递（Perfect Forwarding），它的主要目的有两个方面：
 
-- 消除两个对象交互时不必要的对象拷贝，节省运算存储资源，提高效率。
-- 能够更简洁明确地定义泛型函数。
 
-#### 引用折叠
+An R-value reference is a reference that must be bound to an R-value (a temporary object, an object to be destroyed), and generally represents the value of an object.
 
-- `X& &`、`X& &&`、`X&& &` 可折叠成 `X&`
-- `X&& &&` 可折叠成 `X&&`
 
-C++的引用**在减少了程序员自由度的同时提升了内存操作的安全性和语义的优美性**。比如引用强制要求必须初始化，可以让我们在使用引用的时候不用再去判断引用是否为空，让代码更加简洁优美，避免了指针满天飞的情形。除了这种场景之外引用还用于如下两个场景：
+An R-value reference is a reference that must be bound to an R-value (a temporary object, an object to be destroyed), and generally represents the value of an object.
 
-> 引用型参数
+- It eliminates unnecessary copy of objects when two objects interact, saves operation storage resources and improves efficiency
+- It can define generic functions more concisely and clearly
 
-一般我们使用const reference参数作为只读形参，这种情况下既可以避免参数拷贝还可以获得与传值参数一样的调用方式。
+#### Reference collapse
+
+- `X& &`、`X& &&`、`X&& &` can be folded into `X&`
+- `X&& &&` can be floded into `X&&`
+
+The reference of C ++ **At the same time, it improves the security of memory operation and the beauty of semantics**。For example, the mandatory requirement of reference must be initialized, so that we don't have to judge whether the reference is empty when using the reference, which makes the code more concise and elegant, and avoids the situation of pointer flying all over the sky. In addition to this scenario, references are used for the following two scenarios：
+
+> Reference type parameter
+
+In general, we use const reference parameter as a read-only formal parameter. In this case, we can not only avoid parameter copy, but also get the same call method as value passing parameter.
 
 ```c++
 void test(const vector<int> &data)
@@ -96,20 +102,20 @@ int main()
 }
 ```
 
-> 引用型返回值
+> Reference type return value
 
-C++提供了重载运算符的功能，我们在重载某些操作符的时候，使用引用型返回值可以获得跟该操作符原来语法相同的调用方式，保持了操作符语义的一致性。一个例子就是operator []操作符，这个操作符一般需要返回一个引用对象，才能正确的被修改。
+C++ Provides the ability to overload operators.The syntax of the overloaded operator is the same as that of the original operator.An example is the operator [] operator, which generally needs to return a reference object in order to be modified correctly.
 
 ```c++
 vector<int> v(10);
-v[5] = 10;    //[]操作符返回引用，然后vector对应元素才能被修改
-              //如果[]操作符不返回引用而是指针的话，赋值语句则需要这样写
-*v[5] = 10;   //这种书写方式，完全不符合我们对[]调用的认知，容易产生误解
+v[5] = 10;    //[]Operator returns the reference, and then the corresponding element of vector can be modified
+              //If[] operator do not return a reference but a pointer, the assignment statement needs to be written like this
+*v[5] = 10;   // This way of writing is totally inconsistent with our understanding of the call of [], which is easy to be misunderstood
 ```
 
-## 3.指针与引用的性能差距
+## 3.Performance gap between pointer and reference
 
-指针与引用之间有没有性能差距呢？这种问题就需要进入汇编层面去看一下。我们先写一个test1函数，参数传递使用指针：
+Is there a performance gap between pointers and references？This kind of problem needs to enter the assembly level to have a look. Let's first write a test1 function, which uses pointers for parameter passing：
 
 ```c++
 void test1(int* p)
@@ -119,7 +125,7 @@ void test1(int* p)
 }
 ```
 
-该代码段对应的汇编代码如下：
+The assembly code corresponding to this code segment is as follows：
 
 ```c++
 (gdb) disassemble 
@@ -136,9 +142,9 @@ End of assembler dump.
 
 ```
 
-上述代码1、2行是参数调用保存现场操作；第3行是参数传递，函数调用第一个参数一般放在rdi寄存器，此行代码把rdi寄存器值（指针p的值）写入栈中；第4行是把栈中p的值写入rax寄存器；第5行是把立即数3写入到**rax寄存器值所指向的内存**中，此处要注意(%rax)两边的括号，这个括号并并不是可有可无的，(%rax)和%rax完全是两种意义，(%rax)代表rax寄存器中值所代表地址部分的内存，即相当于C++代码中的*p，而%rax代表rax寄存器，相当于C++代码中的p值，所以汇编这里使用了(%rax)而不是%rax。
+The above code lines 1 and 2 are the field operation of parameter calling and saving；The third line is parameter passing. The first parameter of the function call is usually placed in the RDI register. This line of code writes the RDI register value (the value of pointer P) to the stack；Line 4 writes the value of P in the stack to the rax register；Line 5 is to write the immediate number 3 to the**Memory pointed to by the value of the rax register**.
 
-我们再写出参数传递使用引用的C++代码段test2：
+Let's write out the reference C + + code segment test2 for parameter passing：
 
 ```c++
 void test2(int& r)
@@ -148,7 +154,7 @@ void test2(int& r)
 }
 ```
 
-这段代码对应的汇编代码如下：
+This code corresponds to the following assembly code：
 
 ```c++
 (gdb) disassemble 
@@ -165,10 +171,10 @@ End of assembler dump.
 
 ```
 
-我们发现test2对应的汇编代码和test1对应的汇编代码完全相同，这说明C++编译器在编译程序的时候将指针和引用编译成了完全一样的机器码。所以C++中的引用只是C++对指针操作的一个“语法糖”，在底层实现时C++编译器实现这两种操作的方法完全相同。
+We find that the assembly code corresponding to test2 is exactly the same as that of test1.This shows that the C + + compiler compiles the pointer and reference into exactly the same machine code when compiling the program. Therefore, the reference in C + + is just a "syntax sugar" of pointer operation in C ++，In the underlying implementation, the C + + compiler implements these two operations in the same way.
 
-## 3.总结
+## 3. Conclusion
 
-C++中引入了引用操作，在对引用的使用加了更多限制条件的情况下，保证了引用使用的安全性和便捷性，还可以保持代码的优雅性。在适合的情况使用适合的操作，引用的使用可以一定程度避免“指针满天飞”的情况，对于提升程序稳定性也有一定的积极意义。最后，指针与引用底层实现都是一样的，不用担心两者的性能差距。
+The introduction of reference operation in C + + ensures the security and convenience of reference use and maintains the elegance of code under the condition of adding more restrictions on the use of reference. The use of reference can avoid the situation of "pointer flying all over the sky" to a certain extent, and it has a positive significance to improve the stability of the program. Finally, the underlying implementations of pointers and references are the same, and there is no need to worry about the performance gap between them.
 
-上述部分参考自：<http://irootlee.com/juicer_pointer_reference/#>
+From：<http://irootlee.com/juicer_pointer_reference/#>
