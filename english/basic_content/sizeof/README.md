@@ -1,20 +1,20 @@
-# 类大小计算
+# Class size calculation
 
-首先来个总结，然后下面给出实际例子，实战！
+First of all, let's make a summary, and then we will give an actual example
 
-- 空类的大小为1字节
-- 一个类中，虚函数本身、成员函数（包括静态与非静态）和静态数据成员都是不占用类对象的存储空间。
-- 对于包含虚函数的类，不管有多少个虚函数，只有一个虚指针,vptr的大小。
-- 普通继承，派生类继承了所有基类的函数与成员，要按照字节对齐来计算大小
-- 虚函数继承，不管是单继承还是多继承，都是继承了基类的vptr。(32位操作系统4字节，64位操作系统 8字节)！
-- 虚继承,继承基类的vptr。
+- The size of the empty class is 1 byte
+- In a class, the virtual function itself, member functions (including static and non-static) and static data members do not occupy the storage space of class objects
+- For classes containing virtual functions, no matter how many virtual functions there are, there is only one virtual pointer, the size of VPTR
+- Ordinary inheritance, derived class inherits all the functions and members of the base class, and the size is calculated according to byte alignment
+- Virtual function inheritance, whether single inheritance or multi inheritance, inherits the VPTR of the base class(32 bit operating system 4 bytes, 64 bit operating system 8 bytes)！
+- Virtual inheritance inherits the VPTR of the base class
 
-## 1.原则1
+## 1.Rule 1
 
 ```c++
 /**
  * @file blackclass.cpp
- * @brief 空类的大小为1字节
+ * @brief The size of the empty class is 1 byte
  * @author 光城
  * @version v1
  * @date 2019-07-21
@@ -29,13 +29,13 @@ int main()
 }
 ```
 
-## 2.原则2
+## 2.Rule 2
 
 ```c++
 /**
  * @file static.cpp
- * @brief 静态数据成员
- * 静态数据成员被编译器放在程序的一个global data members中，它是类的一个数据成员，但不影响类的大小。不管这个类产生了多少个实例，还是派生了多少新的类，静态数据成员只有一个实例。静态数据成员，一旦被声明，就已经存在。 
+ * @brief
+ * 
  * @author 光城
  * @version v1
  * @date 2019-07-21
@@ -55,20 +55,20 @@ class A
 int main()
 {
     /**
-     * @brief 16  字节对齐、静态变量不影响类的大小、vptr指针=8
+     * @brief 16 
      */
     cout<<sizeof(A)<<endl; 
     return 0;
 }
 ```
 
-## 3.原则3
+## 3.Rule 3
 
 ```c++
 /**
  * @file morevir.cpp
- * @brief 对于包含虚函数的类，不管有多少个虚函数，只有一个虚指针,vptr的大小。
- * @author 光城
+ * @brief 
+ * @author 
  * @version v1
  * @date 2019-07-21
  */
@@ -87,14 +87,14 @@ int main()
 }
 ```
 
-## 4.原则4与5
+## 4.Rule 4 and 5
 
 ```c++
 /**
  * @file geninhe.cpp
- * @brief 1.普通单继承,继承就是基类+派生类自身的大小(注意字节对齐)
- * 注意：类的数据成员按其声明顺序加入内存，与访问权限无关，只看声明顺序。
- * 2.虚单继承，派生类继承基类vptr
+ * @brief 
+ * 
+ * 
  * @author 光城
  * @version v1
  * @date 2019-07-21
@@ -112,7 +112,7 @@ class A
 };
 
 /**
- * @brief 此时B按照顺序：
+ * @brief 
  * char a
  * int b
  * short a
@@ -144,19 +144,19 @@ int main()
     cout<<sizeof(B)<<endl; // 24
     cout<<sizeof(C)<<endl; // 12
     /**
-     * @brief 对于虚单函数继承，派生类也继承了基类的vptr，所以是8字节
+     * @brief 
      */
     cout<<sizeof(C1)<<endl; // 8 
     return 0;
 }
 ```
 
-## 5.原则6
+## 5.Rule 6
 
 ```c++
 /**
  * @file virnhe.cpp
- * @brief 虚继承
+ * @brief 
  * @author 光城
  * @version v1
  * @date 2019-07-21
@@ -181,7 +181,7 @@ class C : virtual public  A, virtual public B
 int main()
 {
     /**
-     * @brief 8 8 16  派生类虚继承多个虚函数，会继承所有虚函数的vptr
+     * @brief 8 8 16  The derived class inherits multiple virtual functions and inherits the VPTR of all virtual functions
      */
     cout<<sizeof(A)<<" "<<sizeof(B)<<" "<<sizeof(C);
 
