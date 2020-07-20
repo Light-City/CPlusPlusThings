@@ -1,14 +1,13 @@
-# :: 范围解析运算符那些事
+# :: Story about range resolution operators
 
-## 关于作者：
+## Abput Author：
 
-个人公众号：
 
 ![](../img/wechat.jpg)
 
-- 全局作用域符（::name）：用于类型名称（类、类成员、成员函数、变量等）前，表示作用域为全局命名空间
-- 类作用域符（class::name）：用于表示指定类型的作用域范围是具体某个类的
-- 命名空间作用域符（namespace::name）:用于表示指定类型的作用域范围是具体某个命名空间的
+- Global scope（::name）：Used before a type name (class, class member, member function, variable, etc.), indicates that the scope is a global namespace
+- Class scope（class::name）：The scope used to represent the specified type is class specific
+- Namespace scope（namespace::name）: The scope used to represent the specified type is a namespace specific
 
-具体代码见：[maohao.cpp](maohao.cpp)
+Code ：[maohao.cpp](maohao.cpp)
 
