@@ -79,7 +79,7 @@ int main()
 
 ```
 
-Inline can improve the efficiency of functions, but not all functions are defined as inline functions！内联是以代码膨胀(复制)为代价，仅仅省去了函数调用的开销，从而提高函数的执行效率。
+Inline can improve the efficiency of functions, but not all functions are defined as inline functions！
 
 -If the execution time of the code in the function body is higher than the cost of function call, the efficiency of receiving goods will be less！
 
