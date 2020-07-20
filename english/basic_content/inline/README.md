@@ -1,14 +1,15 @@
-# inline那些事
+# Story About Inline
 
-## 关于作者：
+## About Author：
 
-个人公众号：
+
 
 ![](../img/wechat.jpg)
 
-## 1.类中内联
+## 1.Inline in Class
 
-头文件中声明方法
+Declaration method in header file
+
 
 ```c++
 
@@ -18,20 +19,21 @@ public:
     void f1(int x); 
 
     /**
-     * @brief 类中定义了的函数是隐式内联函数,声明要想成为内联函数，必须在实现处(定义处)加inline关键字。
+     * @brief The function defined in the class is an implicit inline function. If you want to be an inline function, you must add the inline keyword at the implementation (definition)
      *
      * @param x
      * @param y
      */
-    void Foo(int x,int y) ///< 定义即隐式内联函数！
+    void Foo(int x,int y) ///< The definition is implicit inline function
     {
     
     };
-    void f1(int x); ///< 声明后，要想成为内联函数，必须在定义处加inline关键字。  
+    void f1(int x); ///< To be an inline function after declaration, you must add the inline keyword to the definition  
 };
 ```
 
-实现文件中定义内联函数：
+The inline function is defined in the implementation file:
+
 
 ```c++
 #include <iostream>
@@ -40,20 +42,22 @@ public:
 using namespace std;
 
 /**
- * @brief inline要起作用,inline要与函数定义放在一起,inline是一种“用于实现的关键字,而不是用于声明的关键字”
+ * @brief To work, inline should be placed with function definition. Inline is a kind of "keyword for implementation, not for declaration"
  *
  * @param x
  * @param y
  *
  * @return 
  */
-int Foo(int x,int y);  // 函数声明
-inline int Foo(int x,int y) // 函数定义
+int Foo(int x,int y);  // Function declaration
+
+
+inline int Foo(int x,int y) // Function definition
 {
     return x+y;
 }
 
-// 定义处加inline关键字，推荐这种写法！
+// It is recommended to add the keyword "inline" to the definition！
 inline void A::f1(int x){
 
 }
@@ -87,11 +91,11 @@ int main()
 
 （2）如果函数体内出现循环，那么执行函数体内代码的时间要比函数调用的开销大。
 
-## 2.虚函数（virtual）可以是内联函数（inline）吗？
+## 2.Could virtual be inline function?
 
-- 虚函数可以是内联函数，内联是可以修饰虚函数的，但是当虚函数表现多态性的时候不能内联。
-- 内联是在编译期建议编译器内联，而虚函数的多态性在运行期，编译器无法知道运行期调用哪个代码，因此虚函数表现为多态性时（运行期）不可以内联。
-- `inline virtual` 唯一可以内联的时候是：编译器知道所调用的对象是哪个类（如 `Base::who()`），这只有在编译器具有实际对象而不是对象的指针或引用时才会发生。
+- Virtual functions can be inline functions, which can modify virtual functions, but cannot be inlined when they are polymorphic
+- Inline means that the compiler is advised to inline at compile time. However, due to the polymorphism of virtual functions, the compiler cannot know which code to call at runtime. Therefore, when the virtual function is polymorphic (runtime), it cannot be inlined.
+- `inline virtual` The only time you can inline is when the compiler knows which class the object is calling（such as: `Base::who()`），This only happens if the compiler has an actual object instead of a pointer or reference to the object.
 
 ```c++
 #include <iostream>  
@@ -108,7 +112,7 @@ public:
 class Derived : public Base
 {
 public:
-    inline void who()  // 不写inline时隐式内联
+    inline void who()  //
     {
         cout << "I am Derived\n";
     }
@@ -116,15 +120,15 @@ public:
 
 int main()
 {
-    // 此处的虚函数 who()，是通过类（Base）的具体对象（b）来调用的，编译期间就能确定了，所以它可以是内联的，但最终是否内联取决于编译器。 
+    // 
     Base b;
     b.who();
 
-    // 此处的虚函数是通过指针调用的，呈现多态性，需要在运行时期间才能确定，所以不能为内联。  
+    // 
     Base *ptr = new Derived();
     ptr->who();
 
-    // 因为Base有虚析构函数（virtual ~Base() {}），所以 delete 时，会先调用派生类（Derived）析构函数，再调用基类（Base）析构函数，防止内存泄漏。
+    // 
     delete ptr;
     ptr = nullptr;
 
