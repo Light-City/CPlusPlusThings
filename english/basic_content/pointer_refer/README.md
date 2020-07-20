@@ -1,8 +1,7 @@
-# 引用与指针那些事
+# Reference and Pointer
 
-## 关于作者：
+## About Author：
 
-：
 
 ![](../img/wechat.jpg)
 
@@ -149,7 +148,7 @@ Let's write out the reference C + + code segment test2 for parameter passing：
 ```c++
 void test2(int& r)
 {
-    r = 3;    //赋值前无需判断reference是否为空
+    r = 3;    // do not need to judge whether reference is null.
     return;
 }
 ```
