@@ -13,7 +13,7 @@ Conclusion：
 | ------------ | ------------              |
 | Must be initialized   | No initialization is allowed    |
 | cannot be empty     | could be empty     |
-| Target cannot be changed | 可以更换目标   |
+| Target cannot be changed | could change target   |
 
 > References must be initialized, and pointers can be uninitialized
 
