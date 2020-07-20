@@ -1,20 +1,18 @@
-# 一文搞懂C和C++中struct
+# Understand C and C + + struct
 
-## 关于作者：
 
-个人公众号：
 
 ![](../img/wechat.jpg)
 
-## 1.C中struct
+## 1.Struct In C
 
-- 在C中struct只单纯的用作数据的复合类型，也就是说，在结构体声明中只能将数据成员放在里面，而不能将函数放在里面。 
-- 在C结构体声明中不能使用C++访问修饰符，如：public、protected、private 而在C++中可以使用。
-- 在C中定义结构体变量，如果使用了下面定义必须加struct。
-- C的结构体不能继承（没有这一概念）。
-- 若结构体的名字与函数名相同，可以正常运行且正常的调用！例如：可以定义与 struct Base 不冲突的 void Base() {}。
+- In C, struct is only used as the composite type of data, that is, in the structure declaration, only data members can be placed inside, but not functions 
+- C + + access modifiers cannot be used in C structure declarations,such as：public、protected、private. But they can be used in C + +
+- Define the structure variable in C. If you use the following definition, you must add struct
+- The structure of C cannot be inherited (there is no such concept)
+- If the structure name is the same as the function name, it can run normally and call normally! For example, you can define void base() that does not conflict with struct base{}。
 
-完整案例：
+Example：
 
 ```c
 #include<stdio.h>
@@ -45,30 +43,30 @@ int main() {
 }
 ```
 
-最后输出：
+Finally Output：
 
 ```
 1
 I am Base func
 ```
 
-完整代码见：[struct_func.c](./struct_func.c)
+Code：[struct_func.c](./struct_func.c)
 
-## 2.C++中struct
+## 2.C++ struct
 
-与C对比如下：
+The comparison with C is as follows：
 
-- C++结构体中不仅可以定义数据，还可以定义函数。
-- C++结构体中可以使用访问修饰符，如：public、protected、private 。
-- C++结构体使用可以直接使用不带struct。
-- C++继承
-- 若结构体的名字与函数名相同，可以正常运行且正常的调用！但是定义结构体变量时候只用用带struct的！
+- In C + + structure, not only data can be defined, but also functions can be defined.
+- Access modifiers can be used in C + + structures, such as ：public、protected、private 。
+- C + + structure can be used directly without struct.
+- C + + inheritance
+- If the structure name is the same as the function name, it can run normally and call normally！However, when defining the structure variable, we only use the structure with struct！
 
-例如：
+Example：
 
-> 情形1：不适用typedef定义结构体别名
+> Case 1：
 
-未添加同名函数前：
+Before adding a function with the same name：
 
 ```c++
 struct Student {
@@ -79,7 +77,7 @@ Struct Student s; //ok
 Student s;  //ok
 ```
 
-添加同名函数后：
+After adding a function with the same name：
 
 ```c++
 struct Student {
@@ -90,7 +88,7 @@ Struct Student s; //ok
 Student s;  //error
 ```
 
-> 情形二：使用typedef定义结构体别名
+> Case 2：
 
 ```c++
 typedef struct Base1 {         
@@ -106,7 +104,7 @@ typedef struct Base1 {
 //void B() {}  //error! 符号 "B" 已经被定义为一个 "struct Base1" 的别名
 ```
 
-> 前三种案例
+> The first three cases
 
 ```c++
 #include<iostream>
@@ -136,9 +134,9 @@ int main() {
 }
 ```
 
-完整代码见：[struct_func.cpp](struct_func.cpp)
+Code ：[struct_func.cpp](struct_func.cpp)
 
-> 继承案例
+> Inheritance cases
 
 ```c++
 #include<iostream>
@@ -168,9 +166,9 @@ int main() {
 }
 ```
 
-完整代码见：[ext_struct_func.cpp](./ext_struct_func.cpp)
+Code：[ext_struct_func.cpp](./ext_struct_func.cpp)
 
-> 同名函数
+> Functions with the same name
 
 ```c++
 #include<iostream>
@@ -213,16 +211,16 @@ int main() {
     return 0;
 }
 ```
-完整代码见：[struct_func_func.cpp](./struct_func_func.cpp)
+Code：[struct_func_func.cpp](./struct_func_func.cpp)
 
-## 3.总结
+## 3.Conclusion
 
-### C和C++中的Struct区别
+### The difference of structure between C and C + +
 
 | C                                                      | C++                                                          |
 | ------------------------------------------------------ | ------------------------------------------------------------ |
-| 不能将函数放在结构体声明                               | 能将函数放在结构体声明                                       |
-| 在C结构体声明中不能使用C++访问修饰符。                 | public、protected、private 在C++中可以使用。                 |
-| 在C中定义结构体变量，如果使用了下面定义必须加struct。  | 可以不加struct                                               |
-| 结构体不能继承（没有这一概念）。                       | 可以继承                                                     |
-| 若结构体的名字与函数名相同，可以正常运行且正常的调用！ | 若结构体的名字与函数名相同，使用结构体，只能使用带struct定义！ |
+| You cannot place a function in a structure declaration | Function can be declared in structure                                       |
+| C + + access modifiers cannot be used in C structure declarations.            | public、protected、private They can be used in C + +                 |
+| Define the structure variable in C. If you use the following definition, you must add struct  | You can do without struct                            |
+|Not inheritance                       | you could use inheritance                                                     |
+| If the structure name is the same as the function name, it can run normally and call normally | If the structure name is the same as the function name, the structure can only be defined with struct |
