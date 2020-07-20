@@ -1,13 +1,12 @@
-# using那些事
-## 关于作者：
+# Story About using
+## About Author：
 
-个人公众号：
 
 ![](../img/wechat.jpg)
 
-## 基本使用
+## Basic use
 
-局部与全局using，具体操作与使用见下面案例：
+Local and global using. See the following cases for specific operation and use：
 
 ```c++
 #include <iostream>
@@ -28,9 +27,9 @@ namespace ns1 {
 
 namespace ns2 {
 #ifdef isNs1 
-    using ns1::func;    /// ns1中的函数
+    using ns1::func;    /// function in ns1
 #elif isGlobal
-    using ::func; /// 全局中的函数
+    using ::func; /// global function
 #else
     void func() 
     {
@@ -48,8 +47,8 @@ int main()
     return 0;
 }
 ```
-完整代码见：[using_global.cpp](using_global.cpp)
-## 改变访问性
+Code：[using_global.cpp](using_global.cpp)
+## Changing accessibility
 
 ```
 class Base{
@@ -67,7 +66,7 @@ protected:
 ```
 
 类Derived私有继承了Base，对于它来说成员变量n和成员函数size都是私有的，如果使用了using语句，可以改变他们的可访问性，如上述例子中，size可以按public的权限访问，n可以按protected的权限访问。
-完整代码见：[derived_base.cpp](derived_base.cpp)
+Code：[derived_base.cpp](derived_base.cpp)
 ## 函数重载
 
 在继承过程中，派生类可以覆盖重载函数的0个或多个实例，一旦定义了一个重载版本，那么其他的重载版本都会变为不可见。
@@ -107,9 +106,10 @@ int main()
 如上代码中，在派生类中使用using声明语句指定一个名字而不指定形参列表，所以一条基类成员函数的using声明语句就可以把该函数的所有重载实例添加到派生类的作用域中。此时，派生类只需要定义其特有的函数就行了，而无需为继承而来的其他函数重新定义。
 
 完整代码见：[using_derived.cpp](using_derived.cpp)
-## 取代typedef
+## Replace typedef
 
-C中常用typedef A B这样的语法，将B定义为A类型，也就是给A类型一个别名B
+The syntax of typedef a B is often used in C, which defines B as type A, that is, giving type a an alias B
+
 
 对应typedef A B，使用using B=A可以进行同样的操作。
 
@@ -117,4 +117,4 @@ C中常用typedef A B这样的语法，将B定义为A类型，也就是给A类�
 typedef vector<int> V1; 
 using V2 = vector<int>;
 ```
-完整代码见：[using_typedef.cpp](using_typedef.cpp)
+Code：[using_typedef.cpp](using_typedef.cpp)
