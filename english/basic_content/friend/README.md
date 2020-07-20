@@ -15,26 +15,25 @@ Friends provide a mechanism for ordinary functions or class member functions to 
 
 Advantages: improve the efficiency of the program.
 
-缺点：破坏了类的封装性和数据的透明性。
+Disadvantages: it destroys the encapsulation of classes and the transparency of data.
+Conclusion：
+- Access to private members
+- Breaking encapsulation
+- Friendship is not transitive
+- The unidirectionality of friend relationship
+- There are no restrictions on the form and number of friend declarations
 
-总结：
-- 能访问私有成员
-- 破坏封装性
-- 友元关系不可传递
-- 友元关系的单向性
-- 友元声明的形式及数量不受限制
+## 1.Friend function
 
-## 1.友元函数
-
-在类声明的任何区域中声明，而定义则在类的外部。
+It is declared in any region of the class declaration, and the definition is outside the class.
 
 ```
-friend <类型><友元函数名>(<参数表>);
+friend <type><name>(<Parameter table>);
 ```
 
-注意，友元函数只是一个普通函数，并不是该类的类成员函数，它可以在任何地方调用，友元函数中通过对象名来访问该类的私有或保护成员。
+Note that the friend function is only a common function, not a class member function of this class. It can be called anywhere. In the friend function, private or protected members of the class can be accessed through the object name.
 
-具体代码见：[friend_func.cpp](friend_func.cpp)
+Code：[friend_func.cpp](friend_func.cpp)
 
 ```c++
 #include <iostream>
@@ -45,7 +44,7 @@ class A
 {
 public:
     A(int _a):a(_a){};
-    friend int geta(A &ca);  ///< 友元函数
+    friend int geta(A &ca);  ///< Friend function
 private:
     int a;
 };
