@@ -5,8 +5,34 @@
 
 [直通点](https://light-city.club/sc/)
 
------------------------
+https://light-city.club/sc/
 
+
+### 关于作者
+
+公众号已开放两大入口，分别是专辑与菜单，可以直接在微信公众号上阅读《C++那些事》内容，配上该仓库的代码，将会非常的爽，建议大家关注一波。
+
+个人公众号：guangcity
+
+![](https://light-city.club/sc/assets/images/wechat.jpg)
+
+欢迎大家反馈及C++交流，本人在微信创建了C++那些事交流群，优质的C++资源交流区，期待大家关注上面公众号，点击公众号右下角->联系我，拉你入群。
+
+---
+
+
+
+### 项目运行
+
+- **代码环境**
+
+  Ubuntu 18.04
+
+- **工具**
+
+  CLion  gcc/g++
+
+尽量用g++，因为一开始我用的vim写的，所以纯g++，后来用编译器CLion，部分有CMakeLists.txt文件，直接导入就行，后面会更新这个文件包含整个项目，持续关注~
 
 ### 0.项目概要
 
@@ -45,49 +71,49 @@
 
 ### 2.实战系列
 
-#### 2.1 10日狂练
+#### 2.1 [10日狂练](./practical_exercises/10_day_practice)
 
-- [x] day1
+- [x] [day1](practical_exercises/10_day_practice/day1)
 
 基本c++语法
 
-- [x] day2
+- [x] [day2](practical_exercises/10_day_practice/day2)
 
 递归、结构体、枚举、静态变量等
 
-- [x] day3
+- [x] [day3](practical_exercises/10_day_practice/day3)
 
 函数
 
-- [x] day4
+- [x] [day4](practical_exercises/10_day_practice/day4)
 
 函数深入
 
-- [x] day5
+- [x] [day5](practical_exercises/10_day_practice/day5)
 
 继承多态
 
-- [x] day6
+- [x] [day6](practical_exercises/10_day_practice/day6)
 
 虚函数、抽象类
 
-- [x] day7
+- [x] [day7](practical_exercises/10_day_practice/day7)
 
 运算符重载
 
-- [x] day8
+- [x] [day8](practical_exercises/10_day_practice/day8)
 
 模板与STL
 
-- [x] day9
+- [x] [day9](practical_exercises/10_day_practice/day9)
 
 异常
 
-- [x] day10
+- [x] [day10](practical_exercises/10_day_practice/day10)
 
 文件与流
 
-#### 2.2 重点实战练习
+#### 2.2 [重点实战练习](./practical_exercises/key_exercises/)
 
 ├── [中括号重载.cpp](./practical_exercises/key_exercises/中括号重载.cpp)
 ├── [时钟++运算符重载.cpp](./practical_exercises/key_exercises/时钟++运算符重载.cpp)
@@ -113,13 +139,13 @@
 ├── [输入输出重载.cpp](./practical_exercises/key_exercises/输入输出重载.cpp)
 ├── [输出格式.cpp](./practical_exercises/key_exercises/输出格式.cpp)
 
-### 2.[C++2.0 新特性](./c++2.0)
+### 3.[C++2.0 新特性](./c++2.0)
 
-#### 2.0 概况
+#### 3.0 概况
 
 C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 
-#### 2.1 [C++11 新特性](./c++2.0/c++11)
+#### 3.1 [C++11 新特性](./c++2.0/c++11)
 
 - [Variadic Templates](./c++2.0/variadic)
 
@@ -188,15 +214,16 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 
   学习资料：https://www.bilibili.com/video/av51863195?from=search&seid=3610634846288253061
 
-### 2.2 C++14/17/20
+#### 3.2 C++14/17/20
 
 待更新...
 
-### 3.设计模式
+### 4.设计模式
 
 - [单例模式](./design_pattern/singleton)
+- [生产消费者模式](./design_pattern/producer_consumer)
 
-### 4. [STL 源码剖析](./src_analysis/stl)
+### 5. [STL 源码剖析](./src_analysis/stl)
 
 **STL 源码剖析：gcc 4.9.1**
 
@@ -216,18 +243,18 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 - [myhashtable](./src_analysis/stl/myhashtable.md)
 - [unordered_map](./src_analysis/stl/unordered_map.md)
 
-### 4. [并发编程](./concurrency)
+### 6. [并发编程](./concurrency)
 
-#### 4.1 C++ Concurrency in Action
+#### 6.1 C++ Concurrency in Action
 
 - [第一章](./concurrency/concurrency_v1/chapter1)
 - [第二章](./concurrency/concurrency_v1/chapter2)
 
 学习资料：https://chenxiaowei.gitbook.io/cpp_concurrency_in_action/
 
-#### 4.2 多线程与多进程
+#### 6.2 多线程与多进程
 
-##### 4.2.1 Threading In C++
+##### 6.2.1 Threading In C++
 
 - [介绍](./concurrency/Threading_In_CPlusPlus/1.thread)
 - [创建线程的五种类型](./concurrency/Threading_In_CPlusPlus/2.create_type)
@@ -238,7 +265,7 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 >
 > https://www.youtube.com/watch?v=eZ8yKZo-PGw&list=PLk6CEY9XxSIAeK-EAh3hB4fgNvYkYmghp&index=4
 
-### 5. [C++ 惯用法](./codingStyleIdioms)
+### 7. [C++ 惯用法](./codingStyleIdioms)
 
 ##### 你最喜欢的 c++ 编程风格惯用法是什么?
 
@@ -248,9 +275,9 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 - [4.copy and swap](./codingStyleIdioms/4_copy-swap)
 - [5.pImpl(指针指向具体实现)](./codingStyleIdioms/5_pImpl)
 
-### 6.学习课程
+### 8.学习课程
 
-#### 6.1 [极客时间《现代 C++ 实战 30 讲》](https://time.geekbang.org/channel/home)
+#### 8.1 [极客时间《现代 C++ 实战 30 讲》](https://time.geekbang.org/channel/home)
 
 - [堆、栈、RAII：C++ 里该如何管理资源？](./learn_class/modern_C++_30/RAII)
   - [堆](./modern_++_30/RAII/heap.cpp)
@@ -278,9 +305,9 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 - [函数对象和 lambda：进入函数式编程](./learn_class/modern_C++_30/functionLambda)
 - [内存模型和 atomic：理解并发的复杂性](./learn_class/modern_C++_30/memorymodel_atomic)
 
-### 7.工具篇
+### 9.工具篇
 
-#### 7.1 [容器快捷输出工具](./tool/output)
+#### 9.1 [容器快捷输出工具](./tool/output)
 
 对吴老师的代码进行了修改，[点击此处直通代码](./tool/output/output_container.h)
 
@@ -300,35 +327,25 @@ map<int, int> mp{
 { 1 => 1, 2 => 4, 3 => 9 }
 ```
 
-#### 7.2 像 Python 一样简单输出（Jupyter Notebook）
+#### 9.2 像 Python 一样简单输出（Jupyter Notebook）
 
 - [像 Python 一样玩 C/C++](./tool/像Python一样玩CC++.md)
 
-#### 7.3 观察编译过程变化
+#### 9.3 观察编译过程变化
 
 -  [https://cppinsights.io](https://cppinsights.io/)
 
-#### 7.4 C++ 的 Debug 工具 dbg-macro
+#### 9.4 C++ 的 Debug 工具 dbg-macro
 
 - [C++ 的 Debug 工具 dbg-macro](./tool/C++的Debug工具dbg-macro.md)
 
-### 8.拓展部分
+### 10.拓展部分
 
-#### 8.1 一些问题
+#### 10.1 一些问题
 
 - [C++ 中如何将 string 类型转换为 int 类型？](./extension/some_problem/string_int.md)
 
-### 9.代码运行
-
-- **代码环境**
-
-  Ubuntu 18.04
-
-- **工具**
-
-  CLion  gcc/g++
-
-### 10.贡献者
+### 11.贡献者
 
 <table>
   <tbody>
@@ -349,9 +366,22 @@ map<int, int> mp{
   </tbody>
 </table>
 
-### 11.关于作者
+### 12.赞助我
 
-个人公众号：
+如果觉得不错，赞助我吧~
 
-![](./img/wechat.jpg)
+<table>
+  <tbody>
+    <tr>
+      <th align="center" style="height=200 width="200">
+          <img src="https://light-city.club/sc/assets/images/alipay.jpg" height="200" width="200" ><br>
+          支付宝
+      </th>
+      <th align="center" style="height=200 width="200">
+          <img src="https://light-city.club/sc/assets/images/wechat.png" height="200" width="200" ><br>
+          微信
+      </th>
+    </tr>
+  </tbody>
+</table>
 
