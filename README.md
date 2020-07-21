@@ -367,7 +367,7 @@ map<int, int> mp{
       <th align="center" style="width: 80px;">
         <a href="https://github.com/xliu79">
           <img src="https://avatars2.githubusercontent.com/u/31554245?s=50&v=4" style="width: 50px;"><br>
-          <sub>ChungZH</sub>
+          <sub>xliu79</sub>
         </a><br>
       </th>
     </tr>
