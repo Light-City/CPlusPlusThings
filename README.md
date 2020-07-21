@@ -349,30 +349,15 @@ map<int, int> mp{
 
 ### 11.贡献者
 
-<table>
-  <tbody>
-    <tr>
-      <th align="center" style="width: 80px;">
-        <a href="https://github.com/Light-City">
-          <img src="https://avatars2.githubusercontent.com/u/25699850?s=50&v=4" style="width: 50px;"><br>
-          <sub>Francis</sub>
-        </a><br>
-      </th>
-      <th align="center" style="width: 80px;">
-        <a href="https://github.com/ChungZH">
-          <img src="https://avatars1.githubusercontent.com/u/42088872?s=50&v=4" style="width: 50px;"><br>
-          <sub>ChungZH</sub>
-        </a><br>
-      </th>
-      <th align="center" style="width: 80px;">
-        <a href="https://github.com/xliu79">
-          <img src="https://avatars2.githubusercontent.com/u/31554245?s=50&v=4" style="width: 50px; height: 50px"><br>
-          <sub>xliu79</sub>
-        </a><br>
-      </th>
-    </tr>
-  </tbody>
-</table>
+
+
+| 贡献人  | 地址                          |
+| ------- | ----------------------------- |
+| 光城    | https://github.com/Light-City |
+| ChungZH | https://github.com/ChungZH    |
+| xliu79  | https://github.com/xliu79     |
+
+
 
 ### 12.赞助我
 
