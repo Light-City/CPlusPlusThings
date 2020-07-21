@@ -1,5 +1,7 @@
 # C++ 那些事
 
+[English version is here](./README_EN.md)
+
 
 感谢各位对《C++ 那些事》的支持，现将内容也同步至网站，可以打开网站直接阅读~欢迎大家 star、转发、PR。
 
