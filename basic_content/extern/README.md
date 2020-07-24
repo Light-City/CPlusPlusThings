@@ -99,6 +99,21 @@ gcc -c add.c
 g++ add.cpp add.o -o main
 ```
 
+而通常为了C代码能够通用，即既能被C调用，又能被C++调用，头文件通常会有如下写法：
+
+```c
+#ifdef __cplusplus
+extern "C"{
+#endif
+int add(int x,int y);
+#ifdef __cplusplus
+}
+#endif
+```
+
+即在C++调用该接口时，会以C接口的方式调用。这种方式使得C++者不需要额外的extern C，而标准库头文件通常也是类似的做法，否则你为何不需要extern C就可以直接使用stdio.h中的C函数呢？
+
+
 上述案例源代码见：
 
 - [add.h](extern_c++/add.h)
@@ -191,3 +206,5 @@ int add(){
 extern int add();
 ```
 
+
+不过与C++调用C接口不同，C++确实是能够调用编译好的C函数，而这里C调用C++，不过是把C++代码当成C代码编译后调用而已。也就是说，C并不能直接调用C++库函数。
