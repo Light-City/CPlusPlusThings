@@ -5,7 +5,7 @@ using namespace std;
 
 template <class T>
 //实现降序
-void sort(T &a, int n){
+void sort(T *a, int n){
     for (int i=0;i<n;i++){
         int p=i;
         for (int j=i;j<n;j++)
