@@ -1,70 +1,91 @@
-//Éè¼ÆÒ»¸ö×Ö·û´®ÀàString£¬Í¨¹ıÔËËã·ûÖØÔØÊµÏÖ×Ö·û´®µÄÊäÈë¡¢Êä³öÒÔ¼°+=¡¢==¡¢!=¡¢<¡¢>¡¢>=¡¢[ ]µÈÔËËã¡£
+//è®¾è®¡ä¸€ä¸ªå­—ç¬¦ä¸²ç±»Stringï¼Œé€šè¿‡è¿ç®—ç¬¦é‡è½½å®ç°å­—ç¬¦ä¸²çš„è¾“å…¥ã€è¾“å‡ºä»¥åŠ+=ã€==ã€!=ã€<ã€>ã€>=ã€[ ]ç­‰è¿ç®—ã€‚
 #include <iostream>
 #include <cstring>
 using namespace std;
-class String {
+class String
+{
 private:
-int length;                     		//×Ö·û´®³¤¶È
-char *sPtr;                     		//´æ·Å×Ö·û´®µÄÖ¸Õë
-void setString( const char *s2);	
-friend ostream &operator<<(ostream &os, const String &s); 
-friend istream &operator>>(istream &is, String &s);  //ÖØÔØÊäÈëÔËËã·û
+    int length; //å­—ç¬¦ä¸²é•¿åº¦
+    char *sPtr; //å­˜æ”¾å­—ç¬¦ä¸²çš„æŒ‡é’ˆ
+    void setString(const char *s2);
+    friend ostream &operator<<(ostream &os, const String &s)
+    {
+        return os << s.sPtr;
+    };
+    friend istream &operator>>(istream &is, String &s)
+    {
+        return is >> s.sPtr;
+    }; //é‡è½½è¾“å…¥è¿ç®—ç¬¦
 public:
-    String( const char * = "" );                   
-    const String &operator=(const String &R); 		//ÖØÔØ¸³ÖµÔËËã·û =
-    const String &operator+=(const String &R);		//×Ö·û´®µÄÁ¬½Ó +=
-    bool operator==(const String &R);				//×Ö·û´®µÄÏàµÈ±È½Ï ==
-    bool operator!=(const String &R);				//×Ö·û´®µÄ²»µÈ±È½Ï !=
-    bool operator!() ;               				//ÅĞ¶¨×Ö·û´®ÊÇ·ñÎª¿Õ
-    bool operator<(const String &R) const;     		//×Ö·û´®µÄĞ¡ÓÚ±È½Ï <
-    bool operator>(const String &R);                	//×Ö·û´®µÄ´óÓÚ±È½Ï >
-    bool operator>=(const String &R);             	//×Ö·û´®µÄ´óÓÚµÈÓÚ±È½Ï
-    char &operator[](int);                         	//×Ö·û´®µÄÏÂ±êÔËËã
-    ~String();  
+    String(const char * = "");
+    const String &operator=(const String &R)
+    {
+        length = R.length;
+        strcpy(R.sPtr, sPtr);
+        return *this;
+    };                                         //é‡è½½èµ‹å€¼è¿ç®—ç¬¦ =
+    const String &operator+=(const String &R); //å­—ç¬¦ä¸²çš„è¿æ¥ +=
+    bool operator==(const String &R);          //å­—ç¬¦ä¸²çš„ç›¸ç­‰æ¯”è¾ƒ ==
+    bool operator!=(const String &R);          //å­—ç¬¦ä¸²çš„ä¸ç­‰æ¯”è¾ƒ !=
+    bool operator!();                          //åˆ¤å®šå­—ç¬¦ä¸²æ˜¯å¦ä¸ºç©º
+    bool operator<(const String &R) const;     //å­—ç¬¦ä¸²çš„å°äºæ¯”è¾ƒ <
+    bool operator>(const String &R);           //å­—ç¬¦ä¸²çš„å¤§äºæ¯”è¾ƒ >
+    bool operator>=(const String &R);          //å­—ç¬¦ä¸²çš„å¤§äºç­‰äºæ¯”è¾ƒ
+    char &operator[](int);                     //å­—ç¬¦ä¸²çš„ä¸‹æ ‡è¿ç®—
+    ~String(){};
 };
-const String &String::operator+=(const String &R) {
-    char *temp = sPtr;              
-    length += R.length;           
-    sPtr = new char[length+1]; 
-    strcpy(sPtr,temp );           
-    strcat(sPtr,R.sPtr );         
-    delete [] temp;                 
-    return *this;                         
+const String &String::operator+=(const String &R)
+{
+    char *temp = sPtr;
+    length += R.length;
+    sPtr = new char[length + 1];
+    strcpy(sPtr, temp);
+    strcat(sPtr, R.sPtr);
+    delete[] temp;
+    return *this;
 }
-bool String::operator==(const String &R){return strcmp(sPtr,R.sPtr)==0;}
-bool String::operator!=(const String & R){return !(*this==R);}
-bool String::operator!(){return length ==0;}
-bool String::operator<(const String &R)const{return strcmp(sPtr,R.sPtr)<0;}
-bool String::operator>(const String &R){return R<*this;}
-bool String::operator>=(const String &R){return !(*this<R);}
-char &String::operator[](int subscript){return sPtr[subscript];}
-int main(){
-    String s1("happy"),s2("new year"),s3;
-    cout << "s1 is " << s1 << "\ns2 is " << s2 << "\ns3 is " << s3       
-    << "\n±È½Ïs2ºÍs1:"
-    << "\ns2 ==s1½á¹ûÊÇ " << ( s2 == s1 ? "true" : "false")
-    << "\ns2 != s1½á¹ûÊÇ " << ( s2 != s1 ? "true" : "false")
-    << "\ns2 >  s1½á¹ûÊÇ " << ( s2 >  s1 ? "true" : "false") 
-    << "\ns2 <  s1½á¹ûÊÇ " << ( s2 <  s1 ? "true" : "false") 
-    << "\ns2 >= s1½á¹ûÊÇ " << ( s2 >= s1 ? "true" : "false");
-    cout << "\n\n²âÊÔs3ÊÇ·ñÎª¿Õ: ";                         	
-    if (!s3){
-        cout << "s3ÊÇ¿Õ´®"<<endl;                           	//L3
-        cout<<"°Ñs1¸³¸øs3µÄ½á¹ûÊÇ£º";                    		       	
-        s3 = s1;                                         
-        cout << "s3=" << s3 << "\n";                          	//L5
+String::String(const char *str)
+{
+    sPtr = new char[strlen(str) + 1];
+    strcpy(sPtr, str);
+    length = strlen(str);
+};
+bool String::operator==(const String &R) { return strcmp(sPtr, R.sPtr) == 0; }
+bool String::operator!=(const String &R) { return !(*this == R); }
+bool String::operator!() { return length == 0; }
+bool String::operator<(const String &R) const { return strcmp(sPtr, R.sPtr) < 0; }
+bool String::operator>(const String &R) { return R < *this; }
+bool String::operator>=(const String &R) { return !(*this < R); }
+char &String::operator[](int subscript) { return sPtr[subscript]; }
+int main()
+{
+    String s1("happy"), s2("new year"), s3;
+    cout << "s1 is " << s1 << "\ns2 is " << s2 << "\ns3 is " << s3
+         << "\næ¯”è¾ƒs2å’Œs1:"
+         << "\ns2 ==s1ç»“æœæ˜¯ " << (s2 == s1 ? "true" : "false")
+         << "\ns2 != s1ç»“æœæ˜¯ " << (s2 != s1 ? "true" : "false")
+         << "\ns2 >  s1ç»“æœæ˜¯ " << (s2 > s1 ? "true" : "false")
+         << "\ns2 <  s1ç»“æœæ˜¯ " << (s2 < s1 ? "true" : "false")
+         << "\ns2 >= s1ç»“æœæ˜¯ " << (s2 >= s1 ? "true" : "false");
+    cout << "\n\næµ‹è¯•s3æ˜¯å¦ä¸ºç©º: ";
+    if (!s3)
+    {
+        cout << "s3æ˜¯ç©ºä¸²" << endl; //L3
+        cout << "æŠŠs1èµ‹ç»™s3çš„ç»“æœæ˜¯ï¼š";
+        s3 = s1;
+        cout << "s3=" << s3 << "\n"; //L5
     }
-    cout << "s1 += s2 µÄ½á¹ûÊÇ£ºs1=";                      	//L6
-    s1 += s2;                                       
-    cout << s1;                                             		//L7
-                                                        
-    cout << "\ns1 +=  to you µÄ½á¹ûÊÇ£º";                     	//L8
-    s1 += " to you";                               
-    cout << "s1 = " << s1 <<endl;                              	//L9
-    s1[0] = 'H';      
+    cout << "s1 += s2 çš„ç»“æœæ˜¯ï¼šs1="; //L6
+    s1 += s2;
+    cout << s1; //L7
+
+    cout << "\ns1 +=  to you çš„ç»“æœæ˜¯ï¼š"; //L8
+    s1 += " to you";
+    cout << "s1 = " << s1 << endl; //L9
+    s1[0] = 'H';
     s1[6] = 'N';
     s1[10] = 'Y';
-    cout << "s1 = " << s1 << "\n";                               //L10
+    cout << "s1 = " << s1 << "\n"; //L10
     system("pause");
     return 0;
 }
