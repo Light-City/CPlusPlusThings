@@ -47,7 +47,7 @@ for (vectype i = vec.begin; i != vec.end(); i++)
 struct 
 {
     int d ;
-    doubel b;
+    double b;
 }anon_s;
 ```
 

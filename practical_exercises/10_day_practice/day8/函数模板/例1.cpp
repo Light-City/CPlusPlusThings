@@ -1,17 +1,17 @@
-//函数模板参数可以是类属参数，也可以包括普通类型的参数
+//鍑芥暟妯℃澘鍙傛暟鍙互鏄被灞炲弬鏁帮紝涔熷彲浠ュ寘鎷櫘閫氱被鍨嬬殑鍙傛暟
 #include<iostream>
 using namespace std;
 
 
 template <class T>
-//实现降序
+//瀹炵幇闄嶅簭
 void sort(T &a, int n){
     for (int i=0;i<n;i++){
         int p=i;
         for (int j=i;j<n;j++)
             if(a[p]<a[j])
                 p=j;
-        int t=a[i];	
+        T t=a[i];	
         a[i]=a[p];		
         a[p]=t;
     }
