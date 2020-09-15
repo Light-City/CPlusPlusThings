@@ -48,7 +48,7 @@ static成员函数不属于任何类对象或类实例，所以即使给此函�
 
 代码学习：
 
-- [copy_consrtuct.cpp](./set3/copy_construct.cpp) 
+- [copy_consrtuct.cpp](./set3/copy_consrtuct.cpp) 
 
 - [vir_con.cpp](./set3/vir_con.cpp) 
 
