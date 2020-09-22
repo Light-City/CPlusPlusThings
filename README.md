@@ -256,7 +256,7 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 - [第一章](./concurrency/concurrency_v1/chapter1)
 - [第二章](./concurrency/concurrency_v1/chapter2)
 
-学习资料：https://chenxiaowei.gitbook.io/cpp_concurrency_in_action/
+学习资料：https://downdemo.gitbook.io/cpp-concurrency-in-action-2ed/
 
 #### 6.2 多线程与多进程
 
