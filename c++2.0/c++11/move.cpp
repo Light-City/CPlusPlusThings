@@ -2,16 +2,7 @@
 // Created by light on 19-11-4.
 //
 
-#include <iostream>
-#include <cstring>
-#include <vector>
-#include <list>
-#include <typeinfo>
-#include <deque>
-#include <set>
-#include <map>
-#include <unordered_set>
-#include <unordered_map>
+#include <bits/stdc++.h>
 
 using namespace std;
 
