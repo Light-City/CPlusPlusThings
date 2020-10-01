@@ -2,8 +2,7 @@
 // Created by light on 19-11-3.
 //
 
-#include <iostream>
-#include <complex>
+#include<bits/stdc++.h>
 
 using namespace std;
 
