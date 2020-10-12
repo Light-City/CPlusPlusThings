@@ -7,9 +7,9 @@ public:
     int getx(){return x; }
     void showx(){cout<<x<<endl; }
 };
-//Ë½ÓÐ¼Ì³Ð
-//»ùÀàµÄÖÐµÄpublic³ÉÔ±ÔÚÅÉÉúÀàÖÐÊÇprivate, private³ÉÔ±ÔÚÅÉÉúÀàÖÐ²»¿É·ÃÎÊ¡£
-class derived:private base{
+//ç§æœ‰ç»§æ‰¿
+//åŸºç±»çš„ä¸­çš„publicæˆå‘˜åœ¨æ´¾ç”Ÿç±»ä¸­æ˜¯private, privateæˆå‘˜åœ¨æ´¾ç”Ÿç±»ä¸­ä¸å¯è®¿é—®ã€‚
+class derived:private Base{
 	int y;
 public:
 	void sety(int n){y=n;	}
@@ -22,5 +22,4 @@ int main(){
 	obj.sety(20);
 	obj.showx();//cannot access
 	obj.showy();	
-    system("pause");
 }
