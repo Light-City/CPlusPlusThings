@@ -32,7 +32,7 @@ https://light-city.club/sc/
 
 - **编辑工具**
 
-  CLion  
+  CLion
 
 - **编译器**
 
@@ -187,7 +187,7 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 
 - Alias(化名)Template(template typedef)
 
-  - [alias.cpp](./c++2.0/c++11/alias.cpp) 
+  - [alias.cpp](./c++2.0/c++11/alias.cpp)
   - [template_template.cpp](./c++2.0/c++11/template_template.cpp)
 
 - [template template parameter](./c++2.0/template_template.cpp)
@@ -344,6 +344,9 @@ map<int, int> mp{
 #### 9.4 C++ 的 Debug 工具 dbg-macro
 
 - [C++ 的 Debug 工具 dbg-macro](./tool/C++的Debug工具dbg-macro.md)
+
+#### 9.5 在 Linux 上的 Debug 工具 rr - 拥有回到过去的能力
+- [用rr来进行debug](./tool/用rr来进行debug.md)
 
 ### 10.拓展部分
 
