@@ -9,7 +9,7 @@ class X
 			return i; };
 	int operator[] (int i)
 	{ cout << "X::operator[" << i << "]" << endl; return i; };
-	int operator[] (char * cp)
+	int operator[] (const char * cp)
 	{ cout << "X::operator[" << cp << "]" << endl; return 0; };
 };
 int main (void)
