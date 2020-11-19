@@ -216,7 +216,7 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 
 - [Hash Function](./c++2.0/c++11/hash.cpp)
 
-- [tuple](./c++2.0c++11//tuple.cpp)
+- [tuple](./c++2.0/c++11/tuple.cpp)
 
   学习资料：https://www.bilibili.com/video/av51863195?from=search&seid=3610634846288253061
 
