@@ -12,13 +12,13 @@ https://light-city.club/sc/
 
 ### 关于作者
 
-公众号已开放两大入口，分别是专辑与菜单，可以直接在微信公众号上阅读《C++那些事》内容，配上该仓库的代码，将会非常的爽，建议大家关注一波。
+公众号已开放两大入口，分别是专辑与菜单，可以直接在微信公众号上阅读《C++ 那些事》内容，配上该仓库的代码，将会非常的爽，建议大家关注一波。
 
 个人公众号：guangcity
 
 ![](https://light-city.club/sc/assets/images/wechat.jpg)
 
-欢迎大家反馈及C++交流，本人在微信创建了C++那些事交流群，优质的C++资源交流区，期待大家关注上面公众号，点击公众号右下角->联系我，拉你入群。
+欢迎大家反馈及 C++ 交流，本人在微信创建了 C++ 那些事交流群，优质的 C++ 资源交流区，期待大家关注上面公众号，点击公众号右下角->联系我，拉你入群。
 
 ---
 
@@ -38,50 +38,50 @@ https://light-city.club/sc/
 
 > gcc/g++
 
-尽量用g++，因为一开始我用的vim写的，所以纯g++，后来用编译器CLion，部分有CMakeLists.txt文件，直接导入就行，后面会更新这个文件包含整个项目，持续关注~
+尽量用 g++，因为一开始我用的 vim 写的，所以纯 g++，后来用编译器 CLion，部分有 CMakeLists.txt 文件，直接导入就行，后面会更新这个文件包含整个项目，持续关注~
 
 ### 0.项目概要
 
 - 中文名：**C++ 那些事**
 - 英文名：**Stories About C Plus Plus**
 
-这是一个适合初学者从<u>**入门到进阶**</u>的仓库，解决了<u>**面试者与学习者**</u>想要<u>**深入 C++**</u>及如何<u>**入坑 C++**</u>的问题。除此之外，本仓库拓展了更加深入的源码分析，多线程并发等的知识，是一个比较全面的 C++ 学习从入门到进阶提升的仓库。
+这是一个适合初学者从<u>**入门到进阶**</u>的仓库，解决了<u>**面试者与学习者**</u>想要<u>**深入 C++**</u> 及如何<u>**入坑 C++**</u> 的问题。除此之外，本仓库拓展了更加深入的源码分析，多线程并发等的知识，是一个比较全面的 C++ 学习从入门到进阶提升的仓库。
 
 ### 1.基础进阶
 
-- [const 那些事](./basic_content/const)
-- [static 那些事](./basic_content/static)
-- [this 那些事](./basic_content/this)
-- [inline 那些事](./basic_content/inline)
-- [sizeof 那些事](./basic_content/sizeof)
+- [`const` 那些事](./basic_content/const)
+- [`static` 那些事](./basic_content/static)
+- [`this` 那些事](./basic_content/this)
+- [`inline` 那些事](./basic_content/inline)
+- [`sizeof` 那些事](./basic_content/sizeof)
 - [函数指针那些事](./basic_content/func_pointer)
 - [纯虚函数和抽象类那些事](./basic_content/abstract)
-- [vptr_vtable 那些事](./basic_content/vptr_vtable)
-- [virtual 那些事](./basic_content/virtual)
-- [volatile 那些事](./basic_content/volatile)
-- [assert 那些事](./basic_content/assert)
+- [`vptr_vtable` 那些事](./basic_content/vptr_vtable)
+- [`virtual` 那些事](./basic_content/virtual)
+- [`volatile` 那些事](./basic_content/volatile)
+- [`assert` 那些事](./basic_content/assert)
 - [位域那些事](./basic_content/bit)
-- [extern 那些事](./basic_content/extern)
-- [struct 那些事](./basic_content/struct)
-- [struct 与 class 那些事](./basic_content/struct_class)
-- [union 那些事](./basic_content/union)
-- [c 实现 c++ 多态那些事](./basic_content/c_poly)
-- [explicit 那些事](./basic_content/explicit)
-- [friend 那些事](./basic_content/friend)
-- [using 那些事](./basic_content/using)
-- [:: 那些事](./basic_content/maohao)
-- [enum 那些事](./basic_content/enum)
-- [decltype 那些事](./basic_content/decltype)
+- [`extern` 那些事](./basic_content/extern)
+- [`struct` 那些事](./basic_content/struct)
+- [`struct` 与 `class` 那些事](./basic_content/struct_class)
+- [`union` 那些事](./basic_content/union)
+- [`c` 实现 `c++` 多态那些事](./basic_content/c_poly)
+- [`explicit` 那些事](./basic_content/explicit)
+- [`friend` 那些事](./basic_content/friend)
+- [`using` 那些事](./basic_content/using)
+- [`::` 那些事](./basic_content/maohao)
+- [`enum` 那些事](./basic_content/enum)
+- [`decltype` 那些事](./basic_content/decltype)
 - [引用与指针那些事](./basic_content/pointer_refer)
 - [宏那些事](./basic_content/macro)
 
 ### 2.实战系列
 
-#### 2.1 [10日狂练](./practical_exercises/10_day_practice)
+#### 2.1 [10 日狂练](./practical_exercises/10_day_practice)
 
 - [x] [day1](practical_exercises/10_day_practice/day1)
 
-基本c++语法
+基本 c++ 语法
 
 - [x] [day2](practical_exercises/10_day_practice/day2)
 
@@ -109,7 +109,7 @@ https://light-city.club/sc/
 
 - [x] [day8](practical_exercises/10_day_practice/day8)
 
-模板与STL
+模板与 STL
 
 - [x] [day9](practical_exercises/10_day_practice/day9)
 
@@ -182,10 +182,10 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 
 - [=default,=delete](./c++2.0/c++11/default_delete.cpp)
 
-  如果你自行定义了一个 ctor,那么编译器就不会给你一个 default ctor
-  如果强制加上 =default,就可以重新获得并使用 default ctor.
+  如果你自行定义了一个 `ctor`, 那么编译器就不会给你一个 `default ctor`
+  如果强制加上 `=default`, 就可以重新获得并使用 `default ctor`.
 
-- Alias(化名)Template(template typedef)
+- Alias(化名) Template (template typedef)
 
   - [alias.cpp](./c++2.0/c++11/alias.cpp)
   - [template_template.cpp](./c++2.0/c++11/template_template.cpp)
@@ -277,9 +277,9 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 
 - [1.类初始化列表](./codingStyleIdioms/1_classInitializers)
 - [2.枚举类替换命名空间](./codingStyleIdioms/2_enumclass_namespace)
-- [3.RAII(资源获取即初始化)](./codingStyleIdioms/3_RAII)
+- [3.RAII (资源获取即初始化)](./codingStyleIdioms/3_RAII)
 - [4.copy and swap](./codingStyleIdioms/4_copy-swap)
-- [5.pImpl(指针指向具体实现)](./codingStyleIdioms/5_pImpl)
+- [5.pImpl (指针指向具体实现)](./codingStyleIdioms/5_pImpl)
 
 ### 8.学习课程
 
@@ -346,7 +346,7 @@ map<int, int> mp{
 - [C++ 的 Debug 工具 dbg-macro](./tool/C++的Debug工具dbg-macro.md)
 
 #### 9.5 在 Linux 上的 Debug 工具 rr - 拥有回到过去的能力
-- [用rr来进行debug](./tool/用rr来进行debug.md)
+- [用 rr 来进行 debug](./tool/用rr来进行debug.md)
 
 ### 10.拓展部分
 
