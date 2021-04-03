@@ -185,7 +185,7 @@ singleton *instance() {
         lock_guard<mutex> guard(lock_);
         if (p == nullptr) {
             singleton *tmp = static_cast<singleton *>(operator new(sizeof(singleton)));
-            new(p)singleton();
+            new(tmp)singleton();
             p = tmp;
         }
     }
