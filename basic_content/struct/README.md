@@ -60,9 +60,9 @@ I am Base func
 
 - C++结构体中不仅可以定义数据，还可以定义函数。
 - C++结构体中可以使用访问修饰符，如：public、protected、private 。
-- C++结构体使用可以直接使用不带struct。
+- C++结构体使用可以直接使用不带struct的。
 - C++继承
-- 若结构体的名字与函数名相同，可以正常运行且正常的调用！但是定义结构体变量时候只用用带struct的！
+- 若结构体的名字与函数名相同，可以正常运行且正常的调用！但是定义结构体变量时候只能用用带struct的！
 
 例如：
 
@@ -74,8 +74,7 @@ I am Base func
 struct Student {
     
 };
-Student(){}
-Struct Student s; //ok
+struct Student s; //ok
 Student s;  //ok
 ```
 
@@ -86,7 +85,7 @@ struct Student {
     
 };
 Student(){}
-Struct Student s; //ok
+struct Student s; //ok
 Student s;  //error
 ```
 
@@ -225,4 +224,4 @@ int main() {
 | 在C结构体声明中不能使用C++访问修饰符。                 | public、protected、private 在C++中可以使用。                 |
 | 在C中定义结构体变量，如果使用了下面定义必须加struct。  | 可以不加struct                                               |
 | 结构体不能继承（没有这一概念）。                       | 可以继承                                                     |
-| 若结构体的名字与函数名相同，可以正常运行且正常的调用！ | 若结构体的名字与函数名相同，使用结构体，只能使用带struct定义！ |
+| 若结构体的名字与函数名相同，可以正常运行且正常的调用！ | 若结构体的名字与函数名相同，使用结构体，只能使用带struct的！ |
