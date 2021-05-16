@@ -8,7 +8,7 @@ public:
     static int count;  // 类A的count (A::count)
 
 };
-// 静态变量必须在此处定义
+// 静态变量必须在类外定义
 int A::count;
 int main() {
     ::count=1; // 设置全局的count为1
