@@ -25,7 +25,7 @@ https://light-city.club/sc/
 
 另外，下面是我自己建立的知识星球，会带大家做一些小项目以及源码解读等方面成长。
 
-![](./img/cpp.jpg)
+![](https://www.hualigs.cn/image/60a24728bb736.jpg)
 
 
 ### 项目运行
