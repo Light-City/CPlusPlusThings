@@ -20,8 +20,11 @@ public:
     String(const char * = "");
     const String &operator=(const String &R)
     {
+        char *temp = sPtr;
         length = R.length;
-        strcpy(R.sPtr, sPtr);
+        sPtr = new char[length + 1];
+        strcpy(sPtr, R.sPtr);
+        delete [] temp;
         return *this;
     };                                         //重载赋值运算符 =
     const String &operator+=(const String &R); //字符串的连接 +=
@@ -85,7 +88,25 @@ int main()
     s1[0] = 'H';
     s1[6] = 'N';
     s1[10] = 'Y';
-    cout << "s1 = " << s1 << "\n"; //L10
+    cout << "s1 = " << s1 << "\n" << endl; //L10
+
+    String s4, s5("123");
+    cout << "s4 = " << s4 << "\n"; //L11
+    cout << "s5 = " << s5 << "\n"; //L12
+    cout << "s4 = s5 结果是:" << endl;
+    s4 = s5;
+    cout << "s4 = " << s4 << "\n"; //L13
+    cout << "s5 = " << s5 << "\n" << endl; //L14
+
+    s4 = "";
+    s5 = "abc";
+    cout << "s4 = " << s4 << "\n"; //L15
+    cout << "s5 = " << s5 << "\n"; //L16
+    cout << "s5 = s4 结果是:" << endl;
+    s5 = s4;
+    cout << "s4 = " << s4 << "\n"; //L17
+    cout << "s5 = " << s5 << "\n"; //L18
+
     system("pause");
     return 0;
 }
