@@ -74,8 +74,8 @@ I am Base func
 struct Student {
     
 };
-Student(){}
-Struct Student s; //ok
+//Student(){}
+struct Student s; //ok
 Student s;  //ok
 ```
 
@@ -86,7 +86,7 @@ struct Student {
     
 };
 Student(){}
-Struct Student s; //ok
+struct Student s; //ok
 Student s;  //error
 ```
 
