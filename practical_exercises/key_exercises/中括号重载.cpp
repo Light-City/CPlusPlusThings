@@ -6,13 +6,13 @@ struct Person
     double salary;
     char *name;
 };
-class SalaryManaege
+class SalaryManage
 {
     Person *employ; //存放职工信息的数组
     int max;        //数组下标上界
     int n;          //数组中的实际职工人数
 public:
-    SalaryManaege(int Max = 0)
+    SalaryManage(int Max = 0)
     {
         max = Max;
         n = 0;
@@ -39,13 +39,13 @@ public:
         for (int i = 0; i < n; i++)
             cout << employ[i].name << "   " << employ[i].salary << endl;
     }
-    ~SalaryManaege() {
+    ~SalaryManage() {
         delete employ;
     }
 };
 int main()
 {
-    SalaryManaege s(3);
+    SalaryManage s(3);
     s["张三"] = 2188.88;
     s["里斯"] = 1230.07;
     s["王无"] = 3200.97;

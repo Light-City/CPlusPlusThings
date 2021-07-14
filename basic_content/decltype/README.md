@@ -103,7 +103,7 @@ decltype (arr) var1; //int 标记符表达式
 
 decltype (ptr) var2;//int *  标记符表达式
 
-decltype(s.d) var3;//doubel 成员访问表达式
+decltype(s.d) var3;//double 成员访问表达式
 
 //decltype(Overloaded) var4;//重载函数。编译错误。
 
