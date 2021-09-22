@@ -1,16 +1,16 @@
 
 /*
-ÔÚC++µÄ±ê×¼ÃüÃû¿Õ¼ästdÖÐÔ¤¶¨ÒåÁË¸´ÊýÀàComplex£¬
-²¢ÇÒÍ¨¹ýÓÑÔªÖØÔØÁËComplexµÄ¸÷ÖÖÔËËã£¬°üÀ¨±¾³ÌÐòÖÐÖØÔØµÄ+¡¢-¡¢*¡¢/¡£
-ÈôÊ¹ÓÃusing namespace std½«stdÃû×Ö¿Õ¼äÒýÈë±¾³ÌÐò£¬
-Ôò±¾³ÌÐòÖÐµÄComplex½«ÓëstdÃû×Ö¿Õ¼äÖÐµÄComplexÀàµÄÔËËã·ûÖØÔØº¯Êý²úÉú³åÍ»£¬ÒýÆð±àÒë´íÎó¡£
+åœ¨C++çš„æ ‡å‡†å‘½åç©ºé—´stdä¸­é¢„å®šä¹‰äº†å¤æ•°ç±»Complexï¼Œ
+å¹¶ä¸”é€šè¿‡å‹å…ƒé‡è½½äº†Complexçš„å„ç§è¿ç®—ï¼ŒåŒ…æ‹¬æœ¬ç¨‹åºä¸­é‡è½½çš„+ã€-ã€*ã€/ã€‚
+è‹¥ä½¿ç”¨using namespace stdå°†stdåå­—ç©ºé—´å¼•å…¥æœ¬ç¨‹åºï¼Œ
+åˆ™æœ¬ç¨‹åºä¸­çš„Complexå°†ä¸Žstdåå­—ç©ºé—´ä¸­çš„Complexç±»çš„è¿ç®—ç¬¦é‡è½½å‡½æ•°äº§ç”Ÿå†²çªï¼Œå¼•èµ·ç¼–è¯‘é”™è¯¯ã€‚
 */
 /*
-¶ÔÓÚ²»ÒªÇó×óÖµÇÒ¿ÉÒÔ½»»»²ÎÊý´ÎÐòµÄÔËËã·û£¨Èç+¡¢-¡¢*¡¢/ µÈÔËËã·û£©£¬
-×îºÃÓÃ·Ç³ÉÔ±ÐÎÊ½£¨°üÀ¨ÓÑÔªºÍÆÕÍ¨º¯Êý£©µÄÖØÔØÔËËã·ûº¯ÊýÊµÏÖ¡£
+å¯¹äºŽä¸è¦æ±‚å·¦å€¼ä¸”å¯ä»¥äº¤æ¢å‚æ•°æ¬¡åºçš„è¿ç®—ç¬¦ï¼ˆå¦‚+ã€-ã€*ã€/ ç­‰è¿ç®—ç¬¦ï¼‰ï¼Œ
+æœ€å¥½ç”¨éžæˆå‘˜å½¢å¼ï¼ˆåŒ…æ‹¬å‹å…ƒå’Œæ™®é€šå‡½æ•°ï¼‰çš„é‡è½½è¿ç®—ç¬¦å‡½æ•°å®žçŽ°ã€‚
 */
 
-//½â¾öÇ°ÃæµÄ2+bÎÊÌâ¡£
+//è§£å†³å‰é¢çš„2+bé—®é¢˜ã€‚
 #include<iostream>
 
 
@@ -44,6 +44,7 @@ Complex operator*(Complex a, Complex b){
     Complex t;
     t.r = a.r*b.r-a.i*b.i;
     t.i = a.r*b.i+a.i*b.r;
+    return t;
 }
 Complex operator/(Complex a, Complex b){
     Complex t;
