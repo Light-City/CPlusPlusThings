@@ -290,7 +290,7 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 #### 8.1 [极客时间《现代 C++ 实战 30 讲》](https://time.geekbang.org/channel/home)
 
 - [堆、栈、RAII：C++ 里该如何管理资源？](./learn_class/modern_C++_30/RAII)
-  - [堆](./modern_++_30/RAII/heap.cpp)
+  - [堆](./learn_class/modern_++_30/RAII/heap.cpp)
   - [栈](./learn_class/modern_C++_30/RAII/stack.cpp)
   - [RAII](./learn_class/modern_C++_30/RAII/RAII.cpp)
 - [自己动手，实现 C++ 的智能指针](./learn_class/modern_C++_30/smart_ptr)
