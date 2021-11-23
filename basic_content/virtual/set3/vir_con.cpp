@@ -29,7 +29,7 @@ class Base
         virtual void ChangeAttributes() = 0; 
 
         // The "Virtual Constructor" 
-        static Base *Create(int id); 
+        virtual Base *Create(int id); 
 
         // The "Virtual Copy Constructor" 
         virtual Base *Clone() = 0; 
