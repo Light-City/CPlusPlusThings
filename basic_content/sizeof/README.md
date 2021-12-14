@@ -119,6 +119,17 @@ class A
  * long b
  * 根据字节对齐4+4=8+8+8=24
  */
+
+/**
+ * 非作者本人
+ * char a
+ * int b
+ * short a
+ * long b
+ * 在32位机器底下，根据字节对齐应该为char = 1（对齐后为4），int = 4，short = 2（对齐后为4），long = 4
+ * 总和应该为16
+ */
+ 
 class B:A
 {
     public:
