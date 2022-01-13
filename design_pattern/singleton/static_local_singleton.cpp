@@ -11,12 +11,12 @@ private:
     static singleton *p;
     singleton() {}
 public:
-    singleton *instance();
+    static singleton &instance();
 };
 
-singleton *singleton::instance() {
+singleton &singleton::instance() {
     static singleton p;
-    return &p;
+    return p;
 }
 
 
