@@ -7,9 +7,9 @@
 
 因服务器到期，暂时关闭以下站点，请大家阅读仓库即可，感谢支持。
 
-[直通点](https://light-city.club/sc/)
 
-https://light-city.club/sc/
+> ~~[直通点](https://light-city.club/sc/)~~
+
 
 
 ### 关于作者
