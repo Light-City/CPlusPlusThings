@@ -21,7 +21,7 @@ public:
     const String &operator=(const String &R)
     {
         length = R.length;
-        strcpy(R.sPtr, sPtr);
+        strcpy(sPtr, R.sPtr);
         return *this;
     };                                         //重载赋值运算符 =
     const String &operator+=(const String &R); //字符串的连接 +=
