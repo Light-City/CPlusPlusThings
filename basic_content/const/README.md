@@ -309,9 +309,11 @@ Apple::Apple(int i):apple_number(i)
 }
 int Apple::add(int num){
     take(num);
+    return num;
 }
 int Apple::add(int num) const{
     take(num);
+    return num;
 }
 void Apple::take(int num) const
 {
