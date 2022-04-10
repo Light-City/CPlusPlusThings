@@ -66,7 +66,7 @@ vector<string> read_lines_from_file(string &file_name) {
 	string line;
 	
 	ifstream file_handle (file_name.c_str());
-	while (file_handle.good() && !file_handle.eof()) {
+	while (file_handle.good() && !file_handle.eof() && file_handle.peek()!=EOF) {
 		getline(file_handle, line);
 		lines.push_back(line);
 	}
@@ -89,7 +89,7 @@ int main(int argc, char* argv[]) {
 输出：
 
 ```cpp
-File makefile contains 38 lines.
+File makefile contains 37 lines.
 ```
 
 这看起来很简单。`vector`被填满、返回和调用。然而，作为关心性能的高效程序员，这方面的一些问题困扰着我们:在return语句中，由于使用了值语义，`vector`在销毁之前不久就被复制到一个新`vector`中。
@@ -104,7 +104,7 @@ vector<string> * read_lines_from_file(string &file_name) {
 	string line;
 	
 	ifstream file_handle (file_name.c_str());
-	while (file_handle.good() && !file_handle.eof()) {
+	while (file_handle.good() && !file_handle.eof() && file_handle.peek()!=EOF) {
 		getline(file_handle, line);
 		lines->push_back(line);
 	}
@@ -147,7 +147,7 @@ vector<string> * read_lines_from_file(string &file_name) {
 	string line;
 	
 	ifstream file_handle (file_name.c_str());
-	while (file_handle.good() && !file_handle.eof()) {
+	while (file_handle.good() && !file_handle.eof() && file_handle.peek()!=EOF) {
 		getline(file_handle, line);
 		lines->push_back(line);
 	}
@@ -265,7 +265,7 @@ unique_ptr<vector<string>> read_lines_from_file(string &file_name) {
     string line;
 
     ifstream file_handle (file_name.c_str());
-    while (file_handle.good() && !file_handle.eof()) {
+    while (file_handle.good() && !file_handle.eof() && file_handle.peek()!=EOF) {
         getline(file_handle, line);
         lines->push_back(line);
     }
