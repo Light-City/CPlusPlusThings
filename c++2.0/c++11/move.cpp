@@ -42,7 +42,7 @@ public:
     }
 
     // copy ctor
-    MyStringNoMove(const MyStringNoMove &str) {
+    MyStringNoMove(const MyStringNoMove &str) : _len(str._len) {
         ++CCtor;
         _init_data(str._data);
     }
@@ -118,7 +118,7 @@ public:
     }
 
     // copy ctor
-    MyString(const MyString &str) {
+    MyString(const MyString &str) : _len(str._len) {
         ++CCtor;
         _init_data(str._data);
     }
