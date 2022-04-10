@@ -45,7 +45,7 @@ void f(const int i){
 
 ```cpp
 // file1.cpp
-int ext
+int ext;
 // file2.cpp
 #include<iostream>
 
