@@ -12,7 +12,8 @@ vector<string> read_lines_from_file(string &file_name) {
     string line;
 
     ifstream file_handle (file_name.c_str());
-    while (file_handle.good() && !file_handle.eof()) {
+    //  file_handle.peek()!=EOF 解决多读一行问题
+    while (file_handle.good() && !file_handle.eof() && file_handle.peek()!=EOF) {
         getline(file_handle, line);
         lines.push_back(line);
     }
@@ -26,7 +27,8 @@ vector<string> * read_lines_from_file1(string &file_name) {
     string line;
 
     ifstream file_handle (file_name.c_str());
-    while (file_handle.good() && !file_handle.eof()) {
+    //  file_handle.peek()!=EOF
+    while (file_handle.good() && !file_handle.eof() && file_handle.peek()!=EOF) {
         getline(file_handle, line);
         lines->push_back(line);
     }
@@ -40,7 +42,7 @@ vector<string> * read_lines_from_file1_1(string &file_name) {
     string line;
 
     ifstream file_handle (file_name.c_str());
-    while (file_handle.good() && !file_handle.eof()) {
+    while (file_handle.good() && !file_handle.eof() &&  file_handle.peek()!=EOF) {
         getline(file_handle, line);
         lines->push_back(line);
     }
