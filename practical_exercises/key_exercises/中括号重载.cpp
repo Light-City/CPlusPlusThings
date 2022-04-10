@@ -40,7 +40,7 @@ public:
             cout << employ[i].name << "   " << employ[i].salary << endl;
     }
     ~SalaryManaege() {
-        delete employ;
+        delete[] employ;
     }
 };
 int main()
