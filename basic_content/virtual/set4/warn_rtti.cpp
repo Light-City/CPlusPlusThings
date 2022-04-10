@@ -14,7 +14,7 @@ class B{
 
 };
 
-//D为多态类型
+//D为非多态类型
 
 class D: public A{
 
