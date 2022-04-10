@@ -114,7 +114,7 @@ private:
     static singleton *p;
     static mutex lock_;
 public:
-    singleton *instance();
+    static singleton *instance();
 
     // 实现一个内嵌垃圾回收类
     class CGarbo
@@ -131,6 +131,7 @@ public:
 
 singleton *singleton::p = nullptr;
 singleton::CGarbo Garbo;
+std::mutex singleton::lock_;
 
 singleton* singleton::instance() {
     if (p == nullptr) {
