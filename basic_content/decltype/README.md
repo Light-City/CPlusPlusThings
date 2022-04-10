@@ -99,7 +99,7 @@ int && RvalRef();
 const bool Func(int);
 
 //规则一：推导为其类型
-decltype (arr) var1; //int 标记符表达式
+decltype (arr) var1; //int[] 标记符表达式
 
 decltype (ptr) var2;//int *  标记符表达式
 
