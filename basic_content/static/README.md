@@ -248,7 +248,7 @@ Welcome to Apple!
 
 **限定访问范围**
 static还有限定访问范围的作用（类似于匿名名字空间）。来自issue:https://github.com/Light-City/CPlusPlusThings/issues/142
-
+```cpp
 // source1.cpp
 extern void sayHello();
 const char* msg = "Hello World!\n";
@@ -265,8 +265,9 @@ void sayHello()
 {
     printf("%s", msg);
 }
+```
 g++对于上面两个代码文件是可以正常编译并且打印Hello World!，但如果给source1.cpp中的msg加上static，则会导致undefined reference to 'msg'的编译错误：
-
+```cpp
 // source1.cpp
 extern void sayHello();
 static const char* msg = "Hello World!\n";
@@ -275,3 +276,4 @@ int main()
     sayHello();
     return 0;
 }
+```
