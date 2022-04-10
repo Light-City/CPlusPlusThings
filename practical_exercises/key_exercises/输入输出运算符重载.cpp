@@ -1,39 +1,41 @@
 /*
- ÓĞÒ»ÏúÊÛÈËÔ±ÀàSales£¬ÆäÊı¾İ³ÉÔ±ÓĞĞÕÃûname£¬Éí·İÖ¤ºÅid£¬ÄêÁäage¡£
- ÖØÔØÊäÈë/Êä³öÔËËã·ûÊµÏÖ¶ÔSalesÀàÊı¾İ³ÉÔ±µÄÊäÈëºÍÊä³ö¡£
-*/
-#include<iostream.h>
-#include<string.h>
+   æœ‰ä¸€é”€å”®äººå‘˜ç±»Salesï¼Œå…¶æ•°æ®æˆå‘˜æœ‰å§“ånameï¼Œèº«ä»½è¯å·idï¼Œå¹´é¾„ageã€‚
+   é‡è½½è¾“å…¥/è¾“å‡ºè¿ç®—ç¬¦å®ç°å¯¹Salesç±»æ•°æ®æˆå‘˜çš„è¾“å…¥å’Œè¾“å‡ºã€‚
+ */
+#include<iostream>
+#include<cstring>
+using namespace std;
 class Sales{
-private:
-		char name[10];
-		char id[18];
-		int age;
-public:
-		Sales(char *Name,char *ID,int Age);
+        private:
+                char name[10];
+                char id[18];
+                int age;
+        public:
+                Sales(char *Name,char *ID,int Age);
 
-		friend	Sales &operator<<(ostream &os,Sales &s);	//ÖØÔØÊä³öÔËËã·û
-		friend	Sales &operator>>(istream &is,Sales &s);	//ÖØÔØÊäÈëÔËËã·û
+                friend  Sales &operator<<(ostream &os,Sales &s);        //é‡è½½è¾“å‡ºè¿ç®—ç¬¦
+                friend  Sales &operator>>(istream &is,Sales &s);        //é‡è½½è¾“å…¥è¿ç®—ç¬¦
 };
 Sales::Sales(char *Name,char *ID,int Age) {
-		strcpy(name,Name);
-		strcpy(id,ID);
-		age=Age;
+        strcpy(name,Name);
+        strcpy(id,ID);
+        age=Age;
 }
 Sales& operator<<(ostream &os,Sales &s) {
-		os<<s.name<<"\t";                 			//Êä³öĞÕÃû
-		os<<s.id<<"\t";                    			//Êä³öÉí·İÖ¤ºÅ
-		os<<s.age<<endl;                  			//Êä³öÄêÁä
-		return s;
+        os<<s.name<<"\t";                                       //è¾“å‡ºå§“å
+        os<<s.id<<"\t";                                         //è¾“å‡ºèº«ä»½è¯å·
+        os<<s.age<<endl;                                        //è¾“å‡ºå¹´é¾„
+        return s;
 }
 Sales &operator>>(istream &is,Sales &s) {
-		cout<<"ÊäÈë¹ÍÔ±µÄĞÕÃû£¬Éí·İÖ¤ºÅ£¬ÄêÁä"<<endl;  				is>>s.name>>s.id>>s.age;                       	
-		return s;
+        cout<<"è¾“å…¥é›‡å‘˜çš„å§“åï¼Œèº«ä»½è¯å·ï¼Œå¹´é¾„"<<endl;
+        is>>s.name>>s.id>>s.age;
+        return s;
 }
-void main(){
-		Sales s1("¶Å¿µ","214198012111711",40);   		//L1
-		cout<<s1;                             			//L2
-		cout<<endl;                           				//L3
-		cin>>s1;                              				//L4
-		cout<<s1;                             				//L5
+int main(){
+        Sales s1("æœåº·","214198012111711",40);                  //L1
+        cout<<s1;                                               //L2
+        cout<<endl;                                                     //L3
+        cin>>s1;                                                        //L4
+        cout<<s1;                                                       //L5
 }
