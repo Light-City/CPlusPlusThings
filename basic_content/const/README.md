@@ -293,8 +293,8 @@ public:
     Apple(int i); 
     const int apple_number;
     void take(int num) const;
-    int add(int num);
-	int add(int num) const;
+    int add();
+    int add(int num) const;
     int getCount() const;
 
 };
@@ -307,9 +307,9 @@ Apple::Apple(int i):apple_number(i)
 {
 
 }
-int Apple::add(int num){
-    take(num);
-    return num;
+int Apple::add(){
+    take(1);
+    return 0;
 }
 int Apple::add(int num) const{
     take(num);
@@ -322,33 +322,27 @@ void Apple::take(int num) const
 int Apple::getCount() const
 {
     take(1);
-//    add(); //error
+    add();  // error
     return apple_number;
 }
 int main(){
     Apple a(2);
     cout<<a.getCount()<<endl;
     a.add(10);
-    const Apple b(3);
-    b.add(100);
     return 0;
 }
 ```
 > 编译： g++ -o main main.cpp apple.cpp<br>
 
-结果：
+此时报错，上面getCount()方法中调用了一个add方法，而add方法并非const修饰，所以运行报错。也就是说const成员函数只能访问const成员函数。
+
+当调用改为：
+
 ```
-take func 1
-2
-take func 10
-take func 100
+const Apple b(3);
+b.add(); // error
 ```
-
-上面getCount()方法中调用了一个add方法，而add方法并非const修饰，所以运行报错。也就是说const对象只能访问const成员函数。
-
-而add方法又调用了const修饰的take方法，证明了非const对象可以访问任意的成员函数,包括const成员函数。
-
-除此之外，我们也看到add的一个重载函数，也输出了两个结果，说明const对象默认调用const成员函数。
+此时，可以证明的是const对象只能访问const成员函数。
 
 我们除了上述的初始化const常量用初始化列表方式外，也可以通过下面方法：
 
