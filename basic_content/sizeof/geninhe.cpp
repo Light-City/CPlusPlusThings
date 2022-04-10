@@ -25,7 +25,14 @@ class A
  * int b
  * short a
  * long b
- * 根据字节对齐4+4=8+8+8=24
+ * 根据字节对齐4+4+8+8=24
+ *
+ * 或编译器优化
+ * char a
+ * short a
+ * int b
+ * long b
+ * 根据字节对齐2+2+4+8=16
  */
 class B:A
 {
@@ -33,6 +40,9 @@ class B:A
         short a;
         long b;
 };
+/**
+* 把A的成员拆开看，char为1，int为4，所以是1+（3）+4+1+（3）=12，（）为字节补齐
+*/
 class C
 {
     A a;
@@ -51,7 +61,7 @@ class C1:public A
 int main()
 {
     cout<<sizeof(A)<<endl; // 8
-    cout<<sizeof(B)<<endl; // 24
+    cout<<sizeof(B)<<endl; // 16
     cout<<sizeof(C)<<endl; // 12
 
     /**
