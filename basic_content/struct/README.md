@@ -95,10 +95,9 @@ Student s;  //error
 ```c++
 typedef struct Base1 {         
     int v1;
-//    private:   //error!
-        int v3;
+    int v3;
     public:     //显示声明public
-        int v2;
+    int v2;
     void print(){       
         printf("%s\n","hello world");
     };    
