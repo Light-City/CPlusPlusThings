@@ -1,0 +1,244 @@
+From 6ca32cbbacd425a37acba74787c6199dbdc54783 Mon Sep 17 00:00:00 2001
+From: Hachi <zzy_ahut@163.com>
+Date: Thu, 16 Jun 2022 00:52:47 +0800
+Subject: [PATCH] =?UTF-8?q?=E6=96=B0=E5=A2=9Econst=E5=87=BD=E6=95=B0?=
+ =?UTF-8?q?=E5=8F=82=E6=95=B0?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ .vscode/settings.json                         |   4 ++
+ .../const/funciton_const/condition4/Test.cpp  |  29 +++++++++++++
+ .../const/funciton_const/condition4/Test.h    |  20 +++++++++
+ .../const/funciton_const/condition4/a.out     | Bin 0 -> 18288 bytes
+ .../const/funciton_const/condition4/main.cpp  |  41 ++++++++++++++++++
+ 5 files changed, 94 insertions(+)
+ create mode 100644 .vscode/settings.json
+ create mode 100644 basic_content/const/funciton_const/condition4/Test.cpp
+ create mode 100644 basic_content/const/funciton_const/condition4/Test.h
+ create mode 100755 basic_content/const/funciton_const/condition4/a.out
+ create mode 100644 basic_content/const/funciton_const/condition4/main.cpp
+
+diff --git a/.vscode/settings.json b/.vscode/settings.json
+new file mode 100644
+index 0000000..3986f4a
+--- /dev/null
++++ b/.vscode/settings.json
+@@ -0,0 +1,4 @@
++{
++    "editor.suggest.snippetsPreventQuickSuggestions": false,
++    "aiXcoder.showTrayIcon": true
++}
+\ No newline at end of file
+diff --git a/basic_content/const/funciton_const/condition4/Test.cpp b/basic_content/const/funciton_const/condition4/Test.cpp
+new file mode 100644
+index 0000000..c1a0e5c
+--- /dev/null
++++ b/basic_content/const/funciton_const/condition4/Test.cpp
+@@ -0,0 +1,29 @@
++#include "Test.h"
++#include <iostream>
++using namespace std;
++
++Test::Test()
++{
++   cout<<"无参构造"<<endl;
++}
++
++Test::Test(int a)
++{
++    cout<<"类型转换构造器  有参构造"<<endl;
++}
++
++Test::Test(const Test &t)
++{
++    cout<<"拷贝构造"<<endl;
++}
++
++Test::~Test()
++{
++    cout<<"析构函数"<<endl;
++}
++
++void Test::fun() const
++{
++    a = 1;  //mutable修饰的成员变量可以被修改
++    //b = 2;  //非mutable修饰的变量禁止被修改 
++}
+diff --git a/basic_content/const/funciton_const/condition4/Test.h b/basic_content/const/funciton_const/condition4/Test.h
+new file mode 100644
+index 0000000..799cea8
+--- /dev/null
++++ b/basic_content/const/funciton_const/condition4/Test.h
+@@ -0,0 +1,20 @@
++#ifndef TEST_H
++#define TEST_H
++
++class Test
++{
++public:
++    Test();
++    //类型转换构造函数(有参构造） 用于隐式转换
++    Test(int a);
++    //拷贝构造函数  用于显示转换
++    Test(const Test& t);
++
++    void fun() const;
++
++    ~Test();
++    mutable int a;
++    int b;
++
++};
++#endif // TEST_H
+diff --git a/basic_content/const/funciton_const/condition4/a.out b/basic_content/const/funciton_const/condition4/a.out
+new file mode 100755
+index 0000000000000000000000000000000000000000..a4eca8186ba733790bcc6632fa9719301888fd73
+GIT binary patch
+literal 18288
+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
+
+literal 0
+HcmV?d00001
+
+diff --git a/basic_content/const/funciton_const/condition4/main.cpp b/basic_content/const/funciton_const/condition4/main.cpp
+new file mode 100644
+index 0000000..ae22eeb
+--- /dev/null
++++ b/basic_content/const/funciton_const/condition4/main.cpp
+@@ -0,0 +1,41 @@
++#include <iostream>
++#include "Test.h"
++using namespace std;
++
++
++void fun(const Test& t){
++    t.a = 10;
++}
++
++void fun2(const Test& t){
++    t.a = 10;
++}
++
++void fun3(const Test& t){
++    t.a = 10;
++}
++int main()
++{
++    Test t_m;
++    t_m.a = 2;
++
++    cout<<"==================================="<<endl;
++
++    cout<<"调用fun前:"<<t_m.a<<endl;//2
++    fun(2);//隐式转换 隐式类型转换调用类型转换构造函数 发生类型转换const引用再函数中生产临时对象
++    cout<<"调用fun后:"<<t_m.a<<endl;//2
++
++    cout<<"==================================="<<endl;
++
++    cout<<"调用fun2前:"<<t_m.a<<endl;//2
++    fun2(Test(t_m));//显示转换 显式转换调用拷贝构造函数 发生类型转换const引用再函数中生产临时对象
++    cout<<"调用fun2后:"<<t_m.a<<endl;//2
++
++    cout<<"==================================="<<endl;
++
++    cout<<"调用fun3前:"<<t_m.a<<endl;//2
++    fun3(t_m);//没有发生类型转换 不产生临时变量
++    cout<<"调用fun3后:"<<t_m.a<<endl;//10
++
++    return 0;
++}
+-- 
+2.25.1
+
