@@ -145,7 +145,7 @@ class A1
 {
     virtual void fun(){}
 };
-class C1:public A
+class C1:public A1
 {
 };
 
