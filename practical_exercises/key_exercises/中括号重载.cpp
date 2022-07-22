@@ -5,6 +5,9 @@ struct Person
 { //职工基本信息的结构
     double salary;
     char *name;
+    ~Person() {
+        delete []name;   
+    }
 };
 class SalaryManaege
 {
