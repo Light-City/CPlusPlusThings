@@ -22,20 +22,20 @@ public:
 };
 
 int main(){
-    ofstream out("D:/Employee.dat",ios::out);	//¶¨ÒåËæ»úÊä³öÎÄ¼ş
-    Employee e1(1,"ÕÅÈı",23,2320);
-    Employee e2(2,"ÀîËÄ",32,3210);
-    Employee e3(3,"ÍõÎå",34,2220);
-    Employee e4(4,"ÁõÁù",27,1220);
-    out.write((char*)&e1,sizeof(e1));		//°´e1,e2,e3,e4Ë³ĞòĞ´ÈëÎÄ¼ş
+    ofstream out("D:/Employee.dat",ios::out);	//å®šä¹‰éšæœºè¾“å‡ºæ–‡ä»¶
+    Employee e1(1,"å¼ ä¸‰",23,2320);
+    Employee e2(2,"æå››",32,3210);
+    Employee e3(3,"ç‹äº”",34,2220);
+    Employee e4(4,"åˆ˜å…­",27,1220);
+    out.write((char*)&e1,sizeof(e1));		//æŒ‰e1,e2,e3,e4é¡ºåºå†™å…¥æ–‡ä»¶
     out.write((char*)&e2,sizeof(e2));
     out.write((char*)&e3,sizeof(e3));
     out.write((char*)&e4,sizeof(e4));
 
-     //ÏÂÃæµÄ´úÂë½«e3£¨¼´ÍõÎå£©µÄÄêÁä¸ÄÎª40Ëê   
-    Employee e5(3,"ÍõÎå",40,2220);
-    out.seekp(3*sizeof(e1));		//Ö¸Õë¶¨Î»µ½µÚ3£¨ÆğÊ¼Îª0£©¸öÊı¾İ¿é
-    out.write((char*)&e5,sizeof(e5));	//½«e5Ğ´µ½µÚ3¸öÊı¾İ¿éÎ»ÖÃ£¬¸²¸Çe3
-    out.close();			//¹Ø±ÕÎÄ¼ş
+     //ä¸‹é¢çš„ä»£ç å°†e3ï¼ˆå³ç‹äº”ï¼‰çš„å¹´é¾„æ”¹ä¸º40å²   
+    Employee e5(3,"ç‹äº”",40,2220);
+    out.seekp(2*sizeof(e1));		//æŒ‡é’ˆå®šä½åˆ°ç¬¬3ï¼ˆèµ·å§‹ä¸º0ï¼‰ä¸ªæ•°æ®å—ï¼Œè¿™é‡Œå†™é”™äº†åº”è¯¥æ˜¯2*sizeofï¼ˆe1ï¼‰
+    out.write((char*)&e5,sizeof(e5));	//å°†e5å†™åˆ°ç¬¬3ä¸ªæ•°æ®å—ä½ç½®ï¼Œè¦†ç›–e3
+    out.close();			//å…³é—­æ–‡ä»¶
     system("pause");
 }
