@@ -18,7 +18,7 @@
 
 个人公众号：guangcity
 
-![](https://light-city.club/sc/assets/images/wechat.jpg)
+![](img/wechat.jpg)
 
 欢迎大家反馈及 C++ 交流，本人在微信创建了 C++ 那些事交流群，优质的 C++ 资源交流区，期待大家关注上面公众号，点击公众号右下角->联系我，拉你入群。
 
