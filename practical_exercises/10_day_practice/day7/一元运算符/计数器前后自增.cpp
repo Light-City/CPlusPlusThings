@@ -1,4 +1,4 @@
-//Éè¼ÆÒ»¸ö¼ÆÊıÆ÷counter£¬ÓÃÀà³ÉÔ±ÖØÔØ×ÔÔöÔËËã·ûÊµÏÖ¼ÆÊıÆ÷µÄ×ÔÔö£¬ÓÃÓÑÔªÖØÔØÊµÏÖ¼ÆÊıÆ÷µÄ×Ô¼õ¡£
+//è®¾è®¡ä¸€ä¸ªè®¡æ•°å™¨counterï¼Œç”¨ç±»æˆå‘˜é‡è½½è‡ªå¢è¿ç®—ç¬¦å®ç°è®¡æ•°å™¨çš„è‡ªå¢ï¼Œç”¨å‹å…ƒé‡è½½å®ç°è®¡æ•°å™¨çš„è‡ªå‡ã€‚
 #include<iostream>
 using namespace std;
 class Counter{
@@ -17,16 +17,18 @@ Counter Counter::operator++(){
     return *this;
 }
 Counter Counter::operator++(int){
+    Counter t=*this;
     n++;
-    return *this;
+    return t;
 }
 Counter operator--(Counter &c){
     --c.n;
     return c;
 }
 Counter operator--(Counter &c,int){
+    Counter t=*this;
     c.n--;
-    return c;
+    return t;
 }
 void Counter::display(){
     cout<<"counter number="<<n<<endl;
