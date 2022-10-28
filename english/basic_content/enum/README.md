@@ -85,7 +85,7 @@ enum class Color2
     YELLOW,
     BLUE
 };
-r2 c2 = Color2::RED;
+Color2 c2 = Color2::RED;
 cout << static_cast<int>(c2) << endl; //！
 ```
 
