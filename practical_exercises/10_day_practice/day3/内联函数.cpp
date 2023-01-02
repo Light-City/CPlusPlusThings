@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-//函数声明
+//鍑芥暟澹版槑
 inline double CalArea(double radius);
 int main(int argc, char const *argv[])
 {
@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
     system("pause");
     return 0;
 }
-//加关键字inline
+//鍔犲叧閿瓧inline
 inline double CalArea(double radius)
 {
     return 3.14*radius*radius;

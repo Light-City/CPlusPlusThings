@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
-//函数异常可以抛出去由主函数来处理
+//鍑芥暟寮傚父鍙互鎶涘嚭鍘荤敱涓诲嚱鏁版潵澶勭悊
 void fun(int x){
     try{
         if (x==0)
-            throw "异常";
+            throw "寮傚父";
     }catch(...){
         cout<<"in fun"<<endl;
         throw 1;

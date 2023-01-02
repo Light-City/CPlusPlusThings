@@ -1,4 +1,4 @@
-//ÀıÌâch.cppi
+//ä¾‹é¢˜ch.cppi
 #include <iostream>
 using namespace std;
 class X{
@@ -9,8 +9,8 @@ public:
 int main ()
 {
 	X obj1, obj2, obj3;
-	obj1 = obj2;          //µ÷ÓÃÖØÔØ¡°=¡±
-	obj1.operator= (obj2); //µ÷ÓÃÖØÔØ¡°=¡±
-	obj1 = obj2 = obj3;    //µ÷ÓÃÖØÔØ¡°=¡±
+	obj1 = obj2;          //è°ƒç”¨é‡è½½â€œ=â€
+	obj1.operator= (obj2); //è°ƒç”¨é‡è½½â€œ=â€
+	obj1 = obj2 = obj3;    //è°ƒç”¨é‡è½½â€œ=â€
     system("pause");
 }

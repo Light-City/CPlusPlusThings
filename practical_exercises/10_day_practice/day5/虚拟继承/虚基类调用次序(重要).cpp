@@ -1,4 +1,4 @@
-//ЦШТЄ!!!
+//й‡Ќи¦Ѓ!!!
 #include <iostream>
 using namespace std;
 class A {

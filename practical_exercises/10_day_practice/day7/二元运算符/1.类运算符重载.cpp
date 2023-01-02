@@ -1,4 +1,4 @@
-//ÓĞ¸´ÊıÀàComplex£¬ÀûÓÃÔËËã·ûÖØÔØÊµÏÖ¸´ÊıµÄ¼Ó¡¢¼õ¡¢³Ë¡¢³ıµÈ¸´ÊıÔËËã¡£
+//æœ‰å¤æ•°ç±»Complexï¼Œåˆ©ç”¨è¿ç®—ç¬¦é‡è½½å®ç°å¤æ•°çš„åŠ ã€å‡ã€ä¹˜ã€é™¤ç­‰å¤æ•°è¿ç®—ã€‚
 #include<iostream>
 using namespace std;
 class Complex {
@@ -21,7 +21,7 @@ Complex Complex::operator -(Complex b)
 {
     return Complex(r-b.r,i-b.i);
 }
-//Çó¸´ÊıÏà³ËµÄËã·¨
+//æ±‚å¤æ•°ç›¸ä¹˜çš„ç®—æ³•
 Complex Complex::operator *(Complex b)
 {   
     Complex t;
@@ -29,7 +29,7 @@ Complex Complex::operator *(Complex b)
     t.i=r*b.i+i*b.r;
     return t;
 }
-//Çó¸´ÊıÏà³ıµÄËã·¨
+//æ±‚å¤æ•°ç›¸é™¤çš„ç®—æ³•
 Complex Complex::operator /(Complex b) {
     Complex t;
     double x;
@@ -48,8 +48,8 @@ void Complex::display(){
 int main(void) {
     Complex c1(1,2),c2(3,4),c3,c4,c5,c6;
     Complex a,b(2,3);
-    a=b+2;       			//ÕıÈ·
-    // a=2+b;       			//´íÎó   
+    a=b+2;       			//æ­£ç¡®
+    // a=2+b;       			//é”™è¯¯   
     a.display();  
     c3=c1+c2;
     c4=c1-c2;

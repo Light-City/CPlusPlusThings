@@ -22,8 +22,8 @@ public:
 };
 class ABC:public C, public B {
 public: 
-    //Ğé»ùÀàÓÉ×îÖÕÅÉÉúÀà³õÊ¼»¯ 
-    ABC(int i,int j,int k):C(i),B(j),A(i) //L1£¬ÕâÀï±ØĞë¶ÔA½øĞĞ³õÊ¼»¯
+    //è™šåŸºç±»ç”±æœ€ç»ˆæ´¾ç”Ÿç±»åˆå§‹åŒ– 
+    ABC(int i,int j,int k):C(i),B(j),A(i) //L1ï¼Œè¿™é‡Œå¿…é¡»å¯¹Aè¿›è¡Œåˆå§‹åŒ–
         { cout<<"Constructing ABC..."<<endl; }
 }; 
 int main(){

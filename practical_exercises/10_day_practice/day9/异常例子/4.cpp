@@ -3,8 +3,8 @@ using namespace std;
 void temperature(int t)
 {
     
-    if(t==100) throw "�е㣡";
-    else if(t==0) throw "���㣡";
+    if(t==100) throw "沸点！";
+    else if(t==0) throw "冰点！";
     else{cout<<"temperatore="<<t<<endl;}
    
 }

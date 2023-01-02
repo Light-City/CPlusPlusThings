@@ -36,21 +36,21 @@ int main(int argc, char const *argv[])
     int Math,Chinese,English;
     fstream ioFile;
     ioFile.open("d:/per.dat",ios::out|ios::app);
-    cout<<"---------½¨Á¢Ñ§Éúµµ°¸ÐÅÏ¢----------\n";
+    cout<<"---------å»ºç«‹å­¦ç”Ÿæ¡£æ¡ˆä¿¡æ¯----------\n";
     do{
-        cout<<"ÇëÊäÈëÐÕÃû£º";
+        cout<<"è¯·è¾“å…¥å§“åï¼š";
         cin>>Name;
-        cout<<"ÇëÊäÈëÉí·ÝÖ¤ºÅ£º";
+        cout<<"è¯·è¾“å…¥èº«ä»½è¯å·ï¼š";
         cin>>Id;
-        cout<<"ÇëÊäÈëÊýÑ§³É¼¨£º";
+        cout<<"è¯·è¾“å…¥æ•°å­¦æˆç»©ï¼š";
         cin>>Math;
-        cout<<"ÇëÊäÈëººÓï³É¼¨£º";
+        cout<<"è¯·è¾“å…¥æ±‰è¯­æˆç»©ï¼š";
         cin>>Chinese;
-        cout<<"ÇëÊäÈëÓ¢Óï³É¼¨£º";
+        cout<<"è¯·è¾“å…¥è‹±è¯­æˆç»©ï¼š";
         cin>>English;
         Person per(Name,Id,Math,Chinese,English);
         ioFile.write((char *)&per,sizeof(per));
-        cout<<"ÄúÊÇ·ñ¼ÌÐø½¨µµ£¿(Y/y)  ";
+        cout<<"æ‚¨æ˜¯å¦ç»§ç»­å»ºæ¡£ï¼Ÿ(Y/y)  ";
         cin>>ch;
     }while(ch=='y'||ch=='Y');
     ioFile.close();
@@ -64,7 +64,7 @@ int main(int argc, char const *argv[])
         ioFile.read((char*)&p,sizeof(p));
     }
     ioFile.close();
-    cout<<"---------Êä³öµµ°¸ÐÅÏ¢-----------"<<endl;
+    cout<<"---------è¾“å‡ºæ¡£æ¡ˆä¿¡æ¯-----------"<<endl;
     for(vt=v.begin();vt!=v.end();vt++){
         (*vt).display();
     }

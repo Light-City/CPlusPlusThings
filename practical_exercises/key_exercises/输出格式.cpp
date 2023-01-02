@@ -9,9 +9,9 @@ int main(int argc, char const *argv[])
     cout<<setw(30)<<left<<setfill('*')<<s<<endl;
     cout<<dec<<setprecision(4)<<digit<<endl;
     cout<<dec<<15<<endl;
-    //setbase(int x)ÉèÖÃ½øÖÆºó£¬ºóÃæËùÓÐ²Ù×÷¶¼ÊÇ°´ÕÕÕâ¸ö½øÖÆÀ´¼ÆËã£¡
+    //setbase(int x)è®¾ç½®è¿›åˆ¶åŽï¼ŒåŽé¢æ‰€æœ‰æ“ä½œéƒ½æ˜¯æŒ‰ç…§è¿™ä¸ªè¿›åˆ¶æ¥è®¡ç®—ï¼
     cout<<setbase(10)<<15<<endl;
-    //ËÄÉáÎåÈë,²¢±£Áô2Î»ÓÐÐ§Êý×é
+    //å››èˆäº”å…¥,å¹¶ä¿ç•™2ä½æœ‰æ•ˆæ•°ç»„
     float x=6.6937;
     cout<<float(int(x*1000+0.5)/1000.0)<<endl;
     system("pause");

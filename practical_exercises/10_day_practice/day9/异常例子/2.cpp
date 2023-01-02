@@ -8,7 +8,7 @@ int main(){
         throw 10;                        
         cout<<"3--After throw ...."<<endl;
     }
-    catch(double i) { 		//仅此与例10.1不同
+    catch(double i) { 		//浠呮涓庝緥10.1涓嶅悓
         cout<<"4--In catch block1 .. an int type is.."<<i<<endl;
     }
     cout<<"5--After Catch...";

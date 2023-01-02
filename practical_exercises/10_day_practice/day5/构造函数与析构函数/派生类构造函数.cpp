@@ -14,7 +14,7 @@ class Derived:public  Base{
 private:
     int y;
 public:
-    Derived(int a,int b):Base(a){       //ÅÉÉúÀà¹¹Ôìº¯ÊıµÄ³õÊ¼»¯ÁĞ±í
+    Derived(int a,int b):Base(a){       //æ´¾ç”Ÿç±»æ„é€ å‡½æ•°çš„åˆå§‹åŒ–åˆ—è¡¨
         y=b;
         cout<<"Derived constructor y="<<y<<endl;
     }

@@ -5,7 +5,7 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    string name[]={"ÕÅÈı","ÀîËÄ","ÍõÂé×Ó"};
+    string name[]={"å¼ ä¸‰","æå››","ç‹éº»å­"};
     double salary[]={1200,2000,1450};
     map<string,double>sal;
     map<string,double>::iterator p;
@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
         cout<<p->first<<"\t"<<p->second<<endl;
     }
     string person;
-    cout<<"ÊäÈë²éÕÒÈËÔ±µÄĞÕÃû:";
+    cout<<"è¾“å…¥æŸ¥æ‰¾äººå‘˜çš„å§“å:";
     cin>>person;
     int flag=1;
     for(p=sal.begin();p!=sal.end();p++)
@@ -27,18 +27,18 @@ int main(int argc, char const *argv[])
             flag=0; 
         }
     if(flag)
-        cout<<"Ã»²éÕÒµ½¶ÔÓ¦µÄ½á¹û£¡"<<endl; 
+        cout<<"æ²¡æŸ¥æ‰¾åˆ°å¯¹åº”çš„ç»“æœï¼"<<endl; 
 
-    cout<<"ÊäÈë´ıÉ¾³ıµÄÈËÔ±µÄĞÕÃû:";
+    cout<<"è¾“å…¥å¾…åˆ é™¤çš„äººå‘˜çš„å§“å:";
     cin>>person;
     map<string,double>::iterator it;
     it = sal.find(person);
     if(it!=sal.end()){
-        cout<<"²éÕÒ³É¹¦£º"<<(*it).first<<":"<<(*it).second<<endl;
+        cout<<"æŸ¥æ‰¾æˆåŠŸï¼š"<<(*it).first<<":"<<(*it).second<<endl;
         sal.erase(it);
-        cout<<"É¾³ı³É¹¦"<<endl;
+        cout<<"åˆ é™¤æˆåŠŸ"<<endl;
     }
-    cout<<"É¾³ıºóµÄ½á¹ûÎª"<<endl;
+    cout<<"åˆ é™¤åçš„ç»“æœä¸º"<<endl;
     for(p=sal.begin();p!=sal.end();p++){
         cout<<p->first<<p->second<<endl;
     }

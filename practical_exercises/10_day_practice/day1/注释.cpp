@@ -1,16 +1,16 @@
 #include<iostream>
 
 
-Ò»ÖÖÌõ¼þ±àÒëÖ¸Áî×¢ÊÍ
+ä¸€ç§æ¡ä»¶ç¼–è¯‘æŒ‡ä»¤æ³¨é‡Š
 
 
-//ÁíÒ»ÖÖ×¢ÊÍ·½·¨
+//å¦ä¸€ç§æ³¨é‡Šæ–¹æ³•
 #if 0
 asd
 #endif
 
-//´ò¿ª×¢ÊÍ
-//Ìõ¼þ±àÒëÖ¸Áî
+//æ‰“å¼€æ³¨é‡Š
+//æ¡ä»¶ç¼–è¯‘æŒ‡ä»¤
 #if 1
 asData
 #endif

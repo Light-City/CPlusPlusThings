@@ -32,7 +32,7 @@ int main()
 }
 
 /*
-Ö´ÐÐ½á¹û£º
+æ‰§è¡Œç»“æžœï¼š
 Constructing C
 Constructing B
 Constructing A

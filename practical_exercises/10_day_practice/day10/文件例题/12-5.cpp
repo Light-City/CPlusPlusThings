@@ -7,11 +7,11 @@ int main(){
     double d=-1234.8976;
     cout<<setw(30)<<left<<setfill('*')<<c<<"----L1"<<endl;
     cout<<setw(30)<<right<<setfill('*')<<c<<"----L2"<<endl;
-    //showbaseÏÔÊ¾ÊıÖµµÄ»ùÊıÇ°×º
+    //showbaseæ˜¾ç¤ºæ•°å€¼çš„åŸºæ•°å‰ç¼€
     cout<<dec<<showbase<<showpoint<<setw(30)<<d<<"----L3"<<"\n";
-    //showpointÏÔÊ¾Ğ¡Êıµã
+    //showpointæ˜¾ç¤ºå°æ•°ç‚¹
     cout<<setw(30)<<showpoint<<setprecision(10)<<d<<"----L4"<<"\n";
-    //setbase(8)ÉèÖÃ°Ë½øÖÆ
+    //setbase(8)è®¾ç½®å…«è¿›åˆ¶
     cout<<setw(30)<<setbase(16)<<100<<"----L5"<<"\n";
     system("pause");
 }

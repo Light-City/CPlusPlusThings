@@ -3,37 +3,37 @@ using namespace std;
 class R
 {    public:
          R(int r1, int r2){R1=r1;R2=r2;}
-         //constÇø·Ö³ÉÔ±ÖØÔØº¯Êý
+         //conståŒºåˆ†æˆå‘˜é‡è½½å‡½æ•°
          void print();
          void print() const;
       private:
          int R1,R2;
 };
 /*
-³£³ÉÔ±º¯ÊýËµÃ÷¸ñÊ½£ºÀàÐÍËµÃ÷·û  º¯ÊýÃû£¨²ÎÊý±í£©const;
-ÕâÀï£¬constÊÇº¯ÊýÀàÐÍµÄÒ»¸ö×é³É²¿·Ö£¬Òò´ËÔÚÊµÏÖ²¿·ÖÒ²Òª´øconst¹Ø¼ü×Ö¡£
-const¹Ø¼ü×Ö¿ÉÒÔ±»ÓÃÓÚ²ÎÓë¶ÔÖØÔØº¯ÊýµÄÇø·Ö
-Í¨¹ý³£¶ÔÏóÖ»ÄÜµ÷ÓÃËüµÄ³£³ÉÔ±º¯Êý
+å¸¸æˆå‘˜å‡½æ•°è¯´æ˜Žæ ¼å¼ï¼šç±»åž‹è¯´æ˜Žç¬¦  å‡½æ•°åï¼ˆå‚æ•°è¡¨ï¼‰const;
+è¿™é‡Œï¼Œconstæ˜¯å‡½æ•°ç±»åž‹çš„ä¸€ä¸ªç»„æˆéƒ¨åˆ†ï¼Œå› æ­¤åœ¨å®žçŽ°éƒ¨åˆ†ä¹Ÿè¦å¸¦constå…³é”®å­—ã€‚
+constå…³é”®å­—å¯ä»¥è¢«ç”¨äºŽå‚ä¸Žå¯¹é‡è½½å‡½æ•°çš„åŒºåˆ†
+é€šè¿‡å¸¸å¯¹è±¡åªèƒ½è°ƒç”¨å®ƒçš„å¸¸æˆå‘˜å‡½æ•°
 */
 
 void R::print()
 {     
-    cout<<"ÆÕÍ¨µ÷ÓÃ"<<endl;
+    cout<<"æ™®é€šè°ƒç”¨"<<endl;
     cout<<R1<<":"<<R2<<endl;
 }
-//ÊµÀý»¯Ò²ÐèÒª´øÉÏ
+//å®žä¾‹åŒ–ä¹Ÿéœ€è¦å¸¦ä¸Š
 void R::print() const
 {     
-    cout<<"³£¶ÔÏóµ÷ÓÃ"<<endl;
+    cout<<"å¸¸å¯¹è±¡è°ƒç”¨"<<endl;
     cout<<R1<<";"<<R2<<endl;
 }
 int main()
 {   
     R a(5,4);
-    a.print();  //µ÷ÓÃvoid print()
-    //Í¨¹ý³£¶ÔÏóÖ»ÄÜµ÷ÓÃËüµÄ³£³ÉÔ±º¯Êý
+    a.print();  //è°ƒç”¨void print()
+    //é€šè¿‡å¸¸å¯¹è±¡åªèƒ½è°ƒç”¨å®ƒçš„å¸¸æˆå‘˜å‡½æ•°
     const R b(20,52);  
-    b.print();  //µ÷ÓÃvoid print() const
+    b.print();  //è°ƒç”¨void print() const
     system("pause");
     return 0;
 }

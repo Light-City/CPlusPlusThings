@@ -1,7 +1,7 @@
 //Eg10-7.cpp
 #include<iostream>
 using namespace std;
-//ÄÚ²¿ÔÙ´ÎthrowÒì³£µÄÊ±ºò£¬º¯Êı²»Òª´øthrow()
+//å†…éƒ¨å†æ¬¡throwå¼‚å¸¸çš„æ—¶å€™ï¼Œå‡½æ•°ä¸è¦å¸¦throw()
 void Errhandler(int n)
 {
     try{
@@ -10,7 +10,7 @@ void Errhandler(int n)
     }
     catch(int n){
         cout<<"catch an int exception inside..."<<n<<endl;
-        throw n;                                     //ÔÙ´ÎÅ×³ö±¾catch²¶»ñµÄÒì³£
+        throw n;                                     //å†æ¬¡æŠ›å‡ºæœ¬catchæ•è·çš„å¼‚å¸¸
     }
 }
 int main(){

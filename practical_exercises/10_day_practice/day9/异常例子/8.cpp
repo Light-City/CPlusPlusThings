@@ -2,8 +2,8 @@
 #include <iostream>
 using namespace std;
 const int MAX=3;
-class Full{};	//L1  ¶ÑÕ»ÂúÊ±Å×³öµÄÒì³£Àà
-class Empty{};	//L2  ¶ÑÕ»¿ÕÊ±Å×³öµÄÒì³£Àà
+class Full{};	//L1  å †æ ˆæ»¡æ—¶æŠ›å‡ºçš„å¼‚å¸¸ç±»
+class Empty{};	//L2  å †æ ˆç©ºæ—¶æŠ›å‡ºçš„å¼‚å¸¸ç±»
 class Stack{
     private:
         int s[MAX];
@@ -26,7 +26,7 @@ int main(){
     Stack s;
     try{
         s.push(10);        s.push(20);        s.push(30);
-        //s.push(40);	//L5  ½«²úÉúÕ»ÂúÒì³£
+        //s.push(40);	//L5  å°†äº§ç”Ÿæ ˆæ»¡å¼‚å¸¸
         cout<<"stack(0)= "<<s.pop()<<endl;
         cout<<"stack(1)= "<<s.pop()<<endl;
         cout<<"stack(2)= "<<s.pop()<<endl;

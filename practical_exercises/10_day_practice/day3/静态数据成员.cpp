@@ -1,9 +1,9 @@
 /*
-ѧϰ֪ʶ��
-��̬���ݳ�Ա
-�ùؼ���static����
-��������ж���ά���ó�Ա��ͬһ������
-���������ⶨ��ͳ�ʼ������(::)��ָ���������ࡣ
+学习知识：
+静态数据成员
+用关键字static声明
+该类的所有对象维护该成员的同一个拷贝
+必须在类外定义和初始化，用(::)来指明所属的类。
 */
 #include <iostream>
 using namespace std;
@@ -17,7 +17,7 @@ public:
 	void GetC() {cout<<" Object id="<<countP<<endl;}
 private:	
 	int X,Y;
-    //��̬���ݳ�Ա���������ⲿ����ͳ�ʼ�����ڲ�����ֱ�ӳ�ʼ����
+    //静态数据成员，必须在外部定义和初始化，内部不能直接初始化！
 	static int countP;
 };
 Point::Point(Point &p)
@@ -25,7 +25,7 @@ Point::Point(Point &p)
 	Y=p.Y;
 	countP++;
 }
-//���������ⶨ��ͳ�ʼ������(::)��ָ���������ࡣ
+//必须在类外定义和初始化，用(::)来指明所属的类。
 int Point::countP=0; 
 int main()	
 {	Point A(4,5);	

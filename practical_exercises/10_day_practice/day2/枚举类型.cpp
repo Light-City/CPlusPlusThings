@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
     {
         cout<<i<<endl;
         cout<<wek+s<<endl;
-        cout<<"-------¹þ¹þ-------"<<endl;
+        cout<<"-------å“ˆå“ˆ-------"<<endl;
     }
     system("pause");
     return 0;

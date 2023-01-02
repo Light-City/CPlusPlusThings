@@ -13,7 +13,7 @@ class C: public B {
 public: 
     void f(int i){cout<<"C::f()"<<endl;}
 };
-//Ò»µ©½«Ä³¸ö³ÉÔ±º¯ÊýÉùÃ÷ÎªÐéº¯Êýºó£¬ËüÔÚ¼Ì³ÐÌåÏµÖÐ¾ÍÓÀÔ¶ÎªÐéº¯ÊýÁË 
+//ä¸€æ—¦å°†æŸä¸ªæˆå‘˜å‡½æ•°å£°æ˜Žä¸ºè™šå‡½æ•°åŽï¼Œå®ƒåœ¨ç»§æ‰¿ä½“ç³»ä¸­å°±æ°¸è¿œä¸ºè™šå‡½æ•°äº† 
 class D: public C{
 public:
     void f (int){cout<<"D::f()"<<endl;}
@@ -21,10 +21,10 @@ public:
 int main(){
     A *pA,a;
     B *pB, b;    C c;    D d;
-    pA=&a;    pA->f(1);		//µ÷ÓÃA::f
-    pB=&b;    pB->f(1);		//µ÷ÓÃB::f
-    pB=&c;    pB->f(1);		//µ÷ÓÃC::f
-    pB=&d;    pB->f(1);		//µ÷ÓÃD::f
+    pA=&a;    pA->f(1);		//è°ƒç”¨A::f
+    pB=&b;    pB->f(1);		//è°ƒç”¨B::f
+    pB=&c;    pB->f(1);		//è°ƒç”¨C::f
+    pB=&d;    pB->f(1);		//è°ƒç”¨D::f
     system("pause");
     return 0;
 }
