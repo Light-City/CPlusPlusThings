@@ -15,7 +15,7 @@ Clock::Clock(Clock &c)
 }
 void Clock::SetTime(int NewH,int NewM,int NewS)
 {
-    //¼Ó²»¼ÓthisÖ¸Õë¶¼Ò»Ñù
+    //åŠ ä¸åŠ thisæŒ‡é’ˆéƒ½ä¸€æ ·
     this->Hour=NewH;
     this->Minute=NewM;
     this->Second=NewS;
@@ -26,7 +26,7 @@ void Clock::ShowTime()
     cout<<this->Minute<<endl;
     cout<<this->Second<<endl;
 }
-//Îö¹¹º¯Êý
+//æžæž„å‡½æ•°
 Clock::~Clock()
 {
 
@@ -37,7 +37,7 @@ int main(int argc, char const *argv[])
     
     c.SetTime(10,20,30);
     c.ShowTime();
-    //¿½±´¹¹Ôìº¯Êýµ÷ÓÃ
+    //æ‹·è´æž„é€ å‡½æ•°è°ƒç”¨
     Clock c1(c);
     c1.ShowTime();
     c1.SetTime(90,98,99);

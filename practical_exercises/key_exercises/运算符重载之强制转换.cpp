@@ -1,12 +1,12 @@
 /*
-ÓÐÒ»¸öÀàCircle£¬Éè¼Æ¸ÃÀàµÄÀàÐÍ×ª»»º¯Êý£¬µ±½«Circle¶ÔÏó×ª»»³ÉintÐÍÊ±£¬·µ»ØÔ²µÄ°ë¾¶£»µ±½«Ëü×ª»»³ÉdoubleÐÍÊ±£¬¾Í·µ»ØÔ²µÄÖÜ³¤£»µ±½«Ëü×ª»»³ÉfloatÐÍÊ±£¬¾Í·µ»ØÔ²µÄÃæ»ý¡£
+æœ‰ä¸€ä¸ªç±»Circleï¼Œè®¾è®¡è¯¥ç±»çš„ç±»åž‹è½¬æ¢å‡½æ•°ï¼Œå½“å°†Circleå¯¹è±¡è½¬æ¢æˆintåž‹æ—¶ï¼Œè¿”å›žåœ†çš„åŠå¾„ï¼›å½“å°†å®ƒè½¬æ¢æˆdoubleåž‹æ—¶ï¼Œå°±è¿”å›žåœ†çš„å‘¨é•¿ï¼›å½“å°†å®ƒè½¬æ¢æˆfloatåž‹æ—¶ï¼Œå°±è¿”å›žåœ†çš„é¢ç§¯ã€‚
 */
 
 /*
 
-ÀàÐÍ×ª»»º¯ÊýÃ»ÓÐ²ÎÊý¡£
-ÀàÐÍ×ª»»º¯ÊýÃ»ÓÐ·µ»ØÀàÐÍ¡£
-ÀàÐÍ×ª»»º¯Êý±ØÐë·µ»Ø½«Òª×ª»»³ÉµÄtypeÀàÐÍÊý¾Ý¡£
+ç±»åž‹è½¬æ¢å‡½æ•°æ²¡æœ‰å‚æ•°ã€‚
+ç±»åž‹è½¬æ¢å‡½æ•°æ²¡æœ‰è¿”å›žç±»åž‹ã€‚
+ç±»åž‹è½¬æ¢å‡½æ•°å¿…é¡»è¿”å›žå°†è¦è½¬æ¢æˆçš„typeç±»åž‹æ•°æ®ã€‚
 
 */
 
@@ -23,10 +23,10 @@ public:
 };
 int main(){
     Circle c(2.3,3.4,2.5);
-    int r=c;        //µ÷ÓÃoperator int()£¬½«CircleÀàÐÍ×ª»»³Éint
-    double length=c;   //µ÷ÓÃoperator double()£¬×ª»»³Édouble
-    float area=c;   //µ÷ÓÃoperator float()£¬½«CircleÀàÐÍ×ª»»³Éfloat
-    double len=(double) c;	//½«CirlceÀàÐÍ¶ÔÏóÇ¿ÖÆ×ª»»³Édouble
+    int r=c;        //è°ƒç”¨operator int()ï¼Œå°†Circleç±»åž‹è½¬æ¢æˆint
+    double length=c;   //è°ƒç”¨operator double()ï¼Œè½¬æ¢æˆdouble
+    float area=c;   //è°ƒç”¨operator float()ï¼Œå°†Circleç±»åž‹è½¬æ¢æˆfloat
+    double len=(double) c;	//å°†Cirlceç±»åž‹å¯¹è±¡å¼ºåˆ¶è½¬æ¢æˆdouble
     cout<<r<<endl;
     cout<<length<<endl;
     cout<<len<<endl;

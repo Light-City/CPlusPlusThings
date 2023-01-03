@@ -12,64 +12,64 @@ int main(int argc, char const *argv[])
     const char key[3][20]={"img","system","ip"};
     const char value[3][20]={"d:/a.img","win7","193.68.6.3"};
     
-    //make_pair²åÈë
+    //make_pairæ’å…¥
     for(int i=0;i<2;i++){
         mp.insert(make_pair(key[i],value[i]));
     }
-    //pair<const char*,const char*>²åÈë
+    //pair<const char*,const char*>æ’å…¥
     mp.insert(pair<const char*,const char*>(key[2],value[2]));
 
-    //Êı×é²åÈë·½Ê½
-    mp["addr"]="ÖĞ¹ú";
-    //µü´úÆ÷È¡³öÔªËØ
-    //Ñ­»·È¡³öÔªËØ
+    //æ•°ç»„æ’å…¥æ–¹å¼
+    mp["addr"]="ä¸­å›½";
+    //è¿­ä»£å™¨å–å‡ºå…ƒç´ 
+    //å¾ªç¯å–å‡ºå…ƒç´ 
     for(iter=mp.begin();iter!=mp.end();iter++){
         cout<<iter->first<<"\t"<<iter->second<<endl;
     }
     char key1[20];
-    cout<<"ÇëÊäÈë°´key²éÕÒ£º";
+    cout<<"è¯·è¾“å…¥æŒ‰keyæŸ¥æ‰¾ï¼š";
     cin.getline(key1,20);
-    //²éÕÒÔªËØ
+    //æŸ¥æ‰¾å…ƒç´ 
     for(iter=mp.begin();iter!=mp.end();iter++){
         if(strcmp(iter->first,key1)==0){
-            cout<<iter->first<<"²éÕÒ³öÀ´ÁË£¡"<<"¶ÔÓ¦µÄÖµÎª£º"<<iter->second<<endl;
+            cout<<iter->first<<"æŸ¥æ‰¾å‡ºæ¥äº†ï¼"<<"å¯¹åº”çš„å€¼ä¸ºï¼š"<<iter->second<<endl;
         }
     }
    
-    //µÚÒ»ÖÖÉ¾³ı·½Ê½
-    //findÖ»ÄÜÓÃÓÚ²éÕÒÊı×é½¨Á¢µÄĞÎÊ½£¡²¢ÇÒ²»Ö§³ÖÊäÈëÓÃcinµÈ
+    //ç¬¬ä¸€ç§åˆ é™¤æ–¹å¼
+    //findåªèƒ½ç”¨äºæŸ¥æ‰¾æ•°ç»„å»ºç«‹çš„å½¢å¼ï¼å¹¶ä¸”ä¸æ”¯æŒè¾“å…¥ç”¨cinç­‰
     iter=mp.find("addr");
     if(iter!=mp.end()){
-        cout<<iter->first<<"°´ÕÕkey²éÕÒ³öÀ´ÁË£¡"<<"¶ÔÓ¦µÄvalueÎª£º"<<iter->second<<endl;
-        cout<<"¿ªÊ¼É¾³ıÔªËØ£¡"<<endl;
+        cout<<iter->first<<"æŒ‰ç…§keyæŸ¥æ‰¾å‡ºæ¥äº†ï¼"<<"å¯¹åº”çš„valueä¸ºï¼š"<<iter->second<<endl;
+        cout<<"å¼€å§‹åˆ é™¤å…ƒç´ ï¼"<<endl;
         mp.erase(iter);
         // break;
     }
-    //µÚ¶şÖÖ·½Ê½É¾³ı
-     //°´ÕÕkeyÉ¾³ıÔªËØ
+    //ç¬¬äºŒç§æ–¹å¼åˆ é™¤
+     //æŒ‰ç…§keyåˆ é™¤å…ƒç´ 
     char drop_key[20];
-    //°´ÕÕvalueÉ¾³ıÔªËØ
+    //æŒ‰ç…§valueåˆ é™¤å…ƒç´ 
     char drop_value[20];
-    cout<<"ÇëÊäÈë°´keyÉ¾³ı£º";
+    cout<<"è¯·è¾“å…¥æŒ‰keyåˆ é™¤ï¼š";
     cin.getline(drop_key,20);
-    cout<<"ÇëÊäÈë°´valueÉ¾³ı£º";
+    cout<<"è¯·è¾“å…¥æŒ‰valueåˆ é™¤ï¼š";
     cin.getline(drop_value,20);
     for(iter=mp.begin();iter!=mp.end();iter++){
         if(strcmp(iter->first,drop_key)==0){
-            cout<<iter->first<<"°´ÕÕkey²éÕÒ³öÀ´ÁË£¡"<<"¶ÔÓ¦µÄvalueÎª£º"<<iter->second<<endl;
-            cout<<"¿ªÊ¼É¾³ıÔªËØ£¡"<<endl;
+            cout<<iter->first<<"æŒ‰ç…§keyæŸ¥æ‰¾å‡ºæ¥äº†ï¼"<<"å¯¹åº”çš„valueä¸ºï¼š"<<iter->second<<endl;
+            cout<<"å¼€å§‹åˆ é™¤å…ƒç´ ï¼"<<endl;
             mp.erase(iter);
             break;
         }
         if(strcmp(iter->second,drop_value)==0){
-            cout<<iter->second<<"value²éÕÒ³öÀ´ÁË£¡"<<"¶ÔÓ¦µÄkeyÎª£º"<<iter->first<<endl;
-            cout<<"¿ªÊ¼É¾³ıÔªËØ£¡"<<endl;
+            cout<<iter->second<<"valueæŸ¥æ‰¾å‡ºæ¥äº†ï¼"<<"å¯¹åº”çš„keyä¸ºï¼š"<<iter->first<<endl;
+            cout<<"å¼€å§‹åˆ é™¤å…ƒç´ ï¼"<<endl;
             mp.erase(iter);
             break;
         }
     }
-    cout<<"------É¾³ıÔªËØÒÔºó--------\n";
-    //Ñ­»·È¡³öÔªËØ
+    cout<<"------åˆ é™¤å…ƒç´ ä»¥å--------\n";
+    //å¾ªç¯å–å‡ºå…ƒç´ 
     for(iter=mp.begin();iter!=mp.end();iter++){
         cout<<iter->first<<"\t"<<iter->second<<endl;
     }

@@ -1,4 +1,4 @@
-//ÓÃcinÊäÈë×Ö·û´®Êý¾ÝÊ±£¬Èç¹û×Ö·û´®ÖÐº¬ÓÐ¿Õ°×¾Í²»ÄÜÍêÕûÊäÈë¡£ÒòÎªÓöµ½¿Õ°××Ö·ûÊ±£¬cin¾ÍÈÏÎª×Ö·û´®½áÊøÁË¡£
+//ç”¨cinè¾“å…¥å­—ç¬¦ä¸²æ•°æ®æ—¶ï¼Œå¦‚æžœå­—ç¬¦ä¸²ä¸­å«æœ‰ç©ºç™½å°±ä¸èƒ½å®Œæ•´è¾“å…¥ã€‚å› ä¸ºé‡åˆ°ç©ºç™½å­—ç¬¦æ—¶ï¼Œcinå°±è®¤ä¸ºå­—ç¬¦ä¸²ç»“æŸäº†ã€‚
 #include<iostream>
 using namespace std;
 int main(int argc, char const *argv[])
@@ -11,8 +11,8 @@ int main(int argc, char const *argv[])
     return 0;
 }
 /*
-ÈôaµÄÄÚÈÝÊÇ£º
+è‹¥açš„å†…å®¹æ˜¯ï¼š
 this is a string! 
-¾ÍÄÑÒÔÊäÈëÀ²£¡
-ÕâÑùµÄÊý¾ÝÓ¦ÓÃÊäÈëÁ÷ÀàµÄ³ÉÔ±º¯ÊýÊäÈë
+å°±éš¾ä»¥è¾“å…¥å•¦ï¼
+è¿™æ ·çš„æ•°æ®åº”ç”¨è¾“å…¥æµç±»çš„æˆå‘˜å‡½æ•°è¾“å…¥
 */

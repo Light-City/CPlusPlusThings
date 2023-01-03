@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-//º¯ÊıÔ­ĞÍ
+//å‡½æ•°åŸå‹
 //put(char c)
 //write(const char*c, int n)
 int main(){

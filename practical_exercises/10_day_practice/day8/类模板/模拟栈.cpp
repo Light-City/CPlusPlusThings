@@ -1,5 +1,5 @@
 /*
-Éè¼ÆÒ»¸ö¶ÑÕ»µÄÀàÄ£°åStack£¬ÔÚÄ£°åÖĞÓÃÀàĞÍ²ÎÊıT±íÊ¾Õ»ÖĞ´æ·ÅµÄÊı¾İ£¬ÓÃ·ÇÀàĞÍ²ÎÊıMAXSIZE´ú±íÕ»µÄ´óĞ¡¡£
+è®¾è®¡ä¸€ä¸ªå †æ ˆçš„ç±»æ¨¡æ¿Stackï¼Œåœ¨æ¨¡æ¿ä¸­ç”¨ç±»å‹å‚æ•°Tè¡¨ç¤ºæ ˆä¸­å­˜æ”¾çš„æ•°æ®ï¼Œç”¨éç±»å‹å‚æ•°MAXSIZEä»£è¡¨æ ˆçš„å¤§å°ã€‚
 */
 #include<iostream>
 using namespace std;
@@ -32,14 +32,14 @@ class Stack{
         }
 };
 /*
-Ô­ĞÍ£º
-template <Ä£°å²ÎÊıÁĞ±í> 
-·µ»ØÖµÀàĞÍ ÀàÄ£°åÃû<Ä£°å²ÎÊıÃû±í>::³ÉÔ±º¯ÊıÃû (²ÎÊıÁĞ±í){};
+åŸå‹ï¼š
+template <æ¨¡æ¿å‚æ•°åˆ—è¡¨> 
+è¿”å›å€¼ç±»å‹ ç±»æ¨¡æ¿å<æ¨¡æ¿å‚æ•°åè¡¨>::æˆå‘˜å‡½æ•°å (å‚æ•°åˆ—è¡¨){};
 */
 template<class T, int MAXSIZE>
 void Stack<T,MAXSIZE>::push(T e){
     if(full()){
-        cout<<"Õ»ÒÑÂú£¬²»ÄÜÔÙÌí¼ÓÔªËØÁË£¡";
+        cout<<"æ ˆå·²æ»¡ï¼Œä¸èƒ½å†æ·»åŠ å…ƒç´ äº†ï¼";
         return;
     }
     elem[++top]=e;
@@ -48,7 +48,7 @@ void Stack<T,MAXSIZE>::push(T e){
 template<class T, int MAXSIZE>
 T Stack<T,MAXSIZE>::pop(){
     if(empty()){
-        cout<<"Õ»ÒÑ¿Õ£¬²»ÄÜÔÙµ¯³öÔªËØÁË£¡"<<endl;
+        cout<<"æ ˆå·²ç©ºï¼Œä¸èƒ½å†å¼¹å‡ºå…ƒç´ äº†ï¼"<<endl;
         return 0;
     }
 	return elem[top--];
@@ -57,7 +57,7 @@ T Stack<T,MAXSIZE>::pop(){
 
 int main(int argc, char const *argv[])
 {
-    //ÀàÄ£°åÊµÀı»¯
+    //ç±»æ¨¡æ¿å®ä¾‹åŒ–
     Stack<int,10>  iStack;      	
     Stack<char,10>  cStack; 
     iStack.setEmpty(); 

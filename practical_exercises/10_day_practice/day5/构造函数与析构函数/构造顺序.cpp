@@ -2,8 +2,8 @@
 using namespace std;
 
 /*
-ÏÈ¹¹Ôì³ÉÔ±
-ÔÙ¹¹Ôì×ÔÉí£¨µ÷ÓÃ¹¹Ôìº¯Êı£©
+å…ˆæ„é€ æˆå‘˜
+å†æ„é€ è‡ªèº«ï¼ˆè°ƒç”¨æ„é€ å‡½æ•°ï¼‰
 */
 
 class A { 
@@ -33,7 +33,7 @@ int main()
 }
 
 /*
-Ö´ĞĞ½á¹û£º
+æ‰§è¡Œç»“æœï¼š
 Constructing B
 Constructing A
 Constructing C

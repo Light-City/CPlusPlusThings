@@ -4,7 +4,7 @@ void move(char A, char B);
 void hanoi(int n,char A, char B, char C);
 int main(int argc, char const *argv[])
 {
-    cout<<"请输入盘子数量：";
+    cout<<"璇疯緭鍏ョ洏瀛愭暟閲忥細";
     int disks;
     cin>>disks;
     hanoi(disks,'A','B','C');

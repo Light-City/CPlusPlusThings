@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
 /*
-£¨1£©cin.getline(arrayname,size)Óëcin.get(arrayname,size)µÄÇø±ğ
-cin.get(arrayname,size)µ±Óöµ½[enter]Ê±»á½áÊøÄ¿Ç°ÊäÈë£¬Ëû²»»áÉ¾³ı»º³åÇøÖĞµÄ[enter]
-cin.getline(arrayname,size)µ±Óöµ½[enter]Ê±»á½áÊøµ±Ç°ÊäÈë£¬µ«ÊÇ»áÉ¾³ı»º³åÇøÖĞµÄ[enter]
+ï¼ˆ1ï¼‰cin.getline(arrayname,size)ä¸cin.get(arrayname,size)çš„åŒºåˆ«
+cin.get(arrayname,size)å½“é‡åˆ°[enter]æ—¶ä¼šç»“æŸç›®å‰è¾“å…¥ï¼Œä»–ä¸ä¼šåˆ é™¤ç¼“å†²åŒºä¸­çš„[enter]
+cin.getline(arrayname,size)å½“é‡åˆ°[enter]æ—¶ä¼šç»“æŸå½“å‰è¾“å…¥ï¼Œä½†æ˜¯ä¼šåˆ é™¤ç¼“å†²åŒºä¸­çš„[enter]
 */
 int main()
 {
@@ -12,27 +12,27 @@ int main()
     char b;
     cin.get(a,10);
 	cin.get(b);
-    cout<<a<<endl<<int(b);//ÊäÈë£º12345[enter] Êä³ö£º12345 ¡¾»»ĞĞ¡¿ 10*/
+    cout<<a<<endl<<int(b);//è¾“å…¥ï¼š12345[enter] è¾“å‡ºï¼š12345 ã€æ¢è¡Œã€‘ 10*/
     /*char c[10];
     char d;
     cin.getline(c,10);
     cin.get(d);
-	cout<<c<<endl<<int(d);//ÊäÈë£º12345[enter]a[enter] Êä³ö£º12345¡¾»»ĞĞ¡¿97*/
-    //cin.getline(arrayname,size,s)Óëcin.gei(arrayname,size,s)µÄÇø±ğ
+	cout<<c<<endl<<int(d);//è¾“å…¥ï¼š12345[enter]a[enter] è¾“å‡ºï¼š12345ã€æ¢è¡Œã€‘97*/
+    //cin.getline(arrayname,size,s)ä¸cin.gei(arrayname,size,s)çš„åŒºåˆ«
     /*
-    cin.getline(arrayname,size,s)µ±Óöµ½sÊ±»á½áÊøÊäÈë£¬²¢°Ñs´Ó»º³åÇøÖĞÉ¾³ı
-    cin.get£¨arrayname,size,s£©µ±Óöµ½sÊ±»á½áÊøÊäÈë£¬µ«²»»áÉ¾³ı»º³åÇøÖĞµÄs
+    cin.getline(arrayname,size,s)å½“é‡åˆ°sæ—¶ä¼šç»“æŸè¾“å…¥ï¼Œå¹¶æŠŠsä»ç¼“å†²åŒºä¸­åˆ é™¤
+    cin.getï¼ˆarrayname,size,sï¼‰å½“é‡åˆ°sæ—¶ä¼šç»“æŸè¾“å…¥ï¼Œä½†ä¸ä¼šåˆ é™¤ç¼“å†²åŒºä¸­çš„s
     */
    /*
     char e[10];
     char f;
     cin.get(e,10,',');
 	cin.get(f);
-	cout<<e<<endl<<f;//ÊäÈë£º12345,[enter] Êä³ö£º12345¡¾»»ĞĞ¡¿£¬ËµÃ÷£ºcin,get²»»áÉ¾³ı»º³åÇøµÄ£¬*/
+	cout<<e<<endl<<f;//è¾“å…¥ï¼š12345,[enter] è¾“å‡ºï¼š12345ã€æ¢è¡Œã€‘ï¼Œè¯´æ˜ï¼šcin,getä¸ä¼šåˆ é™¤ç¼“å†²åŒºçš„ï¼Œ*/
     char e1[10];
     char f1;
     cin.getline(e1,10,',');
 	cin.get(f1);
-	cout<<e1<<endl<<f1;//ÊäÈë£ºasd,wqe Êä³ö£ºasd¡¾»»ĞĞ¡¿w
+	cout<<e1<<endl<<f1;//è¾“å…¥ï¼šasd,wqe è¾“å‡ºï¼šasdã€æ¢è¡Œã€‘w
     system("pause");
 }

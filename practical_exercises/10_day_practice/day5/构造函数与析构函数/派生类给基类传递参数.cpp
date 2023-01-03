@@ -13,7 +13,7 @@ class Line:public Point{
 protected:
     int len;
 public:
-    Line(int a,int b,int l):Point(a,b) {	//构造函数初始化列表
+    Line(int a,int b,int l):Point(a,b) {	//鏋勯�犲嚱鏁板垵濮嬪寲鍒楄〃
         len=l;
         cout<<"Constructing Line,len ..."<<len<<endl;
     }

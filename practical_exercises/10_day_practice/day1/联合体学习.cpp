@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-//ÏàÍ¬µÄÄÚ´æµØÖ·
+//ç›¸åŒçš„å†…å­˜åœ°å€
 union myun 
 {
     struct { int x; int y; int z; }u; 
@@ -11,7 +11,7 @@ int main()
     a.u.x =4;
     a.u.y =5; 
     a.u.z =6; 
-    a.k = 0; //¸²¸ÇµôµÚÒ»¸öint¿Õ¼äÖµ
+    a.k = 0; //è¦†ç›–æ‰ç¬¬ä¸€ä¸ªintç©ºé—´å€¼
     printf("%d %d %d %d\n",a.u.x,a.u.y,a.u.z,a.k);
     system("pause");
     return 0;

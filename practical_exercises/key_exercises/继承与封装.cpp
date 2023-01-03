@@ -26,12 +26,12 @@ class Employee{
 
 class Manager:public Employee{
     public:
-        //Ö±½Óµ÷ÓÃ¹¹Ôì·½·¨´«µİ£¬»ùÀà¹¹Ôì·½·¨ÓĞ²ÎÊı£¬ÅÉÉúÀà±ØĞëÍ¨¹ı¹¹Ôì·½·¨£¬ÔÚ³õÊ¼»¯ÁĞ±íÖĞ´«µİ²ÎÊı
+        //ç›´æ¥è°ƒç”¨æ„é€ æ–¹æ³•ä¼ é€’ï¼ŒåŸºç±»æ„é€ æ–¹æ³•æœ‰å‚æ•°ï¼Œæ´¾ç”Ÿç±»å¿…é¡»é€šè¿‡æ„é€ æ–¹æ³•ï¼Œåœ¨åˆå§‹åŒ–åˆ—è¡¨ä¸­ä¼ é€’å‚æ•°
         Manager(const char *name,const char *id,int week):Employee(name,id){
             WeeklySalary=week*1000;
         }
         void display(){
-            cout<<"¾­Àí£º"<<getName()<<"\t"<<getId()<<"\t"<<WeeklySalary<<endl;
+            cout<<"ç»ç†ï¼š"<<getName()<<"\t"<<getId()<<"\t"<<WeeklySalary<<endl;
         }
     private:
         int WeeklySalary;
@@ -43,7 +43,7 @@ class SaleWorker:public Employee{
             workerMoney=baseMoney+x*0.05*profit;
         }
         void display(){
-            cout<<"ÏúÊÛÔ±£º"<<getName()<<"\t"<<getId()<<"\t"<<workerMoney<<endl;
+            cout<<"é”€å”®å‘˜ï¼š"<<getName()<<"\t"<<getId()<<"\t"<<workerMoney<<endl;
         }
 
     private:
@@ -56,7 +56,7 @@ class HourWorker:public Employee{
             TotalMoney=h*hourMoney;
         }
         void display(){
-            cout<<"Ğ¡Ê±¹¤£º"<<getName()<<"\t"<<getId()<<"\t"<<TotalMoney<<endl;
+            cout<<"å°æ—¶å·¥ï¼š"<<getName()<<"\t"<<getId()<<"\t"<<TotalMoney<<endl;
         }
     private:
         float hourMoney=100.0;
@@ -67,23 +67,23 @@ class HourWorker:public Employee{
 
 int main(int argc, char const *argv[])
 {
-    cout<<"ÇëÊäÈë¹¤×÷ÖÜ£º";
+    cout<<"è¯·è¾“å…¥å·¥ä½œå‘¨ï¼š";
     int week;
     cin>>week;
-    Manager m("Ğ¡Íõ","11111111",week);
+    Manager m("å°ç‹","11111111",week);
     m.display();
-    cout<<"ÇëÊäÈëÏúÊÛÀûÈó£º";
+    cout<<"è¯·è¾“å…¥é”€å”®åˆ©æ¶¦ï¼š";
     int profit;
     cin>>profit;
-    cout<<"ÇëÊäÈëÏúÊÛ¼şÊı£º";
+    cout<<"è¯·è¾“å…¥é”€å”®ä»¶æ•°ï¼š";
     int x;
     cin>>x;
-    SaleWorker s("Ğ¡Àî","222222",profit,x);
+    SaleWorker s("å°æ","222222",profit,x);
     s.display();
-    cout<<"ÇëÊäÈë¹¤×÷Ğ¡Ê±£º";
+    cout<<"è¯·è¾“å…¥å·¥ä½œå°æ—¶ï¼š";
     int hour;
     cin>>hour;
-    HourWorker h("Ğ¡ºÎ","333333",hour);
+    HourWorker h("å°ä½•","333333",hour);
     h.display();
     system("pause");
     return 0;

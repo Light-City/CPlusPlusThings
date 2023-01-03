@@ -1,7 +1,7 @@
 
 //Eg7-1.cpp
-//»ùÀàÖ¸Õë»òÒıÓÃÖ¸ÏòÅÉÉúÀà¶ÔÏóÊ±,Ğéº¯ÊıÓë·ÇĞéº¯ÊıÇø±ğ£º
-//ÉùÃ÷EmployeeµÄprintÎªĞéº¯Êı£¬Ôò¿É·ÃÎÊµ½ManagerµÄprintº¯Êı£¬·ÇĞéº¯Êı£¬ÔòÖ»ÄÜ·ÃÎÊµ½EmployeeµÄprint
+//åŸºç±»æŒ‡é’ˆæˆ–å¼•ç”¨æŒ‡å‘æ´¾ç”Ÿç±»å¯¹è±¡æ—¶,è™šå‡½æ•°ä¸éè™šå‡½æ•°åŒºåˆ«ï¼š
+//å£°æ˜Employeeçš„printä¸ºè™šå‡½æ•°ï¼Œåˆ™å¯è®¿é—®åˆ°Managerçš„printå‡½æ•°ï¼Œéè™šå‡½æ•°ï¼Œåˆ™åªèƒ½è®¿é—®åˆ°Employeeçš„print
 #include<iostream>
 #include<string>
 using namespace std;
@@ -30,7 +30,7 @@ float Employee::getSalary(){
     return 0.0;
 }
 void Employee::print(){
-    cout<<"ĞÕÃû£º"<<Name<<"\t"<<"±àºÅ£º"<<Id<<endl;
+    cout<<"å§“åï¼š"<<Name<<"\t"<<"ç¼–å·ï¼š"<<Id<<endl;
 }
 
 class Manager:public Employee{
@@ -38,23 +38,23 @@ class Manager:public Employee{
         Manager(string name,string id,float s=0.0):Employee(name,id){
             weeklySalary=s;
         }
-        void setSalary(float s) { weeklySalary=s; }	//ÉèÖÃ¾­ÀíµÄÖÜĞ½
-        float getSalary(){ return weeklySalary; }	//»ñÈ¡¾­ÀíµÄÖÜĞ½
-        void print(){			//´òÓ¡¾­ÀíĞÕÃû¡¢Éí·İÖ¤¡¢ÖÜĞ½
-            cout<<"¾­Àí£º"<<getName()<<"\t\t ±àºÅ: "<<getId()<<"\t\t ÖÜ¹¤×Ê: "<<getSalary()<<endl;
+        void setSalary(float s) { weeklySalary=s; }	//è®¾ç½®ç»ç†çš„å‘¨è–ª
+        float getSalary(){ return weeklySalary; }	//è·å–ç»ç†çš„å‘¨è–ª
+        void print(){			//æ‰“å°ç»ç†å§“åã€èº«ä»½è¯ã€å‘¨è–ª
+            cout<<"ç»ç†ï¼š"<<getName()<<"\t\t ç¼–å·: "<<getId()<<"\t\t å‘¨å·¥èµ„: "<<getSalary()<<endl;
         }
     private:
-        float weeklySalary; //ÖÜĞ½
+        float weeklySalary; //å‘¨è–ª
 };
 
 
 /*
-²»ÂÛÄÄÖÖ¸³Öµ·½Ê½£¬¶¼Ö»ÄÜÍ¨¹ı»ùÀà¶ÔÏó£¨»ò»ùÀà¶ÔÏóµÄÖ¸Õë»òÒıÓÃ£©·ÃÎÊµ½ÅÉÉúÀà¶ÔÏó´Ó»ùÀàÖĞ¼Ì³Ğµ½µÄ³ÉÔ±£¬ 
-²»ÄÜ½è´Ë·ÃÎÊÅÉÉúÀà¶¨ÒåµÄ³ÉÔ±¡£¶øĞéº¯ÊıÊ¹µÃ¿ÉÒÔÍ¨¹ı»ùÀà¶ÔÏóµÄÖ¸Õë»òÒıÓÃ·ÃÎÊÅÉÉúÀà¶¨ÒåµÄ³ÉÔ±¡£
+ä¸è®ºå“ªç§èµ‹å€¼æ–¹å¼ï¼Œéƒ½åªèƒ½é€šè¿‡åŸºç±»å¯¹è±¡ï¼ˆæˆ–åŸºç±»å¯¹è±¡çš„æŒ‡é’ˆæˆ–å¼•ç”¨ï¼‰è®¿é—®åˆ°æ´¾ç”Ÿç±»å¯¹è±¡ä»åŸºç±»ä¸­ç»§æ‰¿åˆ°çš„æˆå‘˜ï¼Œ 
+ä¸èƒ½å€Ÿæ­¤è®¿é—®æ´¾ç”Ÿç±»å®šä¹‰çš„æˆå‘˜ã€‚è€Œè™šå‡½æ•°ä½¿å¾—å¯ä»¥é€šè¿‡åŸºç±»å¯¹è±¡çš„æŒ‡é’ˆæˆ–å¼•ç”¨è®¿é—®æ´¾ç”Ÿç±»å®šä¹‰çš„æˆå‘˜ã€‚
 */
 int main(){
-    Employee e("Ğ¡Ã×","NO0001"),*pM;
-    Manager m("Ğ¡Íô","NO0002",128);
+    Employee e("å°ç±³","NO0001"),*pM;
+    Manager m("å°æ±ª","NO0002",128);
     m.print();
     pM=&m;
     pM->print();
@@ -63,4 +63,4 @@ int main(){
     system("pause");
     return 0;
 }
-//Virtual¹Ø¼ü×ÖÆäÊµÖÊÊÇ¸æÖª±àÒëÏµÍ³£¬±»Ö¸¶¨ÎªvirtualµÄº¯Êı²ÉÓÃ¶¯Ì¬Áª±àµÄĞÎÊ½±àÒë¡£
+//Virtualå…³é”®å­—å…¶å®è´¨æ˜¯å‘ŠçŸ¥ç¼–è¯‘ç³»ç»Ÿï¼Œè¢«æŒ‡å®šä¸ºvirtualçš„å‡½æ•°é‡‡ç”¨åŠ¨æ€è”ç¼–çš„å½¢å¼ç¼–è¯‘ã€‚

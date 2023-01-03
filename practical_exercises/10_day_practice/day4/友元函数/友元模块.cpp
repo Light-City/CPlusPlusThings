@@ -1,4 +1,4 @@
-//Ê¹ÓÃÓÑÔªº¯Êı¼ÆËãÁ½µã¼ä¾àÀë
+//ä½¿ç”¨å‹å…ƒå‡½æ•°è®¡ç®—ä¸¤ç‚¹é—´è·ç¦»
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -13,9 +13,9 @@ class Point{
     }
     friend float Distance(Point &a,Point &b);
   private:
-    int X,Y;//Ë½ÓĞÊı¾İ³ÉÔ±
+    int X,Y;//ç§æœ‰æ•°æ®æˆå‘˜
 };
-//Í¨¹ı½«Ò»¸öÄ£¿éÉùÃ÷ÎªÁíÒ»¸öÄ£¿éµÄÓÑÔª£¬Ò»¸öÄ£¿éÄÜ¹»ÒıÓÃµ½ÁíÒ»¸öÄ£¿éÖĞ±¾ÊÇ±»Òş²ØµÄĞÅÏ¢¡£
+//é€šè¿‡å°†ä¸€ä¸ªæ¨¡å—å£°æ˜ä¸ºå¦ä¸€ä¸ªæ¨¡å—çš„å‹å…ƒï¼Œä¸€ä¸ªæ¨¡å—èƒ½å¤Ÿå¼•ç”¨åˆ°å¦ä¸€ä¸ªæ¨¡å—ä¸­æœ¬æ˜¯è¢«éšè—çš„ä¿¡æ¯ã€‚
 float Distance(Point &a, Point &b){
   double dx = a.X-b.X;
   double dy = a.Y-b.Y;
@@ -25,7 +25,7 @@ float Distance(Point &a, Point &b){
 int main()
 {  
     Point p1(3.0,5.0),p2(4.0,6.0);
-    cout<<"Á½µã¾àÀëÎª£º"<<Distance(p1,p2)<<endl;
+    cout<<"ä¸¤ç‚¹è·ç¦»ä¸ºï¼š"<<Distance(p1,p2)<<endl;
     system("pause");
     return 0;
 }

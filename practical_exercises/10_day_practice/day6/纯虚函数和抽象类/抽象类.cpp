@@ -13,21 +13,21 @@ class Figure{
 class Trianle:public Figure{
     public:
         void area(){
-            cout<<"Èı½ÇĞÎÃæ»ı£º"<<x*y*0.5<<endl;
+            cout<<"ä¸‰è§’å½¢é¢ç§¯ï¼š"<<x*y*0.5<<endl;
         }
 };
 class Rectangle:public Figure{
     public:
         void area(){
-            cout<<"ÕâÊÇ¾ØĞÎ£¬ËüµÄÃæ»ıÊÇ£º"<<x*y<<endl;
+            cout<<"è¿™æ˜¯çŸ©å½¢ï¼Œå®ƒçš„é¢ç§¯æ˜¯ï¼š"<<x*y<<endl;
         }
 };
 
 int main(int argc, char const *argv[])
 {
-    //¶¨Òå³éÏóÀàÖ¸Õë
+    //å®šä¹‰æŠ½è±¡ç±»æŒ‡é’ˆ
     Figure *pF=NULL;
-    // Figure f1; ³éÏóÀà²»ÄÜ±»ÊµÀı»¯
+    // Figure f1; æŠ½è±¡ç±»ä¸èƒ½è¢«å®ä¾‹åŒ–
     Rectangle r;
     Trianle t;
     t.set(10,20);
@@ -36,7 +36,7 @@ int main(int argc, char const *argv[])
     r.set(10,20);
     pF=&r;
     pF->area();
-    //¶¨Òå³éÏóÀàÒıÓÃ
+    //å®šä¹‰æŠ½è±¡ç±»å¼•ç”¨
     Figure &rF=t;
     rF.set(20,20);
     rF.area();

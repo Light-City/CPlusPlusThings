@@ -35,7 +35,7 @@ template<typename T,int MAXSIZE> void Stack<T,MAXSIZE>::push(T e){
         elems[++top]=e;
     }
     else{
-        cout<<"Õ»ÒÑÂú£¬Çë²»ÒªÔÙ¼ÓÈëÔªËØ£¡";
+        cout<<"æ ˆå·²æ»¡ï¼Œè¯·ä¸è¦å†åŠ å…¥å…ƒç´ ï¼";
         return;
     }
 }
@@ -44,7 +44,7 @@ template<typename T,int MAXSIZE> T Stack<T,MAXSIZE>::pop(){
         return elems[top--];
     }
     else{
-        cout<<"Õ»ÒÑ¿Õ£¬Çë²»ÒªÔÙµ¯³öÔªËØ£¡";
+        cout<<"æ ˆå·²ç©ºï¼Œè¯·ä¸è¦å†å¼¹å‡ºå…ƒç´ ï¼";
         return 0;
     }
 }

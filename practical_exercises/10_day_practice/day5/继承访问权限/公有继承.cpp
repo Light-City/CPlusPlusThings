@@ -7,7 +7,7 @@ public:
 	int getx(){	return x;  }
 	void showx()	{	cout<<x<<endl;  }
 };
-//ÅÉÉúÀà
+//æ´¾ç”Ÿç±»
 class derived:public base{
 	int y;
 public:
@@ -16,7 +16,7 @@ public:
 	void showy()
 	{	cout<<y<<endl;   }
 };
-//ÅÉÉúÀà²»¿ÉÖ±½Ó·ÃÎÊ»ùÀàµÄprivate³ÉÔ±£¬¿ÉÍ¨¹ý»ùÀàµÄ¹²ÓÐ³ÉÔ±º¯Êý·ÃÎÊ
+//æ´¾ç”Ÿç±»ä¸å¯ç›´æŽ¥è®¿é—®åŸºç±»çš„privateæˆå‘˜ï¼Œå¯é€šè¿‡åŸºç±»çš„å…±æœ‰æˆå‘˜å‡½æ•°è®¿é—®
 int main()
 {	derived obj;
 	obj.setx(10);	

@@ -3,7 +3,7 @@
 using namespace std;   
   
 /*  
- *  Ê±ÖÓÀà  
+ *  æ—¶é’Ÿç±»  
  */  
 class Clock    
 {   
@@ -17,7 +17,7 @@ public:
 };   
   
 /*  
- *  Ê±ÖÓÀà¹¹Ôìº¯Êı  
+ *  æ—¶é’Ÿç±»æ„é€ å‡½æ•°  
  */  
 Clock::Clock(int h,int m, int s)   
 {   
@@ -28,11 +28,11 @@ Clock::Clock(int h,int m, int s)
         Second= s;   
     }   
     else  
-        cout<<"ÊäÈëµÄÊ±¼ä¸ñÊ½´íÎó!"<<endl;   
+        cout<<"è¾“å…¥çš„æ—¶é—´æ ¼å¼é”™è¯¯!"<<endl;   
 }   
   
 /*  
- *  ÏÔÊ¾Ê±¼ä  
+ *  æ˜¾ç¤ºæ—¶é—´  
  */  
 void Clock::ShowTime()   
 {   
@@ -40,7 +40,7 @@ void Clock::ShowTime()
 }   
   
 /*  
- *  Ê±¼äµİÔöÒ»Ãë£¨ÖØÔØÇ°×º++ÔËËã·û£©  
+ *  æ—¶é—´é€’å¢ä¸€ç§’ï¼ˆé‡è½½å‰ç¼€++è¿ç®—ç¬¦ï¼‰  
  */  
 Clock& Clock::operator ++()    
 {    
@@ -60,7 +60,7 @@ Clock& Clock::operator ++()
 }   
   
 /*  
- *  Ê±¼äµİÔöÒ»Ãë£¨ÖØÔØºó×º++ÔËËã·û£©  
+ *  æ—¶é—´é€’å¢ä¸€ç§’ï¼ˆé‡è½½åç¼€++è¿ç®—ç¬¦ï¼‰  
  */  
 Clock Clock::operator ++(int)   
 {   
@@ -70,24 +70,24 @@ Clock Clock::operator ++(int)
 }   
   
 /*  
- *  Ö÷º¯Êı  
+ *  ä¸»å‡½æ•°  
  */  
 int main()   
 {   
     Clock myClock(23,59,59);   
-    cout<<"³õÊ¼»¯ÏÔÊ¾Ê±¼äÎª:\t\t";   
+    cout<<"åˆå§‹åŒ–æ˜¾ç¤ºæ—¶é—´ä¸º:\t\t";   
     myClock.ShowTime();   
   
-    cout<<"Ö´ĞĞmyClock++ºóµÄÊ±¼äÎª:\t";   
+    cout<<"æ‰§è¡ŒmyClock++åçš„æ—¶é—´ä¸º:\t";   
   
-    //ÏÈÖ´ĞĞShowTime()£¬Êä³ömyClock=23:59:59£¬   
-    //ÔÙÖ´ĞĞmyClock++£¬´ËÊ±myClock=00:00:00   
+    //å…ˆæ‰§è¡ŒShowTime()ï¼Œè¾“å‡ºmyClock=23:59:59ï¼Œ   
+    //å†æ‰§è¡ŒmyClock++ï¼Œæ­¤æ—¶myClock=00:00:00   
     (myClock++).ShowTime();   
   
-    cout<<"Ö´ĞĞ++myClockºóµÄÊ±¼äÎª:\t";   
+    cout<<"æ‰§è¡Œ++myClockåçš„æ—¶é—´ä¸º:\t";   
   
-    //ÏÈÖ´ĞĞ++myClock£¬´ËÊ±myClock=00:00:01   
-    //ÔÙÖ´ĞĞShowTime()£¬Êä³ömyClock=00:00:01   
+    //å…ˆæ‰§è¡Œ++myClockï¼Œæ­¤æ—¶myClock=00:00:01   
+    //å†æ‰§è¡ŒShowTime()ï¼Œè¾“å‡ºmyClock=00:00:01   
     (++myClock).ShowTime();   
     system("pause");
 }  

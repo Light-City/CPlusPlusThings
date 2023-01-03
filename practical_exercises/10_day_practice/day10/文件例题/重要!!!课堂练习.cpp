@@ -1,6 +1,6 @@
 #include<iostream>
 #include<fstream>
-//ÏòÁ¿ÊÇÒ»¸öÄÜ¹»´æ·ÅÈÎÒâÀàĞÍµÄ¶¯Ì¬Êı×é
+//å‘é‡æ˜¯ä¸€ä¸ªèƒ½å¤Ÿå­˜æ”¾ä»»æ„ç±»å‹çš„åŠ¨æ€æ•°ç»„
 #include<vector>
 #include<cstring>
 using namespace std;
@@ -25,20 +25,20 @@ class Person{
 int main(int argc, char const *argv[])
 {
     vector<Person> v;
-    vector<Person>::iterator pos;//ÉùÃ÷Ò»¸öµü´úÆ÷£¬À´·ÃÎÊvectorÈİÆ÷£¬×÷ÓÃ£º±éÀú»òÕßÖ¸ÏòvectorÈİÆ÷µÄÔªËØ 
+    vector<Person>::iterator pos;//å£°æ˜ä¸€ä¸ªè¿­ä»£å™¨ï¼Œæ¥è®¿é—®vectorå®¹å™¨ï¼Œä½œç”¨ï¼šéå†æˆ–è€…æŒ‡å‘vectorå®¹å™¨çš„å…ƒç´  
     char ch;
     ofstream out("d:/person.dat",ios::out|ios::app|ios::binary);
     char Name[20],ID[18],Addr[20];
     int Age;
-    cout<<"------ÊäÈë¸öÈËµµ°¸------"<<endl<<endl;
+    cout<<"------è¾“å…¥ä¸ªäººæ¡£æ¡ˆ------"<<endl<<endl;
     do{
-        cout<<"ĞÕÃû£º ";
+        cout<<"å§“åï¼š ";
         cin>>Name;
-        cout<<"Éí·İÖ¤ºÅ£º ";
+        cout<<"èº«ä»½è¯å·ï¼š ";
         cin>>ID;
-        cout<<"ÄêÁä£º ";
+        cout<<"å¹´é¾„ï¼š ";
         cin>>Age;
-        cout<<"µØÖ·£º ";
+        cout<<"åœ°å€ï¼š ";
         cin>>Addr;
         Person per(Name,ID,Age,Addr);
         out.write((char*)&per,sizeof(per));
@@ -53,7 +53,7 @@ int main(int argc, char const *argv[])
         v.push_back(s);						       
         in.read((char*)&s,sizeof(s));			
     }								 
-    cout<<"\n---------´ÓÎÄ¼şÖĞ¶Á³öµÄÊı¾İ--------"<<endl<<endl;//L15
+    cout<<"\n---------ä»æ–‡ä»¶ä¸­è¯»å‡ºçš„æ•°æ®--------"<<endl<<endl;//L15
     pos=v.begin();						
     for(pos=v.begin();pos!=v.end();pos++)				        
         (*pos).display();				

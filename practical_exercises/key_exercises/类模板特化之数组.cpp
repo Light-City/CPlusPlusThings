@@ -21,7 +21,7 @@ class Array{
 
 template<class T> T& Array<T>::operator[](int i){
     if(i<0||i>MAXSIZE-1){
-        cout<<"Êý×éÏÂ±êÔ½½ç£¡"<<endl;
+        cout<<"æ•°ç»„ä¸‹æ ‡è¶Šç•Œï¼"<<endl;
         exit(0);
     }
     return array[i];

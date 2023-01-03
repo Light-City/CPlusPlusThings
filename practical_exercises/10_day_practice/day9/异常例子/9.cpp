@@ -19,7 +19,7 @@ class DiskNotFound:public FileSysException{
 };
 int main(){
     try{
-//         .....  //程序代码
+//         .....  //绋嬪簭浠ｇ爜
          throw FileSysException();
     }
     catch(DiskNotFound p){cout<<p.Where()<<endl;}
@@ -27,7 +27,7 @@ int main(){
     catch(FileSysException p){cout<<p.Where()<<endl;}
     catch(BasicException p){cout<<p.Where()<<endl;}
     try{
-//        .....  //程序代码
+//        .....  //绋嬪簭浠ｇ爜
          throw DiskNotFound();
     }
     catch(BasicException p){cout<<p.Where()<<endl;}

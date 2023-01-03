@@ -1,9 +1,9 @@
 /*
-һԲ����Ӿ����ͼ��ʾ��������������Χ��һԲ�͹���������������Χ��դ����դ���۸�Ϊ35Ԫ/�ף��������Ϊ20Ԫ/ƽ���ס�
-��������Ϊ3�ף���Ӿ�ذ뾶�ɼ������롣Ҫ���̼��㲢���������դ������ۡ�
+一圆型游泳池如图所示，现在需在其周围建一圆型过道，并在其四周围上栅栏。栅栏价格为35元/米，过道造价为20元/平方米。
+过道宽度为3米，游泳池半径由键盘输入。要求编程计算并输出过道和栅栏的造价。
 
-ͼ����������ԲǶ��СԲ��
-СԲ�ڴ�Բ�м䣬СԲΪ��Ӿ�أ���Բ��СԲ���Ϊ������
+图形描述：大圆嵌套小圆：
+小圆在大圆中间，小圆为游泳池，大圆与小圆间隔为过道。
 */
 #include<iostream>
 using namespace std;
@@ -25,13 +25,13 @@ Circle::Circle(float r)
     radius=r;
 }
 
-// ����Բ���ܳ�
+// 计算圆的周长
 float Circle::Circumference() const
 {
     return 2 * PI * radius;
 }
         
-// ����Բ����� 
+// 计算圆的面积 
 float Circle::Area() const
 {
     return PI * radius * radius;
@@ -42,20 +42,20 @@ int main(int argc, char const *argv[])
     float radius;
     float FenceCost, ConcreteCost; 
     
-    // ��ʾ�û�����뾶
+    // 提示用户输入半径
     cout<<"Enter the radius of the pool: ";
     cin>>radius;
 
-    // ���� Circle ����
+    // 声明 Circle 对象
     Circle Pool(radius);
     Circle PoolRim(radius + 3);       
-    // ����դ����۲����
+    // 计算栅栏造价并输出
     FenceCost = PoolRim.Circumference() * FencePrice;
-    cout << "Fencing Cost is ��" << FenceCost << endl;
+    cout << "Fencing Cost is ￥" << FenceCost << endl;
     
-    //  ���������۲����
+    //  计算过道造价并输出
     ConcreteCost = (PoolRim.Area() - Pool.Area())*ConcretePrice;
-    cout << "Concrete Cost is ��" << ConcreteCost << endl;
+    cout << "Concrete Cost is ￥" << ConcreteCost << endl;
     system("pause");
     return 0;
 }

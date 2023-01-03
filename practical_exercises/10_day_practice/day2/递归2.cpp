@@ -3,7 +3,7 @@ using namespace std;
 int f(int n, int k);
 int main(int argc, char const *argv[])
 {
-    cout<<"ÇëÊäÈënÓëk"<<endl;
+    cout<<"è¯·è¾“å…¥nä¸k"<<endl;
     int n,k;
     cin>>n;
     cin>>k;
