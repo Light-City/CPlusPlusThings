@@ -90,7 +90,7 @@ int main(void)
     pp.fun1(); 
     cout<<"基类指针指向派生类实例并调用虚函数"<<endl;
     pt->fun1();
-    cout<<"基类引用指向基类实例并调用虚函数"<<endl;
+    cout<<"基类引用指向派生类实例并调用虚函数"<<endl;
     p.fun1();
 
 
