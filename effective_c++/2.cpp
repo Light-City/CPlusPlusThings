@@ -33,10 +33,10 @@ int main() {
     cout << C::NUM1 << endl;
 //    cout << &C:NUM1 << endl;  //error enum no address
 
-    int a=5, b=0;
+    int a=10, b=5;
     cout<<MAX(++a, b)<<endl;              // a被增加两次
     cout<<MAX(++a, b+10)<<endl;           // a被累加一次
-    a=5,b=0;
+    a=10,b=5;
     cout<<Max(++a,b)<<endl;
 }
 
