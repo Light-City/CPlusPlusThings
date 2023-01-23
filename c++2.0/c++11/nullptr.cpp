@@ -2,7 +2,7 @@
 // Created by light on 19-11-2.
 //
 
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 void f(int i) {
@@ -22,7 +22,7 @@ int main() {
 
     //  c语言中将NULL定义为空指针，而在c++中直接定义为0，这是因为C++是强类型的，void *是不能隐式转换成其他指针类型的。
 
-    if(NULL==0)  cout<<"NULL==0"<<endl;
+    if(NULL)  cout<<"NULL==0"<<endl;
     // f(NULL); // ambiguous,因为NULL==0所以存在二义性 指针也可以是个int的地址
     // c++11 空指针nullptr
     f(nullptr); //typedef decltype(nullptr)	nullptr_t;
