@@ -2,7 +2,7 @@
 // Created by light on 19-11-2.
 //
 
-#include <iostream>
+#include <bits/stdc++.h>
 #include <list>
 #include <algorithm>
 #include <vector>
