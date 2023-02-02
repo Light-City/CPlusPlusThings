@@ -21,7 +21,7 @@ const int a=100;
     + const常量与`#define`宏定义常量的区别：
     > ~~<u>**const常量具有类型，编译器可以进行安全检查；#define宏定义没有数据类型，只是简单的字符串替换，不能进行安全检查。**</u>~~感谢两位大佬指出这里问题，见：[issue](https://github.com/Light-City/CPlusPlusThings/issues/5)
 
-    + const定义的变量只有类型为整数或枚举，且以常量表达式初始化时才能作为常量表达式。
+    + const常量支持所有类型。
     + 其他情况下它只是一个 `const` 限定的变量，不要将与常量混淆。
 
 + 防止修改，起保护作用，增加程序健壮性
