@@ -8,14 +8,19 @@ T Max(T a,T b) {
 }
 //特化
 //template <> 返回类型 函数名<特化的数据类型>(参数表) {}
+template<>const char * Max<const char *>(const char *a,const char *b) {
+    return (strcmp(a,b)>=0)?a:b;
+}
 template<>char * Max<char *>(char *a,char *b) {
     return (strcmp(a,b)>=0)?a:b;
 }
 int main(){
     float  c=5.1,d=3.2;
-    cout<<"2,3的最大值是："<<Max(3,2)<<endl;   
-    cout<<"c,d的最大值是："<<Max(c,d)<<endl;   
-    cout<<Max("xbv","xyce")<<endl;         
+    char s1[]="xyce", s2[]="xbv";
+    cout<<"2,3的最大值是："<<Max(3,2)<<endl;
+    cout<<"c,d的最大值是："<<Max(c,d)<<endl;
+    cout<<Max("xbv","xyce")<<endl;
+    cout<<Max(s1,s2)<<endl;
     system("pause");
 }
 /*
