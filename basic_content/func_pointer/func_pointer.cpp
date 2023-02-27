@@ -29,5 +29,5 @@ int main(){
     func pfun = myfunc;/*赋值*/  
     pfun();/*调用*/  
     pFun = glFun; 
-    (*pFun)(2); 
+    (*pFun)(2);
 }
