@@ -1,7 +1,9 @@
 # Stories About C Plus Plus
 
-Thanks for all the support about << Stories About C ++ >>, right now you could open this link(https://light-city.club/sc/) to read this article.
+Thanks for all the support about << Stories About C ++ >>~~, right now you could open this link(https://light-city.club/sc/) to read this article.~~
 Any star, retweet or pr will be weclomed.
+
+**Notice: The website is not available now.**
 
 
 -----------------------
