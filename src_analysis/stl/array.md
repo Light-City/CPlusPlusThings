@@ -118,7 +118,7 @@ typedef _Type _M_elems;  // 一个含有100个元素的数组。
 int a[100];
 //或者
 typedef int T[100];
-typedef T a;
+T a;
 ```
 针对传进来的size处理，相比于tr1，更加复杂，使用了模板偏特化来处理传递size为0情况。
 
