@@ -1,7 +1,7 @@
 # Stories About C Plus Plus
 
 Thanks for all the support about << Stories About C ++ >>~~, right now you could open this link(https://light-city.club/sc/) to read this article.~~
-Any star, retweet or pr will be weclomed.
+Any star, retweet or pr will be welcomed.
 
 **Notice: The website is not available now.**
 
@@ -54,7 +54,7 @@ other details,such as in-depth source code analysis and multi-threaded concurren
 Basic Grammar About C ++
 - [x] day2
 
-Recursive、Structor、Enumerate、Static Variable
+Recursive、Struct、Enumerate、Static Variable
 
 - [x] day3
 
@@ -70,7 +70,7 @@ Inheritance and Polymorphism
 
 - [x] day6
 
-Vitrual Function、Abstruct 
+Virtual Function、Abstruct 
 
 - [x] day7
 
@@ -232,7 +232,7 @@ Learning materials: https://chenxiaowei.gitbook.io/cpp_concurrency_in_action/
 
 - [Introduction](./concurrency/Threading_In_CPlusPlus/1.thread)
 - [Five Types of Thread Creation](./concurrency/Threading_In_CPlusPlus/2.create_type)
-- [Join And Detachs](./concurrency/Threading_In_CPlusPlus/3.join_detach)
+- [Join And Detaches](./concurrency/Threading_In_CPlusPlus/3.join_detach)
 - [mutex in C++ Threading](./concurrency/Threading_In_CPlusPlus/4.mutex)
 
 > From：
@@ -253,31 +253,31 @@ Learning materials: https://chenxiaowei.gitbook.io/cpp_concurrency_in_action/
 
 #### 6.1 [Chinese Name:极客时间《现代 C++ 实战 30 讲》](https://time.geekbang.org/channel/home)
 
-- [heap、stack、RAII：How to manage resources for C ++ ?](./learn_class/modern_C++_30/RAII)
+- [heap、stack、RAII：How to manage resources for C ++ ?](./learn_class/modern_cpp_30/RAII)
   - [heap](./modern_++_30/RAII/heap.cpp)
-  - [stack](./learn_class/modern_C++_30/RAII/stack.cpp)
-  - [RAII](./learn_class/modern_C++_30/RAII/RAII.cpp)
-- [Implementing smart pointers for C ++](./learn_class/modern_C++_30/smart_ptr)
-  - [auto_ptr、scope_ptr](./learn_class/modern_C++_30/smart_ptr/auto_scope.cpp)
-  - [unique_ptr](./learn_class/modern_C++_30/smart_ptr/unique_ptr.cpp)
-  - [shared_ptr](./learn_class/modern_C++_30/smart_ptr/shared_ptr.cpp)
-- [What exactly does r value and move solve？](./learn_class/modern_C++_30/reference)
-  - [L value and R value](./learn_class/modern_C++_30/reference/reference.cpp)
-  - [Extend the declaration cycle](./learn_class/modern_C++_30/reference/lifetime.cpp)
-  - [Reference folding](./learn_class/modern_C++_30/reference/collapses.cpp)
-  - [Perfect forward](./learn_class/modern_C++_30/reference/forward.cpp)
-  - [Do not return Reference](./learn_class/modern_C++_30/reference/don'treturnReference.cpp)
-- [Container 1](./learn_class/modern_C++_30/container1)
-- [Container 2](./learn_class/modern_C++_30/container2)
-- [Exception](./learn_class/modern_C++_30/exception)
-- [Literal、Static Assertion And Member Function Specifier](./learn_class/modern_C++_30/literalAssert)
-- [Return Object？](./learn_class/modern_C++_30/returnObj)c
-- [Getting started with generic programming and templates](./learn_class/modern_C++_30/compilerpoly)
-- [A whole Compiler Compute World](./learn_class/modern_C++_30/compilercompute)
-- [SFINAE：What is it if it is not replace error?](./learn_class/modern_C++_30/SFINAE)
-- [constexpr：A Normal World](./learn_class/modern_C++_30/constexpr)
-- [Function object and Lambda：functionLambda](./learn_class/modern_C++_30/functionLambda)
-- [Memory Model and Atomic：Understangding the complexity of concurrency](./learn_class/modern_C++_30/memorymodel_atomic)
+  - [stack](./learn_class/modern_cpp_30/RAII/stack.cpp)
+  - [RAII](./learn_class/modern_cpp_30/RAII/RAII.cpp)
+- [Implementing smart pointers for C ++](./learn_class/modern_cpp_30/smart_ptr)
+  - [auto_ptr、scope_ptr](./learn_class/modern_cpp_30/smart_ptr/auto_scope.cpp)
+  - [unique_ptr](./learn_class/modern_cpp_30/smart_ptr/unique_ptr.cpp)
+  - [shared_ptr](./learn_class/modern_cpp_30/smart_ptr/shared_ptr.cpp)
+- [What exactly does r value and move solve？](./learn_class/modern_cpp_30/reference)
+  - [L value and R value](./learn_class/modern_cpp_30/reference/reference.cpp)
+  - [Extend the declaration cycle](./learn_class/modern_cpp_30/reference/lifetime.cpp)
+  - [Reference folding](./learn_class/modern_cpp_30/reference/collapses.cpp)
+  - [Perfect forward](./learn_class/modern_cpp_30/reference/forward.cpp)
+  - [Do not return Reference](./learn_class/modern_cpp_30/reference/don'treturnReference.cpp)
+- [Container 1](./learn_class/modern_cpp_30/container1)
+- [Container 2](./learn_class/modern_cpp_30/container2)
+- [Exception](./learn_class/modern_cpp_30/exception)
+- [Literal、Static Assertion And Member Function Specifier](./learn_class/modern_cpp_30/literalAssert)
+- [Return Object？](./learn_class/modern_cpp_30/returnObj)c
+- [Getting started with generic programming and templates](./learn_class/modern_cpp_30/compilerpoly)
+- [A whole Compiler Compute World](./learn_class/modern_cpp_30/compilercompute)
+- [SFINAE：What is it if it is not replace error?](./learn_class/modern_cpp_30/SFINAE)
+- [constexpr：A Normal World](./learn_class/modern_cpp_30/constexpr)
+- [Function object and Lambda：functionLambda](./learn_class/modern_cpp_30/functionLambda)
+- [Memory Model and Atomic：Understanding the complexity of concurrency](./learn_class/modern_cpp_30/memorymodel_atomic)
 
 ### 7.Tools
 

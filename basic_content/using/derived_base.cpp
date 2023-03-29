@@ -3,26 +3,28 @@
 using namespace std;
 
 class Base1 {
-    public:
-        Base1():value(10) {}
-        virtual ~Base1() {}
-        void test1() { cout << "Base test1..." << endl; }
-    protected: // 保护
-        int value;
+public:
+  Base1() : value(10) {}
+  virtual ~Base1() {}
+  void test1() { cout << "Base test1..." << endl; }
+
+protected: // 保护
+  int value;
 };
 // 默认为私有继承
 class Derived1 : Base1 {
-    public:
-        void test2() { cout << "value is " << value << endl; }
+public:
+  void test2() { cout << "value is " << value << endl; }
 };
 
 class Base {
-    public:
-        Base():value(20) {}
-        virtual ~Base() {}
-        void test1() { cout << "Base test1..." << endl; }
-    private:  //私有
-        int value;
+public:
+  Base() : value(20) {}
+  virtual ~Base() {}
+  void test1() { cout << "Base test1..." << endl; }
+
+private: // 私有
+  int value;
 };
 
 /**
@@ -31,18 +33,16 @@ class Base {
  *
  */
 class Derived : Base {
-    public:
-        using Base::value;
-        void test2() { cout << "value is " << value << endl; }
+public:
+  using Base::value;
+  void test2() { cout << "value is " << value << endl; }
 };
 
+int main() {
+  Derived1 d1;
+  d1.test2();
 
-int main() 
-{
-    Derived1 d1;
-    d1.test2();
-
-    Derived d;
-    d.test2();
-    return 0;
+  Derived d;
+  d.test2();
+  return 0;
 }

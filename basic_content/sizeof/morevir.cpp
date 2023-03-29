@@ -6,19 +6,18 @@
  * @date 2019-07-21
  */
 
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-class A{
+class A {
 
-    virtual void fun();
-    virtual void fun1();
-    virtual void fun2();
-    virtual void fun3();
+  virtual void fun();
+  virtual void fun1();
+  virtual void fun2();
+  virtual void fun3();
 };
-int main()
-{
-    cout<<sizeof(A)<<endl;
-    return 0;
+int main() {
+  cout << sizeof(A) << endl;
+  return 0;
 }

@@ -9,5 +9,5 @@
  * @date 2019-07-24
  */
 
-virtual static void fun()  { }
-static void fun() const { }
+virtual static void fun() {}
+static void fun() const {}

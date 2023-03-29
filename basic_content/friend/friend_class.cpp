@@ -2,27 +2,23 @@
 
 using namespace std;
 
-class A
-{
+class A {
 public:
-    A(int _a):a(_a){};
-    friend class B;
+  A(int _a) : a(_a){};
+  friend class B;
+
 private:
-    int a;
+  int a;
 };
 
-class B
-{
+class B {
 public:
-    int getb(A ca) {
-        return  ca.a; 
-    };
+  int getb(A ca) { return ca.a; };
 };
 
-int main() 
-{
-    A a(3);
-    B b;
-    cout<<b.getb(a)<<endl;
-    return 0;
+int main() {
+  A a(3);
+  B b;
+  cout << b.getb(a) << endl;
+  return 0;
 }

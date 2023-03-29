@@ -108,7 +108,7 @@ struct stuff
 
 这里 stuff.field1 与 stuff.field2 之间有一个 2 Bits 的空隙，stuff.field3 则存储在下一个 unsigned int 中，该结构现在大小为 3 * 32 = 96 Bits。
 
-学习代码见：[learn.cpp](learn.cpp)
+学习代码见：[bit.cpp](bit.cpp)
 
 ## 位域的初始化和位的重映射
 

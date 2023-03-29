@@ -10,32 +10,27 @@
  * @date 2019-07-24
  */
 
-// CPP program without virtual destructor  
-// causing undefined behavior 
-#include<iostream> 
+// CPP program without virtual destructor
+// causing undefined behavior
+#include <iostream>
 
-using namespace std; 
+using namespace std;
 
-class base { 
-    public: 
-        base()      
-        { cout<<"Constructing base \n"; } 
-        ~base() 
-        { cout<<"Destructing base \n"; }      
-}; 
+class base {
+public:
+  base() { cout << "Constructing base \n"; }
+  ~base() { cout << "Destructing base \n"; }
+};
 
-class derived: public base { 
-    public: 
-        derived()      
-        { cout<<"Constructing derived \n"; } 
-        ~derived() 
-        { cout<<"Destructing derived \n"; } 
-}; 
+class derived : public base {
+public:
+  derived() { cout << "Constructing derived \n"; }
+  ~derived() { cout << "Destructing derived \n"; }
+};
 
-int main(void) 
-{ 
-    derived *d = new derived();   
-    base *b = d; 
-    delete b; 
-    return 0; 
-} 
+int main(void) {
+  derived *d = new derived();
+  base *b = d;
+  delete b;
+  return 0;
+}
