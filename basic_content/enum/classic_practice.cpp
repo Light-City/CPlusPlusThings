@@ -1,24 +1,10 @@
-/**
- * @file classic_practice.cpp
- * @brief g++ -o classic_practice classic_practice.cpp -std=c++11
- * @author 光城
- * @version v1
- * @date 2019-08-07
- */
-
 #include <iostream>
 using namespace std;
 /**
  * @brief namespace解决作用域不受限
  */
-namespace Color 
-{
-    enum Type
-    {
-        RED=15,
-        YELLOW,
-        BLUE
-    };
+namespace Color {
+enum Type { RED = 15, YELLOW, BLUE };
 };
 
 /**
@@ -32,56 +18,40 @@ namespace Color
  * 这里用结构体而非类，一是因为本身希望这些常量可以公开访问，
  * 二是因为它只包含数据没有成员函数。
  */
-struct Color1
-{
-    enum Type
-    {
-        RED=102,
-        YELLOW,
-        BLUE
-    };
+struct Color1 {
+  enum Type { RED = 102, YELLOW, BLUE };
 };
 
 /**
  * @brief C++11的枚举类
  * 下面等价于enum class Color2:int
  */
-enum class Color2
-{
-    RED=2,
-    YELLOW,
-    BLUE
-};
+enum class Color2 { RED = 2, YELLOW, BLUE };
 
-enum class Color3:char;  // 前向声明
+enum class Color3 : char; // 前向声明
 
 // 定义
-enum class Color3:char 
-{
-    RED='r',
-    BLUE
-};
+enum class Color3 : char { RED = 'r', BLUE };
 
-int main() 
-{
-    // 定义新的枚举变量
-    Color::Type c = Color::RED;
-    cout<<c<<endl;  
-    /**
-     * 上述的另一种方法：
-     * using namespace Color; // 定义新的枚举变量
-     * Type c = RED;
-     */
-    Color1 c1;
-    cout<<c1.RED<<endl;
+int main() {
+  // 定义新的枚举变量
+  Color::Type c = Color::RED;
+  cout << c << endl;
+  /**
+   * 上述的另一种方法：
+   * using namespace Color; // 定义新的枚举变量
+   * Type c = RED;
+   */
+  Color1 c1;
+  cout << c1.RED << endl;
 
-    Color1::Type c11 = Color1::BLUE;
-    cout<<c11<<endl;
-    
-    Color2 c2 = Color2::RED;
-    cout << static_cast<int>(c2) << endl;
-    
-    char c3 = static_cast<char>(Color3::RED);
-    cout<<c3<<endl;
-    return 0;
+  Color1::Type c11 = Color1::BLUE;
+  cout << c11 << endl;
+
+  Color2 c2 = Color2::RED;
+  cout << static_cast<int>(c2) << endl;
+
+  char c3 = static_cast<char>(Color3::RED);
+  cout << c3 << endl;
+  return 0;
 }

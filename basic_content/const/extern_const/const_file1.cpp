@@ -1,1 +1,1 @@
-extern const int ext=12;
+extern const int ext = 12;

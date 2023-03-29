@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 extern "C" {
-    #include "add.h"
+#include "add.h"
 }
 int main() {
-    add(2,3);
-    return 0;
+  std::cout << add(2, 3) << std::endl;
+  return 0;
 }

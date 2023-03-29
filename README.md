@@ -155,15 +155,15 @@
 ├── [输入输出重载.cpp](./practical_exercises/key_exercises/输入输出重载.cpp)
 ├── [输出格式.cpp](./practical_exercises/key_exercises/输出格式.cpp)
 
-### 3.[C++2.0 新特性](./c++2.0)
+### 3.[C++2.0 新特性](./cpp2.0)
 
 #### 3.0 概况
 
 C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 
-#### 3.1 [C++11 新特性](./c++2.0/c++11)
+#### 3.1 [C++11 新特性](./cpp2.0/cpp11)
 
-- [Variadic Templates](./c++2.0/c++11/variadic)
+- [Variadic Templates](./cpp2.0/cpp11/variadic)
 
 - Spaces in Template Expressions
 
@@ -172,17 +172,17 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
   vector<list<int>> // before c++ 11 error error: ‘>>’ should be ‘> >’ within a nested template argument list,c++11后可以正常通过
   ```
 
-- [nullptr and nullptr_t](./c++2.0/c++11/nullptr.cpp)
+- [nullptr and nullptr_t](./cpp2.0/cpp11/nullptr.cpp)
 
-- [Automatic Type Deduction with auto](./c++2.0/c++11/auto.cpp)
+- [Automatic Type Deduction with auto](./cpp2.0/cpp11/auto.cpp)
 
-- [Uniform Initialization ](./c++2.0/c++11/uniform_initialization.cpp)
+- [Uniform Initialization ](./cpp2.0/cpp11/uniform_initialization.cpp)
 
-- [initializer_list](./c++2.0/c++11/initializer.cpp)
+- [initializer_list](./cpp2.0/cpp11/initializer.cpp)
 
-- [explicit for ctors taking more than one argument](./c++2.0/c++11/explicit.cpp)
+- [explicit for ctors taking more than one argument](./cpp2.0/cpp11/explicit.cpp)
 
-- [range-based for statement](./c++2.0/c++11/auto.cpp)
+- [range-based for statement](./cpp2.0/cpp11/auto.cpp)
 
   ```cpp
   for(decl:col) {
@@ -190,33 +190,33 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
   }
   ```
 
-- [=default,=delete](./c++2.0/c++11/default_delete.cpp)
+- [=default,=delete](./cpp2.0/cpp11/default_delete.cpp)
 
   如果你自行定义了一个 `ctor`, 那么编译器就不会给你一个 `default ctor`
   如果强制加上 `=default`, 就可以重新获得并使用 `default ctor`.
 
 - Alias(化名) Template (template typedef)
 
-  - [alias.cpp](./c++2.0/c++11/alias.cpp)
-  - [template_template.cpp](./c++2.0/c++11/template_template.cpp)
+  - [alias.cpp](./cpp2.0/cpp11/alias.cpp)
+  - [template_template.cpp](./cpp2.0/cpp11/template_template.cpp)
 
-- [template template parameter](./c++2.0/template_template.cpp)
+- [template template parameter](./cpp2.0/template_template.cpp)
 
-- [type alias](./c++2.0/c++11/type_alias.cpp)
+- [type alias](./cpp2.0/cpp11/type_alias.cpp)
 
-- [noexcept](./c++2.0/c++11/noexcept.cpp)
+- [noexcept](./cpp2.0/cpp11/noexcept.cpp)
 
-- [override](./c++2.0/c++11/override.cpp)
+- [override](./cpp2.0/cpp11/override.cpp)
 
-- [final](./c++2.0/c++11/final.cpp)
+- [final](./cpp2.0/cpp11/final.cpp)
 
-- [decltype](./c++2.0/c++11/decltype.cpp)
+- [decltype](./cpp2.0/cpp11/decltype.cpp)
 
-- [lambda](./c++2.0/c++11/lambda.cpp)
+- [lambda](./cpp2.0/cpp11/lambda.cpp)
 
-- [Rvalue reference](./c++2.0/c++11/rvalue.cpp)
+- [Rvalue reference](./cpp2.0/cpp11/rvalue.cpp)
 
-- [move aware class](./c++2.0/c++11/move.cpp)
+- [move aware class](./cpp2.0/cpp11/move.cpp)
 
 - 容器-结构与分类
 
@@ -224,9 +224,9 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
   - (2) 关联式容器包括：`set/multiset`,`map/multimap`
   - (3) 无序容器(C++2.0 新引入,更换原先 `hash_xxx` 为 `unordered_xxx`)包括：`unordered_map/unordered_multimap,unordered_set/unordered_multiset`
 
-- [Hash Function](./c++2.0/c++11/hash.cpp)
+- [Hash Function](./cpp2.0/cpp11/hash.cpp)
 
-- [tuple](./c++2.0/c++11/tuple.cpp)
+- [tuple](./cpp2.0/cpp11/tuple.cpp)
 
   学习资料：https://www.bilibili.com/video/av51863195?from=search&seid=3610634846288253061
 
@@ -295,31 +295,31 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 
 #### 8.1 [极客时间《现代 C++ 实战 30 讲》](https://time.geekbang.org/channel/home)
 
-- [堆、栈、RAII：C++ 里该如何管理资源？](./learn_class/modern_C++_30/RAII)
+- [堆、栈、RAII：C++ 里该如何管理资源？](./learn_class/modern_cpp_30/RAII)
   - [堆](./learn_class/modern_++_30/RAII/heap.cpp)
-  - [栈](./learn_class/modern_C++_30/RAII/stack.cpp)
-  - [RAII](./learn_class/modern_C++_30/RAII/RAII.cpp)
-- [自己动手，实现 C++ 的智能指针](./learn_class/modern_C++_30/smart_ptr)
-  - [auto_ptr、scope_ptr](./learn_class/modern_C++_30/smart_ptr/auto_scope.cpp)
-  - [unique_ptr](./learn_class/modern_C++_30/smart_ptr/unique_ptr.cpp)
-  - [shared_ptr](./learn_class/modern_C++_30/smart_ptr/shared_ptr.cpp)
-- [右值和移动究竟解决了什么问题？](./learn_class/modern_C++_30/reference)
-  - [左值与右值](./learn_class/modern_C++_30/reference/reference.cpp)
-  - [延长声明周期](./learn_class/modern_C++_30/reference/lifetime.cpp)
-  - [引用折叠](./learn_class/modern_C++_30/reference/collapses.cpp)
-  - [完美转发](./learn_class/modern_C++_30/reference/forward.cpp)
-  - [不要返回本地变量的引用](./learn_class/modern_C++_30/reference/don'treturnReference.cpp)
-- [容器 1](./learn_class/modern_C++_30/container1)
-- [容器 2](./learn_class/modern_C++_30/container2)
-- [异常](./learn_class/modern_C++_30/exception)
-- [字面量、静态断言和成员函数说明符](./learn_class/modern_C++_30/literalAssert)
-- [是不是应该返回对象？](./learn_class/modern_C++_30/returnObj)
-- [编译期多态：泛型编程和模板入门](./learn_class/modern_C++_30/compilerpoly)
-- [译期能做些什么？一个完整的计算世界](./learn_class/modern_C++_30/compilercompute)
-- [SFINAE：不是错误的替换失败是怎么回事?](./learn_class/modern_C++_30/SFINAE)
-- [constexpr：一个常态的世界](./learn_class/modern_C++_30/constexpr)
-- [函数对象和 lambda：进入函数式编程](./learn_class/modern_C++_30/functionLambda)
-- [内存模型和 atomic：理解并发的复杂性](./learn_class/modern_C++_30/memorymodel_atomic)
+  - [栈](./learn_class/modern_cpp_30/RAII/stack.cpp)
+  - [RAII](./learn_class/modern_cpp_30/RAII/RAII.cpp)
+- [自己动手，实现 C++ 的智能指针](./learn_class/modern_cpp_30/smart_ptr)
+  - [auto_ptr、scope_ptr](./learn_class/modern_cpp_30/smart_ptr/auto_scope.cpp)
+  - [unique_ptr](./learn_class/modern_cpp_30/smart_ptr/unique_ptr.cpp)
+  - [shared_ptr](./learn_class/modern_cpp_30/smart_ptr/shared_ptr.cpp)
+- [右值和移动究竟解决了什么问题？](./learn_class/modern_cpp_30/reference)
+  - [左值与右值](./learn_class/modern_cpp_30/reference/reference.cpp)
+  - [延长声明周期](./learn_class/modern_cpp_30/reference/lifetime.cpp)
+  - [引用折叠](./learn_class/modern_cpp_30/reference/collapses.cpp)
+  - [完美转发](./learn_class/modern_cpp_30/reference/forward.cpp)
+  - [不要返回本地变量的引用](./learn_class/modern_cpp_30/reference/don'treturnReference.cpp)
+- [容器 1](./learn_class/modern_cpp_30/container1)
+- [容器 2](./learn_class/modern_cpp_30/container2)
+- [异常](./learn_class/modern_cpp_30/exception)
+- [字面量、静态断言和成员函数说明符](./learn_class/modern_cpp_30/literalAssert)
+- [是不是应该返回对象？](./learn_class/modern_cpp_30/returnObj)
+- [编译期多态：泛型编程和模板入门](./learn_class/modern_cpp_30/compilerpoly)
+- [译期能做些什么？一个完整的计算世界](./learn_class/modern_cpp_30/compilercompute)
+- [SFINAE：不是错误的替换失败是怎么回事?](./learn_class/modern_cpp_30/SFINAE)
+- [constexpr：一个常态的世界](./learn_class/modern_cpp_30/constexpr)
+- [函数对象和 lambda：进入函数式编程](./learn_class/modern_cpp_30/functionLambda)
+- [内存模型和 atomic：理解并发的复杂性](./learn_class/modern_cpp_30/memorymodel_atomic)
 
 ### 9.工具篇
 
@@ -376,20 +376,20 @@ map<int, int> mp{
 
 
 
-### 12.赞助我
+### 12.关注我
 
-如果觉得不错，赞助我吧~
+如果觉得不错，关注我吧~
 
 <table>
   <tbody>
     <tr>
       <th align="center" style="height=200 width="200">
-          <img src="https://light-city.club/sc/assets/images/alipay.jpg" height="200" width="200" ><br>
-          支付宝
+          <img src="./img/cpp.jpg" height="200" width="200" ><br>
+          星球
       </th>
       <th align="center" style="height=200 width="200">
-          <img src="https://light-city.club/sc/assets/images/wechat.png" height="200" width="200" ><br>
-          微信
+          <img src="./img/wechat.jpg" height="200" width="200" ><br>
+          微信公众号
       </th>
     </tr>
   </tbody>

@@ -298,41 +298,42 @@ public:
     int getCount() const;
 
 };
-//main.cpp
-#include<iostream>
-#include"apple.cpp"
-using namespace std;
-
-Apple::Apple(int i):apple_number(i)
+// apple.cpp
+Apple::Apple(int i) : apple_number(i)
 {
-
 }
-int Apple::add(){
-    take(1);
+int Apple::add(int num)
+{
+    take(num);
     return 0;
 }
-int Apple::add(int num) const{
+int Apple::add(int num) const
+{
     take(num);
-    return num;
+    return 0;
 }
 void Apple::take(int num) const
 {
-    cout<<"take func "<<num<<endl;
+    std::cout << "take func " << num << std::endl;
 }
 int Apple::getCount() const
 {
     take(1);
-    add();  // error
+    //    add(); //error
     return apple_number;
 }
-int main(){
+int main()
+{
     Apple a(2);
-    cout<<a.getCount()<<endl;
+    cout << a.getCount() << endl;
     a.add(10);
+    const Apple b(3);
+    b.add(100);
     return 0;
 }
+// main.cpp
 ```
-> 编译： g++ -o main main.cpp apple.cpp<br>
+> 编译：bazel run basic_content/const/class_const/first_example:main<br>
 
 此时报错，上面getCount()方法中调用了一个add方法，而add方法并非const修饰，所以运行报错。也就是说const成员函数只能访问const成员函数。
 
