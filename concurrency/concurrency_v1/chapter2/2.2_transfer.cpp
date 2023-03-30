@@ -11,7 +11,10 @@ public:
     void do_length_work() {};
 };
 
-void process_big_object(std::unique_ptr<X>);
+void process_big_object(std::unique_ptr<X>)
+{
+    // TODO
+}
 
 int main() {
     X my_x;

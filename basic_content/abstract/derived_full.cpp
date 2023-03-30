@@ -6,27 +6,24 @@
  * @date 2019-07-20
  */
 
-#include<iostream> 
-using namespace std; 
+#include <iostream>
+using namespace std;
 
-class Base 
-{ 
-    int x; 
-    public: 
-    virtual void fun() = 0; 
-    int getX() { return x; } 
-}; 
+class Base {
+  int x;
 
-class Derived: public Base 
-{ 
-    int y; 
-    public: 
-    void fun() { cout << "fun() called"; }  // 实现了fun()函数
-}; 
+public:
+  virtual void fun() = 0;
+  int getX() { return x; }
+};
 
-int main(void) 
-{ 
-    Derived d; 
-    d.fun(); 
-    return 0; 
-} 
+class Derived : public Base {
+public:
+  void fun() { cout << "fun() called"; } // 实现了fun()函数
+};
+
+int main(void) {
+  Derived d;
+  d.fun();
+  return 0;
+}

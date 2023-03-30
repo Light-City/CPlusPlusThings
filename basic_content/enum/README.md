@@ -15,14 +15,22 @@
 - 作用域不受限,会容易引起命名冲突。例如下面无法编译通过的：
 
 ```c++
-#include <iostream>
-using namespace std;
-
-enum Color {RED,BLUE};
-enum Feeling {EXCITED,BLUE};
-
-int main() 
+enum Color
 {
+    RED,
+    BLUE
+};
+enum Feeling
+{
+    EXCITED,
+    BLUE
+};
+
+int main()
+{
+    Color a = BLUE; // error
+    Feeling b = EXCITED;
+    std::cout << a << ":" << b << std::endl;
     return 0;
 }
 ```

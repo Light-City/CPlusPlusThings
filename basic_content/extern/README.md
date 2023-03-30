@@ -82,7 +82,7 @@ extern "C" {
     #include "add.h"
 }
 int main() {
-    add(2,3);
+    std::cout << add(2, 3) << std::endl;
     return 0;
 }
 ```
@@ -98,6 +98,8 @@ gcc -c add.c
 ```
 g++ add.cpp add.o -o main
 ```
+
+如果使用bazel编译，运行:`bazel run basic_content/extern/extern_c++:main`
 
 而通常为了C代码能够通用，即既能被C调用，又能被C++调用，头文件通常会有如下写法：
 

@@ -23,7 +23,7 @@ public:
 
 抽象类只能作为基类来派生新类使用，不能创建抽象类的对象,抽象类的指针和引用->由抽象类派生出来的类的对象！
 
-> 代码样例：[test.cpp](./test.cpp)、[pure_virtual.cpp](./pure_virtual.cpp)
+> 代码样例：[abstract_base.h](./abstract_base.h)、[pure_virtual.cpp](./pure_virtual.cpp)
 
 ## 2.实现抽象类
 

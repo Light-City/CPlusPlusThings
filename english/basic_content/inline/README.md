@@ -132,7 +132,7 @@ int main()
     delete ptr;
     ptr = nullptr;
 
-    system("pause");
+    
     return 0;
 } 
 ```

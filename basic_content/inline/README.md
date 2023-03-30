@@ -27,7 +27,7 @@ public:
     {
     
     };
-    void f1(int x); ///< 声明后，要想成为内联函数，必须在定义处加inline关键字。  
+    void f2(int x); ///< 声明后，要想成为内联函数，必须在定义处加inline关键字。  
 };
 ```
 
@@ -128,7 +128,7 @@ int main()
     delete ptr;
     ptr = nullptr;
 
-    system("pause");
+    
     return 0;
 } 
 ```

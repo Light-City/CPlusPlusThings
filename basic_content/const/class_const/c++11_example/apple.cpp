@@ -1,15 +1,19 @@
-class Apple
-{
-private:
-    int people[100];
-public:
-    Apple(int i);
-    //使用c++11标准编译
-    static const int apple_number=10;
-    //const int apple_number=10;
-    void take(int num) const;
-    int add(int num);
-    int add(int num) const;
-    int getCount() const;
-};
+#include "apple.h"
+#include <iostream>
 
+using namespace std;
+Apple::Apple(int i) {}
+int Apple::add(int num) {
+  take(num);
+  return 0;
+}
+int Apple::add(int num) const {
+  take(num);
+  return 0;
+}
+void Apple::take(int num) const { cout << "take func " << num << endl; }
+int Apple::getCount() const {
+  take(1);
+  //    add(); //error
+  return apple_number;
+}

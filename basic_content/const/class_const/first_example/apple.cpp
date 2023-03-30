@@ -1,13 +1,20 @@
-class Apple
-{
-private:
-    int people[100];
-public:
-    Apple(int i);
-    const int apple_number;
-    void take(int num) const;
-    int add(int num);
-    int add(int num) const;
-    int getCount() const;
-};
+#include "apple.h"
+#include <iostream>
 
+Apple::Apple(int i) : apple_number(i) {}
+int Apple::add(int num) {
+  take(num);
+  return 0;
+}
+int Apple::add(int num) const {
+  take(num);
+  return 0;
+}
+void Apple::take(int num) const {
+  std::cout << "take func " << num << std::endl;
+}
+int Apple::getCount() const {
+  take(1);
+  //    add(); //error
+  return apple_number;
+}
