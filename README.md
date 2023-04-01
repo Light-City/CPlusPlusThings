@@ -39,7 +39,10 @@
 
 vscode + bazel
 
-参考：https://mp.weixin.qq.com/s/dO29WKMJTJk5YBs3Aorrlg
+
+### 视频学习本项目
+
+[第一期：Step By Step上手编译本项目](https://www.bilibili.com/video/BV1Rv4y1H7LB/?vd_source=bb6532dcd5b1d6b26125da900adb618e)
 
 
 
