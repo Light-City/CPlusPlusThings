@@ -27,10 +27,24 @@ b站直戳点：https://www.bilibili.com/video/BV1Rv4y1H7LB/?vd_source=bb6532dcd
 
 ---
 
+### 关注我
 
-另外，下面是我自己建立的知识星球，会带大家做一些小项目以及源码解读等方面成长。
+如果觉得不错，关注我吧~
 
-![](https://www.hualigs.cn/image/60a24728bb736.jpg)
+<table>
+  <tbody>
+    <tr>
+      <th align="center" style="height=200 width="200">
+          <img src="./img/cpp.jpg" height="200" width="200" ><br>
+          星球
+      </th>
+      <th align="center" style="height=200 width="200">
+          <img src="./img/wechat.jpg" height="200" width="200" ><br>
+          微信公众号
+      </th>
+    </tr>
+  </tbody>
+</table>
 
 
 ### 项目运行
@@ -388,22 +402,5 @@ map<int, int> mp{
 
 
 
-### 12.关注我
 
-如果觉得不错，关注我吧~
-
-<table>
-  <tbody>
-    <tr>
-      <th align="center" style="height=200 width="200">
-          <img src="./img/cpp.jpg" height="200" width="200" ><br>
-          星球
-      </th>
-      <th align="center" style="height=200 width="200">
-          <img src="./img/wechat.jpg" height="200" width="200" ><br>
-          微信公众号
-      </th>
-    </tr>
-  </tbody>
-</table>
 
