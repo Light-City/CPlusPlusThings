@@ -97,6 +97,18 @@ const char * const a; //指向const对象的const指针。
 > **小结：** <br>
 > 如果*const*位于`*`的左侧，则const就是用来修饰指针所指向的变量，即指针指向为常量；<br>如果const位于`*`的右侧，*const*就是修饰指针本身，即指针本身是常量。
 
+**另一种解读方式**<br>
+利用英文从右边往左边读，并且以to为分界，to之前为描述指针的特性，to之后为描述目标的特性<br>
+```c++
+const char * p; //p is a pointer to const char
+char const * p; //同上
+char * const p; //p is a const pointer to char
+const char * const p; //p is a const pointer to const char
+```
+当指针被加上const特性，则指针不可改变指向的地址<br>
+当指向的目标特性为char，则内容可以透过指针被修改，如: *char='y';<br>
+当指向的目标特性为const char，则内容不可透过指针修改<br>
+
 具体使用如下：
 
 （1） **指向常量的指针**
