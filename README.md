@@ -75,7 +75,7 @@ docker pull xingfranics/cplusplusthings:latest
 
 - **编译器**
 
-> gcc/g++
+  gcc/g++
 
 尽量用 g++，因为一开始我用的 vim 写的，所以纯 g++，后来用编译器 CLion，部分有 CMakeLists.txt 文件，直接导入就行，后面会更新这个文件包含整个项目，持续关注~
 
