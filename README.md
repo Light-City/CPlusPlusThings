@@ -50,6 +50,12 @@ b站直戳点：https://www.bilibili.com/video/BV1Rv4y1H7LB/?vd_source=bb6532dcd
 
 vscode + bazel
 
+新推出免开发环境，docker环境，大家可以pull下面镜像：
+
+```
+docker pull xingfranics/cplusplusthings:latest
+```
+
 
 ### 视频学习本项目
 
