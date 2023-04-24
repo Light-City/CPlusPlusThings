@@ -140,22 +140,33 @@ cout<<*ptr<<endl;
 
 （2） **常指针**
 
-const指针必须进行初始化，且const指针的值不能修改。
+const指针必须进行初始化，且const指针指向的值能修改，但指向不能修改。
 
 ```cpp
 #include<iostream>
 using namespace std;
 int main(){
-
-    int num=0;
-    int * const ptr=&num; //const指针必须初始化！且const指针的值不能修改
-    int * t = &num;
-    *t = 1;
+    int num=0, num1=1;
+    int * const ptr=&num; //const指针必须初始化！且const指针的指向不能修改
+    ptr = &num1; //error! const指针不能修改指向！
     cout<<*ptr<<endl;
 }
 ```
 
-上述修改ptr指针所指向的值，可以通过非const指针来修改。
+代码出现编译错误：const指针不能修改指向。
+
+```cpp
+#include<iostream>
+using namespace std;
+int main(){
+    int num=0, num1=1;
+    int * const ptr=&num; //const指针必须初始化！且const指针的指向不能修改
+    *ptr = 1;
+    cout<<*ptr<<endl;
+}
+```
+
+代码无事发生，正常输出1。
 
 最后，当把一个const常量的地址赋值给ptr时候，由于ptr指向的是一个变量，而不是const常量，所以会报错，出现：const int`*` -> int `*`错误！
 
@@ -169,7 +180,7 @@ int main(){
 }
 ```
 
-上述若改为 const int `*`ptr或者改为const int `*`const ptr，都可以正常！
+上述若改为 const int *ptr或者改为const int *const ptr，都可以正常运行！
 
 （3）**指向常量的常指针**
 
