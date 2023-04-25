@@ -60,6 +60,7 @@ docker pull xingfranics/cplusplusthings:latest
 ### 视频学习本项目
 
 [第一期：Step By Step上手编译本项目](https://www.bilibili.com/video/BV1Rv4y1H7LB/?vd_source=bb6532dcd5b1d6b26125da900adb618e)
+[第二期：免开发环境docker](https://www.bilibili.com/video/BV1oz4y1a7Pu/?spm_id_from=333.1007.top_right_bar_window_dynamic.content.click&vd_source=bb6532dcd5b1d6b26125da900adb618e)
 
 
 
