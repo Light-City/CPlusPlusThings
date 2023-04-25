@@ -28,7 +28,7 @@ const int a=100;
 
 ```cpp
 void f(const int i){
-    i++; //error!
+    i++; // error!
 }
 ```
 
@@ -58,9 +58,9 @@ int main(){
 > const常量在不同文件的访问
 
 ```cpp
-//extern_file1.cpp
+// extern_file1.cpp
 extern const int ext=12;
-//extern_file2.cpp
+// extern_file2.cpp
 #include<iostream>
 extern const int ext;
 int main(){
@@ -88,10 +88,10 @@ const int i,j=0 // error: uninitialized const ‘i’
 与指针相关的const有四种：
 
 ```c++
-const char * a; //指向const对象的指针或者说指向常量的指针。
-char const * a; //同上
-char * const a; //指向类型对象的const指针。或者说常指针、const指针。
-const char * const a; //指向const对象的const指针。
+const char * a; // 指向const对象的指针或者说指向常量的指针。
+char const * a; // 同上
+char * const a; // 指向类型对象的const指针。或者说常指针、const指针。
+const char * const a; // 指向const对象的const指针。
 ```
 
 > **小结：** <br>
@@ -103,7 +103,7 @@ const char * const a; //指向const对象的const指针。
 
 ```cpp
 const int *ptr;
-*ptr = 10; //error
+*ptr = 10; // error
 ```
 
 ptr是一个指向int类型const对象的指针，const定义的是int类型，也就是ptr所指向的对象类型，而不是ptr本身，所以ptr可以不用赋初始值。但是不能通过ptr去修改所指对象的值。
@@ -113,7 +113,7 @@ ptr是一个指向int类型const对象的指针，const定义的是int类型，�
 ```c++
 const int p = 10;
 const void * vp = &p;
-void *vp = &p; //error
+void *vp = &p; // error
 ```
 
 另外一个重点是：**允许把非const对象的地址赋给指向const对象的指针**。
@@ -123,7 +123,7 @@ void *vp = &p; //error
 ```c++
 const int *ptr;
 int val = 3;
-ptr = &val; //ok
+ptr = &val; // ok
 ```
 
 我们不能通过ptr指针来修改val的值，即使它指向的是非const对象!
@@ -140,22 +140,33 @@ cout<<*ptr<<endl;
 
 （2） **常指针**
 
-const指针必须进行初始化，且const指针的值不能修改。
+const指针必须进行初始化，且const指针指向的值能修改，但指向不能修改。
 
 ```cpp
 #include<iostream>
 using namespace std;
 int main(){
-
-    int num=0;
-    int * const ptr=&num; //const指针必须初始化！且const指针的值不能修改
-    int * t = &num;
-    *t = 1;
+    int num=0, num1=1;
+    int * const ptr=&num; // const指针必须初始化！且const指针的指向不能修改
+    ptr = &num1; // error! const指针不能修改指向！
     cout<<*ptr<<endl;
 }
 ```
 
-上述修改ptr指针所指向的值，可以通过非const指针来修改。
+代码出现编译错误：const指针不能修改指向。
+
+```cpp
+#include<iostream>
+using namespace std;
+int main(){
+    int num=0, num1=1;
+    int * const ptr=&num; // const指针必须初始化！且const指针的指向不能修改
+    *ptr = 1;
+    cout<<*ptr<<endl;
+}
+```
+
+代码无事发生，正常输出1。
 
 最后，当把一个const常量的地址赋值给ptr时候，由于ptr指向的是一个变量，而不是const常量，所以会报错，出现：const int`*` -> int `*`错误！
 
@@ -164,7 +175,7 @@ int main(){
 using namespace std;
 int main(){
     const int num=0;
-    int * const ptr=&num; //error! const int* -> int*
+    int * const ptr=&num; // error! const int* -> int*
     cout<<*ptr<<endl;
 }
 ```
@@ -284,7 +295,7 @@ const对象只能访问const成员函数,而非const对象可以访问任意的�
 例如：
 
 ```cpp
-//apple.cpp
+// apple.cpp
 class Apple
 {
 private:
@@ -319,7 +330,7 @@ void Apple::take(int num) const
 int Apple::getCount() const
 {
     take(1);
-    //    add(); //error
+    //    add(); // error
     return apple_number;
 }
 int main()
