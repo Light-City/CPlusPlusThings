@@ -5,7 +5,7 @@
 
 感谢各位对《C++ 那些事》的支持，现将内容也同步至B站，以视频的方式展示，可以打开网站直接阅读~欢迎大家 star、转发、PR。
 
-因服务器到期，暂时关闭以下站点，请大家阅读仓库即可，感谢支持。
+网站：https://light-city.github.io/
 
 b站直戳点：https://www.bilibili.com/video/BV1Rv4y1H7LB/?vd_source=bb6532dcd5b1d6b26125da900adb618e
 
