@@ -7,7 +7,6 @@
 
 网站：https://light-city.github.io/
 
-b站直戳点：https://www.bilibili.com/video/BV1Rv4y1H7LB/?vd_source=bb6532dcd5b1d6b26125da900adb618e
 
 ## 规划
 
