@@ -26,14 +26,16 @@ C++调用C函数的例子: 引用C的头文件时，需要加`extern "C"`
 #define ADD_H
 int add(int x,int y);
 #endif
-
+```
+```c
 //add.c
 #include "add.h"
 
 int add(int x,int y) {
     return x+y;
 }
-
+```
+```c++
 //add.cpp
 #include <iostream>
 #include "add.h"
@@ -128,7 +130,7 @@ int add(int x,int y);
 
 `extern "C"`在C中是语法错误，需要放在C++头文件中。
 
-```c
+```c++
 // add.h
 #ifndef ADD_H
 #define ADD_H
@@ -136,14 +138,16 @@ extern "C" {
     int add(int x,int y);
 }
 #endif
-
+```
+```c++
 // add.cpp
 #include "add.h"
 
 int add(int x,int y) {
     return x+y;
 }
-
+```
+```c
 // add.c
 extern int add(int x,int y);
 int main() {
@@ -154,7 +158,7 @@ int main() {
 
 编译：
 
-```c
+```
 g++ -c add.cpp
 ```
 
@@ -181,12 +185,14 @@ gcc add.c add.o -o main
 ```c++
 //xx.h
 extern int add(...)
-
+```
+```c
 //xx.c
 int add(){
     
 }
-
+```
+```c++
 //xx.cpp
 extern "C" {
     #include "xx.h"
@@ -195,15 +201,19 @@ extern "C" {
 
 （2）C调用C++函数
 
-```c
+```c++
 //xx.h
 extern "C"{
     int add();
 }
+```
+```c++
 //xx.cpp
 int add(){
     
 }
+```
+```c
 //xx.c
 extern int add();
 ```
