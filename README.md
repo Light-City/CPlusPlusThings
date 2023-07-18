@@ -1,3 +1,4 @@
+
 # C++ 那些事
 
 [English version is here](./README_EN.md)
@@ -6,6 +7,12 @@
 感谢各位对《C++ 那些事》的支持，现将内容也同步至B站，以视频的方式展示，可以打开网站直接阅读~欢迎大家 star、转发、PR。
 
 网站：https://light-city.github.io/
+
+
+- 中文名：**C++ 那些事**
+- 英文名：**Stories About C Plus Plus**
+
+这是一个适合初学者从<u>**入门到进阶**</u>的仓库，解决了<u>**面试者与学习者**</u>想要<u>**深入 C++**</u> 及如何<u>**入坑 C++**</u> 的问题。除此之外，本仓库拓展了更加深入的源码分析，多线程并发等的知识，是一个比较全面的 C++ 学习从入门到进阶提升的仓库。
 
 
 ### 重磅项目
@@ -46,15 +53,18 @@
 
 
 ### 项目运行
------------新的方式-----------------
 
-vscode + bazel
+
+#### 方式1: vscode + bazel
+
+#### 方式2: docker
 
 新推出免开发环境，docker环境，大家可以pull下面镜像：
 
 ```
 docker pull xingfranics/cplusplusthings:latest
 ```
+#### 方式3: g++
 
 
 ### 视频学习本项目
@@ -63,30 +73,7 @@ docker pull xingfranics/cplusplusthings:latest
 
 [第二期：免开发环境docker](https://www.bilibili.com/video/BV1oz4y1a7Pu/?vd_source=bb6532dcd5b1d6b26125da900adb618e)
 
-
-
------------老的方式-----------------
-
-- **代码环境**
-
-  Ubuntu 18.04
-
-- **编辑工具**
-
-  CLion
-
-- **编译器**
-
-> gcc/g++
-
-尽量用 g++，因为一开始我用的 vim 写的，所以纯 g++，后来用编译器 CLion，部分有 CMakeLists.txt 文件，直接导入就行，后面会更新这个文件包含整个项目，持续关注~
-
-### 0.项目概要
-
-- 中文名：**C++ 那些事**
-- 英文名：**Stories About C Plus Plus**
-
-这是一个适合初学者从<u>**入门到进阶**</u>的仓库，解决了<u>**面试者与学习者**</u>想要<u>**深入 C++**</u> 及如何<u>**入坑 C++**</u> 的问题。除此之外，本仓库拓展了更加深入的源码分析，多线程并发等的知识，是一个比较全面的 C++ 学习从入门到进阶提升的仓库。
+[第三期：手把手共读HashTable，彻底搞懂C++ STL](https://www.bilibili.com/video/BV1o8411U7vy/?vd_source=bb6532dcd5b1d6b26125da900adb618e)
 
 ### 1.基础进阶
 
