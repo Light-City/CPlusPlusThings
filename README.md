@@ -1,7 +1,41 @@
 
-# C++ 那些事
+- [C++ 那些事](#c-那些事)
+    - [重磅项目](#重磅项目)
+    - [关于作者](#关于作者)
+    - [项目运行](#项目运行)
+      - [方式1: vscode + bazel](#方式1-vscode--bazel)
+      - [方式2: docker](#方式2-docker)
+      - [方式3: g++](#方式3-g)
+    - [视频学习本项目](#视频学习本项目)
+    - [基础进阶](#基础进阶)
+    - [实战系列](#实战系列)
+      - [10 日狂练](#10-日狂练)
+      - [重点实战练习](#重点实战练习)
+    - [C++2.0 新特性](#c20-新特性)
+      - [概况](#概况)
+      - [C++11 新特性](#c11-新特性)
+      - [C++14/17/20](#c141720)
+    - [设计模式](#设计模式)
+    - [STL 源码剖析](#stl-源码剖析)
+    - [并发编程](#并发编程)
+      - [C++ Concurrency in Action](#c-concurrency-in-action)
+      - [多线程与多进程](#多线程与多进程)
+        - [Threading In C++](#threading-in-c)
+    - [C++ 惯用法](#c-惯用法)
+        - [你最喜欢的 c++ 编程风格惯用法是什么?](#你最喜欢的-c-编程风格惯用法是什么)
+    - [学习课程](#学习课程)
+      - [极客时间《现代 C++ 实战 30 讲》](#极客时间现代-c-实战-30-讲)
+    - [工具篇](#工具篇)
+      - [容器快捷输出工具](#容器快捷输出工具)
+      - [像 Python 一样简单输出（Jupyter Notebook）](#像-python-一样简单输出jupyter-notebook)
+      - [观察编译过程变化](#观察编译过程变化)
+      - [C++ 的 Debug 工具 dbg-macro](#c-的-debug-工具-dbg-macro)
+      - [在 Linux 上的 Debug 工具 rr - 拥有回到过去的能力](#在-linux-上的-debug-工具-rr---拥有回到过去的能力)
+    - [拓展部分](#拓展部分)
+      - [一些问题](#一些问题)
+    - [贡献者](#贡献者)
 
-[English version is here](./README_EN.md)
+# C++ 那些事
 
 
 感谢各位对《C++ 那些事》的支持，现将内容也同步至B站，以视频的方式展示，可以打开网站直接阅读~欢迎大家 star、转发、PR。
@@ -32,7 +66,7 @@
 
 ---
 
-### 关注我
+>关注我
 
 如果觉得不错，关注我吧~
 
@@ -75,7 +109,7 @@ docker pull xingfranics/cplusplusthings:latest
 
 [第三期：手把手共读HashTable，彻底搞懂C++ STL](https://www.bilibili.com/video/BV1o8411U7vy/?vd_source=bb6532dcd5b1d6b26125da900adb618e)
 
-### 1.基础进阶
+### 基础进阶
 
 - [`const` 那些事](./basic_content/const)
 - [`static` 那些事](./basic_content/static)
@@ -103,9 +137,9 @@ docker pull xingfranics/cplusplusthings:latest
 - [引用与指针那些事](./basic_content/pointer_refer)
 - [宏那些事](./basic_content/macro)
 
-### 2.实战系列
+### 实战系列
 
-#### 2.1 [10 日狂练](./practical_exercises/10_day_practice)
+#### [10 日狂练](./practical_exercises/10_day_practice)
 
 - [x] [day1](practical_exercises/10_day_practice/day1)
 
@@ -147,7 +181,7 @@ docker pull xingfranics/cplusplusthings:latest
 
 文件与流
 
-#### 2.2 [重点实战练习](./practical_exercises/key_exercises/)
+#### [重点实战练习](./practical_exercises/key_exercises/)
 
 ├── [中括号重载.cpp](./practical_exercises/key_exercises/bracket_overloading.cpp)
 
@@ -180,13 +214,13 @@ docker pull xingfranics/cplusplusthings:latest
 ├── [输出格式.cpp](./practical_exercises/key_exercises/output.cpp)
 
 
-### 3.[C++2.0 新特性](./cpp2.0)
+### [C++2.0 新特性](./cpp2.0)
 
-#### 3.0 概况
+#### 概况
 
 C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 
-#### 3.1 [C++11 新特性](./cpp2.0/cpp11)
+#### [C++11 新特性](./cpp2.0/cpp11)
 
 - [Variadic Templates](./cpp2.0/cpp11/variadic)
 
@@ -255,16 +289,16 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 
   学习资料：https://www.bilibili.com/video/av51863195?from=search&seid=3610634846288253061
 
-#### 3.2 C++14/17/20
+#### C++14/17/20
 
 待更新...
 
-### 4.设计模式
+### 设计模式
 
 - [单例模式](./design_pattern/singleton)
 - [生产消费者模式](./design_pattern/producer_consumer)
 
-### 5. [STL 源码剖析](./src_analysis/stl)
+### [STL 源码剖析](./src_analysis/stl)
 
 **STL 源码剖析：gcc 4.9.1**
 
@@ -284,18 +318,18 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 - [myhashtable](./src_analysis/stl/myhashtable.md)
 - [unordered_map](./src_analysis/stl/unordered_map.md)
 
-### 6. [并发编程](./concurrency)
+### [并发编程](./concurrency)
 
-#### 6.1 C++ Concurrency in Action
+#### C++ Concurrency in Action
 
 - [第一章](./concurrency/concurrency_v1/chapter1)
 - [第二章](./concurrency/concurrency_v1/chapter2)
 
 学习资料：https://downdemo.gitbook.io/cpp-concurrency-in-action-2ed/
 
-#### 6.2 多线程与多进程
+#### 多线程与多进程
 
-##### 6.2.1 Threading In C++
+##### Threading In C++
 
 - [介绍](./concurrency/Threading_In_CPlusPlus/1.thread)
 - [创建线程的五种类型](./concurrency/Threading_In_CPlusPlus/2.create_type)
@@ -306,7 +340,7 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 >
 > https://www.youtube.com/watch?v=eZ8yKZo-PGw&list=PLk6CEY9XxSIAeK-EAh3hB4fgNvYkYmghp&index=4
 
-### 7. [C++ 惯用法](./codingStyleIdioms)
+### [C++ 惯用法](./codingStyleIdioms)
 
 ##### 你最喜欢的 c++ 编程风格惯用法是什么?
 
@@ -316,9 +350,9 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 - [4.copy and swap](./codingStyleIdioms/4_copy-swap)
 - [5.pImpl (指针指向具体实现)](./codingStyleIdioms/5_pImpl)
 
-### 8.学习课程
+### 学习课程
 
-#### 8.1 [极客时间《现代 C++ 实战 30 讲》](https://time.geekbang.org/channel/home)
+#### [极客时间《现代 C++ 实战 30 讲》](https://time.geekbang.org/channel/home)
 
 - [堆、栈、RAII：C++ 里该如何管理资源？](./learn_class/modern_cpp_30/RAII)
   - [堆](./learn_class/modern_++_30/RAII/heap.cpp)
@@ -346,9 +380,9 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 - [函数对象和 lambda：进入函数式编程](./learn_class/modern_cpp_30/functionLambda)
 - [内存模型和 atomic：理解并发的复杂性](./learn_class/modern_cpp_30/memorymodel_atomic)
 
-### 9.工具篇
+### 工具篇
 
-#### 9.1 [容器快捷输出工具](./tool/output)
+#### [容器快捷输出工具](./tool/output)
 
 对吴老师的代码进行了修改，[点击此处直通代码](./tool/output/output_container.h)
 
@@ -368,28 +402,28 @@ map<int, int> mp{
 { 1 => 1, 2 => 4, 3 => 9 }
 ```
 
-#### 9.2 像 Python 一样简单输出（Jupyter Notebook）
+#### 像 Python 一样简单输出（Jupyter Notebook）
 
 - [像 Python 一样玩 C/C++](./tool/像Python一样玩CC++.md)
 
-#### 9.3 观察编译过程变化
+#### 观察编译过程变化
 
 -  [https://cppinsights.io](https://cppinsights.io/)
 
-#### 9.4 C++ 的 Debug 工具 dbg-macro
+#### C++ 的 Debug 工具 dbg-macro
 
 - [C++ 的 Debug 工具 dbg-macro](./tool/C++的Debug工具dbg-macro.md)
 
-#### 9.5 在 Linux 上的 Debug 工具 rr - 拥有回到过去的能力
+#### 在 Linux 上的 Debug 工具 rr - 拥有回到过去的能力
 - [用 rr 来进行 debug](./tool/用rr来进行debug.md)
 
-### 10.拓展部分
+### 拓展部分
 
-#### 10.1 一些问题
+#### 一些问题
 
 - [C++ 中如何将 string 类型转换为 int 类型？](./extension/some_problem/string_int.md)
 
-### 11.贡献者
+### 贡献者
 
 
 
