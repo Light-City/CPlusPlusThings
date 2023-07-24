@@ -9,11 +9,11 @@
 
 ## 1.First assertion case
 
-assert，**is macro，rather than function**。
+Assert, **is macro，rather than function**.
 
-assert The prototype of a macro is defined in  <assert.h>（C）、<cassert>（C++）.If its condition returns an error，Program execution is terminated.
+Assert the prototype of a macro is defined in <assert.h>(C) or <cassert>(C++). If its condition is false or returns an error, program execution will terminate.
 
-You can close assert by defining 'ndebug', **But it needs to be at the beginning of the source code，before include <assert.h>.**
+You can disable assert by defining macro `NDEBUG`, **But it needs to be at the beginning of the source code，before include <assert.h>.**
 
 ```c
 void assert(int expression);
@@ -49,11 +49,11 @@ assert: assert.c:13: main: Assertion 'x==7' failed.
 
 + Assertions are mainly used to check for logically impossible situations.
 
->For example, they can be used to check the state that code expects before it starts to run, or after the run is complete. Unlike normal error handling, assertions are usually disabled at run time.
+> For example, they can be used to check the state that code expects before it starts to run, or after the run is complete. Unlike normal error handling, assertions are usually disabled at run time.
 
 + Ignore the assertion and add at the beginning of the code：
 ```c++
-#define NDEBUG          // Adding this line，then you do not need the assert
+#define NDEBUG          // Adding this line，then assert will be disable
 ```
 
 > Code Example：[ignore_assert.c](./ignore_assert.c)

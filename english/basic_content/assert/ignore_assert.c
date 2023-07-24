@@ -1,12 +1,12 @@
 /**
  * @file ignore_assert.c
- * @brief 忽略断言
- * @author 光城
+ * @brief Ignore assertion
+ * @author Light-City
  * @version v1
  * @date 2019-07-25
  */
 
-# define NDEBUG // 忽略断言
+#define NDEBUG // ignore assertion
 
 #include<assert.h>
 
