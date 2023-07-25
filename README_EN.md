@@ -1,7 +1,7 @@
 # Stories About C Plus Plus
 
 Thanks for all the support about << Stories About C ++ >>~~, right now you could open this link(https://light-city.club/sc/) to read this article.~~
-Any star, retweet or pr will be weclomed.
+Any star, retweet or pr will be welcomed.
 
 **Notice: The website is not available now.**
 
@@ -54,7 +54,7 @@ other details,such as in-depth source code analysis and multi-threaded concurren
 Basic Grammar About C ++
 - [x] day2
 
-Recursive、Structor、Enumerate、Static Variable
+Recursive、Struct、Enumerate、Static Variable
 
 - [x] day3
 
@@ -70,7 +70,7 @@ Inheritance and Polymorphism
 
 - [x] day6
 
-Vitrual Function、Abstruct 
+Virtual Function、Abstruct 
 
 - [x] day7
 
@@ -232,7 +232,7 @@ Learning materials: https://chenxiaowei.gitbook.io/cpp_concurrency_in_action/
 
 - [Introduction](./concurrency/Threading_In_CPlusPlus/1.thread)
 - [Five Types of Thread Creation](./concurrency/Threading_In_CPlusPlus/2.create_type)
-- [Join And Detachs](./concurrency/Threading_In_CPlusPlus/3.join_detach)
+- [Join And Detaches](./concurrency/Threading_In_CPlusPlus/3.join_detach)
 - [mutex in C++ Threading](./concurrency/Threading_In_CPlusPlus/4.mutex)
 
 > From：
@@ -277,7 +277,7 @@ Learning materials: https://chenxiaowei.gitbook.io/cpp_concurrency_in_action/
 - [SFINAE：What is it if it is not replace error?](./learn_class/modern_cpp_30/SFINAE)
 - [constexpr：A Normal World](./learn_class/modern_cpp_30/constexpr)
 - [Function object and Lambda：functionLambda](./learn_class/modern_cpp_30/functionLambda)
-- [Memory Model and Atomic：Understangding the complexity of concurrency](./learn_class/modern_cpp_30/memorymodel_atomic)
+- [Memory Model and Atomic：Understanding the complexity of concurrency](./learn_class/modern_cpp_30/memorymodel_atomic)
 
 ### 7.Tools
 
