@@ -1,5 +1,5 @@
 # please run `bazel run basic_content/macro:do_while`
-# please run `bazel run basic_content/sig_examp:sig_examp`
+# please run `bazel run basic_content/macro:sig_examp`
 load("@rules_cc//cc:defs.bzl", "cc_binary")
 
 cc_binary(
