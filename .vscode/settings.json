@@ -108,5 +108,11 @@
         "typeindex": "cpp",
         "valarray": "cpp",
         "variant": "cpp"
-    }
+    },
+    "editor.fontSize": 13,
+    "bazel.buildifierExecutable": "/usr/local/bin/buildifier", //你的buildifier目录
+    "bazel.executable": "/usr/local/bin/bazel", //你的bazel目录
+    "bazel.buildifierFixOnFormat": true,
+    "bazel.enableCodeLens": true,
+    "bazel.queriesShareServer": true,
 }

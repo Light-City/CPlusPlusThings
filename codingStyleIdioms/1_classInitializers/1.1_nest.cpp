@@ -15,7 +15,7 @@ public:
         std::cout << "Animal (const Animal &) is called" << std::endl;
     }
 
-    Animal &operator=(const Animal &) {
+    Animal& operator=(const Animal &) {
         std::cout << "Animal & operator=(const Animal &) is called" << std::endl;
         return *this;
     }
