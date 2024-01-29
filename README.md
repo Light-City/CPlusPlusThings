@@ -42,6 +42,7 @@
 
 网站：https://light-city.github.io/
 
+学习项目：https://light-8qul6w.newpage.im/
 
 - 中文名：**C++ 那些事**
 - 英文名：**Stories About C Plus Plus**
