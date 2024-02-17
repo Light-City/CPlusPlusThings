@@ -219,9 +219,9 @@ singleton *singleton::instance() {
 Scott Meyer在《Effective C++》中提出了一种简洁的singleton写法
 
 ```cpp
-singleton *singleton::instance() {
+singleton &singleton::instance() {
     static singleton p;
-    return &p;
+    return p;
 }
 ```
 
