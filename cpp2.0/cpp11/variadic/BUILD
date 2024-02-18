@@ -1,10 +1,10 @@
-# please run `bazel run //cpp2.0/cpp11:variadic7`
-# please run `bazel run //cpp2.0/cpp11:variadic3_4`
-# please run `bazel run //cpp2.0/cpp11:variadic2`
-# please run `bazel run //cpp2.0/cpp11:variadic6`
-# please run `bazel run //cpp2.0/cpp11:variadic5`
-# please run `bazel run //cpp2.0/cpp11:variadic`
-# please run `bazel run //cpp2.0/cpp11:variadic1`
+# please run `bazel run //cpp2.0/cpp11/variadic:variadic7`
+# please run `bazel run //cpp2.0/cpp11/variadic:variadic3_4`
+# please run `bazel run //cpp2.0/cpp11/variadic:variadic2`
+# please run `bazel run //cpp2.0/cpp11/variadic:variadic6`
+# please run `bazel run //cpp2.0/cpp11/variadic:variadic5`
+# please run `bazel run //cpp2.0/cpp11/variadic:variadic`
+# please run `bazel run //cpp2.0/cpp11/variadic:variadic1`
 
 load("@rules_cc//cc:defs.bzl", "cc_binary")
 
