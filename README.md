@@ -42,9 +42,6 @@
 
 网站：https://light-city.github.io/
 
-项目与博客：[个人博客](https://light-city.vercel.app/)
-学习项目：[项目](https://light-8qul6w.newpage.im/)
-
 - 中文名：**C++ 那些事**
 - 英文名：**Stories About C Plus Plus**
 
@@ -57,6 +54,8 @@
 
 直通点：[戳这里](./proj/README.md)
 
+项目与博客：[个人博客](https://light-city.vercel.app/)
+学习项目：[项目](https://light-8qul6w.newpage.im/)
 
 ### 关于作者
 
