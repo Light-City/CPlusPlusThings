@@ -5,3 +5,6 @@ bazel-out
 bazel-testlogs
 bazel-cplusplus_bazel
 .vscode
+*.exe
+*.json
+settings.json

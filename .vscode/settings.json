@@ -108,5 +108,6 @@
         "typeindex": "cpp",
         "valarray": "cpp",
         "variant": "cpp"
-    }
+    },
+    "C_Cpp.default.compilerPath": "D:\\Program Files\\mingw64\\bin\\gcc.exe"
 }
