@@ -8,7 +8,7 @@
 
 using namespace std;
 
-// 3.functor (Funciton Object)
+// 3.functor (Function Object)
 class Base {
 public:
     void operator()(int x) {

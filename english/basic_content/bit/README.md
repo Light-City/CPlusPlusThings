@@ -86,7 +86,7 @@ struct stuff
 
 
 
-`field1` + `field2` = 34 Bits，beyond 32 Bits, Complier`field2` move to the next unsigned int unit. stuff.field1 and stuff.field2 will leave the 2 Bits space， stuff.field3 follow closely stuff.field2.The structure is now of size 2 * 32 = 64 Bits。
+`field1` + `field2` = 34 Bits，beyond 32 Bits, Compiler`field2` move to the next unsigned int unit. stuff.field1 and stuff.field2 will leave the 2 Bits space， stuff.field3 follow closely stuff.field2.The structure is now of size 2 * 32 = 64 Bits。
 
 This hole can be filled with the unnamed bit field member mentioned earlier, or we can use an unnamed bit field member with a width of 0 to align the next field member with the next integer.
 For example:

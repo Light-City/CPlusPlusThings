@@ -114,7 +114,7 @@ Data members are constants only for the lifetime of an objec. However, it is var
 
 
 
-Cannot be initialized in a class declaration const data memeber。The following usage is incorrect，Because the compiler does not know what the value of size is when the object of the class is not created.(c++11)
+Cannot be initialized in a class declaration const data member。The following usage is incorrect，Because the compiler does not know what the value of size is when the object of the class is not created.(c++11)
 
 ```c++
 class A 

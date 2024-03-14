@@ -1,6 +1,6 @@
-# please run `bazel run basic_content/const/funciton_const/condition2:condition1`
-# please run `bazel run basic_content/const/funciton_const/condition2:condition2`
-# please run `bazel run basic_content/const/funciton_const/condition2:condition3`
+# please run `bazel run basic_content/const/function_const/condition2:condition1`
+# please run `bazel run basic_content/const/function_const/condition2:condition2`
+# please run `bazel run basic_content/const/function_const/condition2:condition3`
 load("@rules_cc//cc:defs.bzl", "cc_binary")
 
 # Don't panic if you get compilation errors, this is what this code demonstrates, as expected.

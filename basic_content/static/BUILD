@@ -2,7 +2,7 @@
 # please run `bazel run basic_content/static:static_class`
 # please run `bazel run basic_content/static:static_demo`
 # please run `bazel run basic_content/static:static_error_variable`
-# please run `bazel run basic_content/static:static_funciton`
+# please run `bazel run basic_content/static:static_function`
 # please run `bazel run basic_content/static:static_variable`
 load("@rules_cc//cc:defs.bzl", "cc_binary")
 
@@ -31,8 +31,8 @@ cc_binary(
 )
 
 cc_binary(
-    name = "static_funciton",
-    srcs = ["static_funciton.cpp"],
+    name = "static_function",
+    srcs = ["static_function.cpp"],
     copts = ["-std=c++11"]
 )
 
