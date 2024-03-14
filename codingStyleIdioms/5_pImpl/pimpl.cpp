@@ -23,7 +23,7 @@ private:
 class private_foo {
 public:
     void bar() {
-        cout<<"private_foo invoke bar funciton."<<endl;
+        cout<<"private_foo invoke bar function."<<endl;
     }
 
 private:

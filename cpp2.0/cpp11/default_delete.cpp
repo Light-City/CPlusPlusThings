@@ -32,7 +32,7 @@ public:
     ~Zoo() = default;
 
     // 上述得出=delete可以使用在任何函数身上,而=default不可以使用在普通函数上
-    // 上述会联想到=0,=0只能用在virtual funciton上
+    // 上述会联想到=0,=0只能用在virtual function上
 
 private:
     int a, b;

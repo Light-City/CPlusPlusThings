@@ -21,7 +21,7 @@ class A
 class B:public A    // 必须为共有继承，否则后面调用不到，class默认为私有继承！
 {
     public:
-        virtual void f()//Virtual function implementation, virtual keyword in subclass can not be appearence
+        virtual void f()//Virtual function implementation, virtual keyword in subclass can not be appearance
         {
             cout << "Derived B::f() " << endl;
         }
