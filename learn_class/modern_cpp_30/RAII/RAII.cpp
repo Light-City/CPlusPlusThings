@@ -48,6 +48,8 @@ shape *create_shape(shape_type type) {
     return new triangle();
   case shape_type::rectangle:
     return new rectangle();
+  default:
+    return nullptr;
   }
 }
 
