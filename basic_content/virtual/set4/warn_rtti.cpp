@@ -22,4 +22,4 @@ class E : private A {};
 
 // F为多态类型
 
-class F : private B {}
+class F : private B {};
