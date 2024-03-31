@@ -1,0 +1,15 @@
+# This is a projectview file generated automatically during bazel project auto-import 
+# For more documentation, please visit https://ij.bazel.build/docs/project-views.html
+# If your repository contains predefined .projectview files, you use 'import' directive to include them.
+# Otherwise, please specify 'directories' and 'targets' you want to be imported
+ 
+# By default, we keep the 'directories' section empty, so nothing is imported.
+# Please change `-.` to a list of directories you would like to import
+# 
+# After that, please look at the `derive_targets_from_directories` section and then:
+#   - either keep it set to `true` to import ALL targets in the directories section
+#   - or set it to `false` and add `targets` section to choose the targets selectively
+
+directories: 
+  -.
+derive_targets_from_directories: true

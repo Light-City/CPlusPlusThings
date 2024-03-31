@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BlazeImportSettings">
+    <option name="buildSystem" value="Bazel" />
+    <option name="locationHash" value="CPlusPlusThings-244453b6" />
+    <option name="projectDataDirectory" value="F:\code\CPlusPlusThings\.clwb" />
+    <option name="projectName" value="CPlusPlusThings" />
+    <option name="projectViewFile" value="F:\code\CPlusPlusThings\.clwb\.bazelproject" />
+    <option name="workspaceRoot" value="F:\code\CPlusPlusThings" />
+  </component>
+  <component name="BlazeSyncStatusState">
+    <option name="dirty" value="true" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dcbb13ca-82de-4f67-b2b5-8021f0f21300" name="更改" comment="test push">
+      <change beforePath="$PROJECT_DIR$/../practical_exercises/10_day_practice/day1/print.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../practical_exercises/10_day_practice/day1/print.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2eMDjORjinLTtoxX0mADxB3UOZB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Bazel Command.Bazel run day1:print se.executor&quot;: &quot;Run&quot;,
+    &quot;Bazel Command.Bazel run day1:print.executor&quot;: &quot;Run&quot;,
+    &quot;Bazel Command.Bazel run print.cpp:print.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;Bazel Command.未命名.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Bazel Command.Bazel run day1:print">
+    <configuration name="Bazel run day1:print se" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command" temporary="true">
+      <blaze-settings blaze-command="run" kind="cc_binary" handler-id="BlazeCLionRunConfigurationHandlerProvider">
+        <blaze-target>//practical_exercises/10_day_practice/day1:print</blaze-target>
+        <env_state>
+          <envs />
+        </env_state>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bazel run day1:print" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command" nameIsGenerated="true">
+      <blaze-settings blaze-command="run" handler-id="BlazeCLionRunConfigurationHandlerProvider" kind="cc_binary">
+        <blaze-target>//practical_exercises/10_day_practice/day1:print</blaze-target>
+        <env_state>
+          <envs />
+        </env_state>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Bazel Command.Bazel run day1:print" />
+      <item itemvalue="Bazel Command.Bazel run day1:print se" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Bazel Command.Bazel run day1:print se" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="dcbb13ca-82de-4f67-b2b5-8021f0f21300" name="更改" comment="" />
+      <created>1711705688269</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711705688269</updated>
+      <workItem from="1711705689312" duration="1194000" />
+      <workItem from="1711873085263" duration="1707000" />
+    </task>
+    <task id="LOCAL-00001" summary="test push">
+      <option name="closed" value="true" />
+      <created>1711873190082</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711873190082</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test push" />
+    <option name="LAST_COMMIT_MESSAGE" value="test push" />
+  </component>
+</project>

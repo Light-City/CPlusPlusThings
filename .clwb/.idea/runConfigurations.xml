@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RunConfigurationProducerService">
+    <option name="ignoredProducers">
+      <set>
+        <option value="com.intellij.javascript.jest.JestRunConfigurationProducer" />
+        <option value="com.intellij.javascript.protractor.ProtractorRunConfigurationProducer" />
+        <option value="com.intellij.lang.javascript.buildTools.grunt.rc.GruntRunConfigurationProducer" />
+        <option value="com.intellij.lang.javascript.buildTools.gulp.rc.GulpRunConfigurationProducer" />
+        <option value="com.intellij.lang.javascript.buildTools.npm.rc.NpmRunConfigurationProducer" />
+        <option value="com.jetbrains.cidr.cpp.execution.CMakeTargetRunConfigurationProducer" />
+        <option value="com.jetbrains.cidr.cpp.execution.debugger.CMakeRunConfigurationProducer" />
+        <option value="com.jetbrains.cidr.cpp.execution.testing.boost.CMakeBoostTestRunConfigurationProducer" />
+        <option value="com.jetbrains.cidr.cpp.execution.testing.google.CMakeGoogleTestRunConfigurationProducer" />
+        <option value="com.jetbrains.cidr.cpp.execution.testing.tcatch.CMakeCatchTestRunConfigurationProducer" />
+        <option value="com.jetbrains.cidr.cpp.runfile.CppFileTargetRunConfigurationProducer" />
+        <option value="com.jetbrains.python.run.PythonRunConfigurationProducer" />
+        <option value="com.jetbrains.python.testing.PyTestsConfigurationProducer" />
+        <option value="com.jetbrains.python.testing.PythonTestLegacyConfigurationProducer" />
+        <option value="com.jetbrains.python.testing.doctest.PythonDocTestConfigurationProducer" />
+        <option value="com.jetbrains.python.testing.tox.PyToxConfigurationProducer" />
+      </set>
+    </option>
+  </component>
+</project>
