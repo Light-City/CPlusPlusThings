@@ -112,6 +112,8 @@ docker pull xingfranics/cplusplusthings:latest
 
 [第四期：手把手共读STL之enable_shared_from_this](https://www.bilibili.com/video/BV1du4y1w7Mg/?spm_id_from=333.788&vd_source=bb6532dcd5b1d6b26125da900adb618e)
 
+[第五期：手把手共读STL之线程，从C++11 thread到C++20 jthread](https://www.bilibili.com/video/BV1DH4y1g7gS/?vd_source=bb6532dcd5b1d6b26125da900adb618e)
+
 ### 飞书知识库
 
 [互联网大厂面试实录](https://hmpy6adnp5.feishu.cn/docx/OitBdRB4KozIhTxQt7Ec7iFDnkc)
