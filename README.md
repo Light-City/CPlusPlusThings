@@ -116,6 +116,10 @@ docker pull xingfranics/cplusplusthings:latest
 
 [第六期：手把手共读STL之共读condition_variable、condition_variable_any](https://www.bilibili.com/video/BV13b421b7Am/?spm_id_from=333.999.0.0&vd_source=bb6532dcd5b1d6b26125da900adb618e)
 
+[第七期：手把手共读STL之Mutex](https://www.bilibili.com/video/BV1xm42157pq/?spm_id_from=333.999.0.0&vd_source=bb6532dcd5b1d6b26125da900adb618e)
+
+[第八期：手把手共读STL之RAII Lock](https://www.bilibili.com/video/BV1Ls421g7iq/?spm_id_from=333.788&vd_source=bb6532dcd5b1d6b26125da900adb618e)
+
 ### 飞书知识库
 
 [互联网大厂面试实录](https://hmpy6adnp5.feishu.cn/docx/OitBdRB4KozIhTxQt7Ec7iFDnkc)
@@ -306,7 +310,7 @@ C++2.0 是一个简称，意为「现代 C++」，包括 C++11/14/17/20。
 - [iterator](./src_analysis/stl/iterator.md)
 - [谈谈 STL 设计之 EBO 优化](./src_analysis/stl/谈谈STL设计之EBO优化.md)
 - [rb_tree](./src_analysis/stl/rb_tree.md)
-- [set and multiset](set_multiset.md)
+- [set and multiset](./src_analysis/stl/set_multiset.md)
 - [map and multimap](./src_analysis/stl/map_multimap.md)
 - [hashtable](./src_analysis/stl/hashtable.md)
 - [myhashtable](./src_analysis/stl/myhashtable.md)
