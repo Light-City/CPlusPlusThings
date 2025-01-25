@@ -1,0 +1,14 @@
+###############################################################################
+# Bazel now uses Bzlmod by default to manage external dependencies.
+# Please consider migrating your external dependencies from WORKSPACE to MODULE.bazel.
+#
+# For more details, please check https://github.com/bazelbuild/bazel/issues/18958
+###############################################################################
+# MODULE.bazel
+module(
+    name = "cplusplusthings",
+    version = "0.0.0",
+)
+
+# Add rules_cc dependency
+bazel_dep(name = "rules_cc", version = "0.0.17")
