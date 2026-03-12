@@ -20,7 +20,7 @@ template <typename Then, typename Else> struct IF<false, Then, Else> {
 
 // 判断奇数与偶数
 template <int N> struct isEven {
-  static const auto RES = IF<N & 1 == 0, true_type, false_type>::result::value;
+  static const auto RES = IF<(N & 1) == 0, true_type, false_type>::result::value;
 };
 
 template <int nums1, int nums2> struct Add_ {
