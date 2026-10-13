@@ -12,6 +12,11 @@
 </p>
 
 <p align="center">
+  📖 <strong>Read online (continuously updated · 7 languages):</strong> <a href="https://light-city.github.io/stories_things/">English Site</a> | <a href="https://light-city.github.io/stories_things/zh/">中文站</a>
+</p>
+
+
+<p align="center">
   <a href="https://github.com/Light-City/CPlusPlusThings/stargazers">
     <img src="https://img.shields.io/github/stars/Light-City/CPlusPlusThings?style=flat-square&color=yellow" alt="GitHub Stars">
   </a>
