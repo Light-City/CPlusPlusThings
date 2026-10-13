@@ -1,10 +1,12 @@
-# decltype那些事
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/decltype/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ decltype 类型推导
 
 ## 关于作者：
 
 个人公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 ## 1.基本使用
 decltype的语法是:
@@ -69,7 +71,7 @@ auto multiply(T x, T y)->decltype(x*y)
 }
 ```
 
-完整代码见：[decltype.cpp](decltype.cpp)
+完整代码见：[decltype.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/decltype/decltype.cpp)
 
 ## 2.判别规则
 

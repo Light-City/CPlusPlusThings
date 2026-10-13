@@ -1,10 +1,12 @@
-# 纯虚函数和抽象类
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/abstract/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ 纯虚函数与抽象类
 
 ## 关于作者：
 
 个人公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 ## 1.纯虚函数与抽象类
 
@@ -23,7 +25,7 @@ public:
 
 抽象类只能作为基类来派生新类使用，不能创建抽象类的对象,抽象类的指针和引用->由抽象类派生出来的类的对象！
 
-> 代码样例：[abstract_base.h](./abstract_base.h)、[pure_virtual.cpp](./pure_virtual.cpp)
+> 代码样例：[abstract_base.h](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/abstract/abstract_base.h)、[pure_virtual.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/abstract/pure_virtual.cpp)
 
 ## 2.实现抽象类
 
@@ -45,11 +47,11 @@ public:
 };
 ```
 
-> 代码样例：[abstract.cpp](./abstract.cpp)
+> 代码样例：[abstract.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/abstract/abstract.cpp)
 
 ## 3.重要点
 
-- [纯虚函数使一个类变成抽象类](./interesting_facts1.cpp)
+- [纯虚函数使一个类变成抽象类](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/abstract/interesting_facts1.cpp)
 ```cpp
 // 抽象类至少包含一个纯虚函数
 class Base{
@@ -62,7 +64,7 @@ private:
 }; 
 ```
 
-- [抽象类类型的指针和引用](./interesting_facts2.cpp)
+- [抽象类类型的指针和引用](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/abstract/interesting_facts2.cpp)
 ```cpp
 class Derived : public Base { 
 public: 
@@ -81,7 +83,7 @@ int main(void)
 }
 ```
 
-- [如果我们不在派生类中覆盖纯虚函数，那么派生类也会变成抽象类](./interesting_facts3.cpp)
+- [如果我们不在派生类中覆盖纯虚函数，那么派生类也会变成抽象类](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/abstract/interesting_facts3.cpp)
 ```cpp
 // Derived为抽象类
 class Derived: public Base 
@@ -91,7 +93,7 @@ public:
 }; 
 ```
 
-- [抽象类可以有构造函数](./interesting_facts4.cpp)
+- [抽象类可以有构造函数](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/abstract/interesting_facts4.cpp)
 ```cpp
 // 抽象类
 class Base { 
@@ -111,7 +113,7 @@ public:
 }; 
 ```
 
-- [构造函数不能是虚函数，而析构函数可以是虚析构函数](./interesting_facts5.cpp)
+- [构造函数不能是虚函数，而析构函数可以是虚析构函数](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/abstract/interesting_facts5.cpp)
 ```cpp
 // 抽象类
 class Base  {
@@ -137,4 +139,4 @@ public:
 
 抽象类由派生类继承实现！
 
-> 代码样例：[derived_full.cpp](./derived_full.cpp)
+> 代码样例：[derived_full.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/abstract/derived_full.cpp)

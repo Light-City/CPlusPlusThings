@@ -1,10 +1,12 @@
-# 从初级到高级的enum那些事
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/enum/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ enum 枚举类型
 
 ## 关于作者：
 
 个人公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 
 ## 传统行为
@@ -37,7 +39,7 @@ int main()
 - 会隐式转换为int
 - 用来表征枚举变量的实际类型不能明确指定，从而无法支持枚举类型的前向声明。
 
-具体实现见：[tradition_color.cpp](tradition_color.cpp)
+具体实现见：[tradition_color.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/enum/tradition_color.cpp)
 
 ## 经典做法
 
@@ -72,7 +74,7 @@ struct Color1
 };
 ```
 
-具体实现见：[classic_practice.cpp](classic_practice.cpp)
+具体实现见：[classic_practice.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/enum/classic_practice.cpp)
 
 ## C++11 的枚举类
 
@@ -110,7 +112,7 @@ enum class Color3:char
 char c3 = static_cast<char>(Color3::RED);
 ```
 
-具体实现见：[classic_practice.cpp](classic_practice.cpp)
+具体实现见：[classic_practice.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/enum/classic_practice.cpp)
 
 ## 类中的枚举类型
 

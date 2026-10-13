@@ -1,10 +1,12 @@
-# 深入浅出C++虚函数的vptr与vtable
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/vptr-vtable/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ 虚指针与虚表机制
 
 ## 关于作者：
 
 个人公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 
 
@@ -24,7 +26,7 @@
 
 开始看代码之前，为了方便大家理解，这里给出调用图：
 
-![base](./img/base.jpg)
+![base](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/basic_content/vptr_vtable/img/base.jpg)
 
 代码全部遵循标准的注释风格，相信大家看了就会明白，不明白的话，可以留言！
 
@@ -216,4 +218,3 @@ Dump of assembler code for function Derived::fun2():
    0x0000000000400efe <+42>:	retq   
 End of assembler dump.
 ```
-

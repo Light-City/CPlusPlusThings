@@ -1,10 +1,12 @@
-# 宏那些事
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/macro/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ 宏与条件编译
 
 ## 关于作者：
 
 个人公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 ## 1.宏中包含特殊符号
 
@@ -113,7 +115,7 @@ int main() {
 }
 ```
 
-上述代码见：[sig_examp.cpp](sig_examp.cpp)
+上述代码见：[sig_examp.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/macro/sig_examp.cpp)
 
 ## 2.do{...}while(0)的使用
 
@@ -226,7 +228,6 @@ int fc()
 }
 ```
 
-上述代码见：[do_while.cpp](do_while.cpp)
+上述代码见：[do_while.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/macro/do_while.cpp)
 
 学习文章：<https://www.cnblogs.com/lizhenghn/p/3674430.html>
-

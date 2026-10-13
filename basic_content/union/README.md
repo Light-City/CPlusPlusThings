@@ -1,10 +1,12 @@
-# UNION那些事
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/union/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ union 联合体
 
 ## 关于作者：
 
 个人公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 联合（union）是一种节省空间的特殊的类，一个 union 可以有多个数据成员，但是在任意时刻只有一个数据成员可以有值。当某个成员被赋值后其他成员变为未定义状态。联合有如下特点：
 

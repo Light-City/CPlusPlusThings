@@ -1,8 +1,12 @@
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/const/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ const 常量与修饰
+
 ## 关于作者
 
 微信公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 ## 1.const含义
 
@@ -34,8 +38,9 @@ void f(const int i){
 
 + 可以节省空间，避免不必要的内存分配
 
-    + const定义常量从汇编的角度来看，只是给出了对应的内存地址，而不是像`#define`一样给出的是立即数。
-    + const定义的常量在程序运行过程中只有一份拷贝，而`#define`定义的常量在内存中有若干个拷贝。
+    + 以整型/枚举类型、常量表达式初始化的 const（即常量表达式）在用法上更接近编译期常量：不取地址、仅使用其值时通常被优化成立即数，与 `#define` 类似；取地址或跨编译单元 odr-use 时才会落到内存，且全程序只有一份。
+    + `#define` 展开为字面量后以立即数形式编入指令，指令本身也占内存，多处使用即多处出现（见 [issue #5](https://github.com/Light-City/CPlusPlusThings/issues/5) 的讨论）。
+    + 注意：并非所有 const 变量都是常量表达式——只有整数/枚举类型且以常量表达式初始化的才是；其他 const 变量只是 const 限度的变量（如浮点、自定义类型，标准并未规定其可用常量表达式初始化，`constexpr` 才是编译期常量的正确表达）。
 
 ## 3.const对象默认为文件局部变量
 
@@ -358,7 +363,7 @@ int main()
 ```
 > 编译：bazel run basic_content/const/class_const/first_example:main<br>
 
-此时报错，上面getCount()方法中调用了一个add方法，而add方法并非const修饰，所以运行报错。也就是说const成员函数只能访问const成员函数。
+此时报错：getCount() 是 const 成员函数，其中的 add() 重载决议只会匹配 const 版本（`int add(int num) const`）；把这个 const 版本注释掉后，才会因调用了非 const 的 add() 而报错。即：const 对象只能访问 const 成员函数，非 const 对象可以访问任意成员函数（见 [issue #338](https://github.com/Light-City/CPlusPlusThings/issues/338)）。
 
 当调用改为：
 

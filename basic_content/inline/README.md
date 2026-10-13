@@ -1,10 +1,12 @@
-# inline那些事
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/inline/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ inline 内联函数
 
 ## 关于作者：
 
 个人公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 ## 1.类中内联
 
@@ -132,6 +134,3 @@ int main()
     return 0;
 } 
 ```
-
-
-

@@ -1,10 +1,12 @@
-# 友元函数与友元类
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/friend/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ friend 友元
 
 ## 关于作者：
 
 个人公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 ## 0.概述
 
@@ -35,7 +37,7 @@ friend <类型><友元函数名>(<参数表>);
 
 注意，友元函数只是一个普通函数，并不是该类的类成员函数，它可以在任何地方调用，友元函数中通过对象名来访问该类的私有或保护成员。
 
-具体代码见：[friend_func.cpp](friend_func.cpp)
+具体代码见：[friend_func.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/friend/friend_func.cpp)
 
 ```c++
 #include <iostream>
@@ -74,7 +76,7 @@ friend class <友元类名>;
 
 类B是类A的友元，那么类B可以直接访问A的私有成员。
 
-具体代码见：[friend_class.cpp](friend_class.cpp)
+具体代码见：[friend_class.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/friend/friend_class.cpp)
 ```c++
 #include <iostream>
 

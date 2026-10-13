@@ -1,8 +1,12 @@
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/bit/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ 位域
+
 ## 关于作者：
 
 个人公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 ## Bit field 是什么？
 
@@ -108,7 +112,7 @@ struct stuff
 
 这里 stuff.field1 与 stuff.field2 之间有一个 2 Bits 的空隙，stuff.field3 则存储在下一个 unsigned int 中，该结构现在大小为 3 * 32 = 96 Bits。
 
-学习代码见：[bit.cpp](bit.cpp)
+学习代码见：[bit.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/bit/bit.cpp)
 
 ## 位域的初始化和位的重映射
 

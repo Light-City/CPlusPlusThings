@@ -1,4 +1,6 @@
-## C++设计模式之单例模式
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/design-patterns/singleton-pattern/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ 单例模式
 
 ## 0.导语
 

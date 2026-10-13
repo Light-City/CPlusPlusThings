@@ -1,12 +1,14 @@
-# struct与class区别
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/struct-vs-class/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ struct 与 class 区别
 
 ## 关于作者：
 
 个人公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
-关于C与C++中struct内容：见[struct那些事](../struct)
+关于C与C++中struct内容：见[struct那些事](struct.md)
 
 总的来说，struct 更适合看成是一个数据结构的实现体，class 更适合看成是一个对象的实现体。
 

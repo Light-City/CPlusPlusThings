@@ -1,8 +1,12 @@
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/volatile/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ volatile 关键字
+
 ## 关于作者：
 
 个人公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 ## 1.volatile
 
@@ -117,6 +121,5 @@ return a * a;
 
 代码学习：
 
-- [noopt_vola.cpp](./noopt_vola.cpp)
-- [volatile.cpp](./volatile.cpp)
-
+- [noopt_vola.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/volatile/noopt_vola.cpp)
+- [volatile.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/volatile/volatile.cpp)

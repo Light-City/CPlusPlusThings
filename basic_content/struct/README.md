@@ -1,10 +1,12 @@
-# 一文搞懂C和C++中struct
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/struct/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ struct 结构体
 
 ## 关于作者：
 
 个人公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 ## 1.C中struct
 
@@ -52,7 +54,7 @@ int main() {
 I am Base func
 ```
 
-完整代码见：[struct_func.c](./struct_func.c)
+完整代码见：[struct_func.c](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/struct/struct_func.c)
 
 ## 2.C++中struct
 
@@ -135,7 +137,7 @@ int main() {
 }
 ```
 
-完整代码见：[struct_func.cpp](struct_func.cpp)
+完整代码见：[struct_func.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/struct/struct_func.cpp)
 
 > 继承案例
 
@@ -167,7 +169,7 @@ int main() {
 }
 ```
 
-完整代码见：[ext_struct_func.cpp](./ext_struct_func.cpp)
+完整代码见：[ext_struct_func.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/struct/ext_struct_func.cpp)
 
 > 同名函数
 
@@ -212,7 +214,7 @@ int main() {
     return 0;
 }
 ```
-完整代码见：[struct_func_func.cpp](./struct_func_func.cpp)
+完整代码见：[struct_func_func.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/struct/struct_func_func.cpp)
 
 ## 3.总结
 

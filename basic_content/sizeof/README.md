@@ -1,4 +1,6 @@
-# 类大小计算
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/sizeof/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ sizeof 运算符
 
 首先来个总结，然后下面给出实际例子，实战！
 
@@ -194,11 +196,10 @@ class C : virtual public  A, virtual public B
 int main()
 {
     /**
-     * @brief 8 8 16  派生类虚继承多个虚函数，会继承所有虚函数的vptr
+     * @brief GCC: 8 8 16（虚基类指针与虚函数表指针合并）；MSVC/Windows: 8 8 32（虚基类指针与虚函数表指针分别存储），结果与编译器相关，见 issue #246
      */
     cout<<sizeof(A)<<" "<<sizeof(B)<<" "<<sizeof(C);
 
     return 0;
 }
 ```
-

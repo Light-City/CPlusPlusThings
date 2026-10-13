@@ -1,24 +1,26 @@
-# virtual那些事
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/virtual/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ virtual 虚函数
 
 ## 关于作者：
 
 个人公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 ## 1.虚函数与运行多态
 
-对应的代码：[emp.cpp](./set1/emp.cpp)
+对应的代码：[emp.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/virtual/set1/emp.cpp)
 
 **虚函数的调用取决于指向或者引用的对象的类型，而不是指针或者引用自身的类型。**
 
 ## 2.vptr与vtable
 
-见[vptr_vtable那些事](../vptr_vtable)
+见[vptr_vtable那些事](vptr-vtable.md)
 
 ## 3.虚函数中默认参数
 
-对应的代码：[default_arg.cpp](./set2/default_arg.cpp)
+对应的代码：[default_arg.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/virtual/set2/default_arg.cpp)
 
 **默认参数是静态绑定的，虚函数是动态绑定的。 默认参数的使用需要看指针或者引用本身的类型，而不是对象的类型**。
 
@@ -34,7 +36,7 @@ static成员函数不属于任何类对象或类实例，所以即使给此函�
 
 虚函数依靠vptr和vtable来处理。vptr是一个指针，在类的构造函数中创建生成，并且只能用this指针来访问它，静态成员函数没有this指针，所以无法访问vptr。
 
-代码学习：[static_error.cpp  ](./set3/static_error.cpp  )
+代码学习：[static_error.cpp  ](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/virtual/set3/static_error.cpp)
 
 （2）**构造函数可以为虚函数吗？**
 
@@ -48,9 +50,9 @@ static成员函数不属于任何类对象或类实例，所以即使给此函�
 
 代码学习：
 
-- [copy_consrtuct.cpp](./set3/copy_consrtuct.cpp) 
+- [copy_consrtuct.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/virtual/set3/copy_consrtuct.cpp) 
 
-- [vir_con.cpp](./set3/vir_con.cpp) 
+- [vir_con.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/virtual/set3/vir_con.cpp) 
 
 （3）**析构函数可以为虚函数吗？**
 
@@ -58,9 +60,9 @@ static成员函数不属于任何类对象或类实例，所以即使给此函�
 
 代码学习：
 
-- [full_virde.cpp](./set3/full_virde.cpp)
+- [full_virde.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/virtual/set3/full_virde.cpp)
 
-- [vir_de.cpp ](./set3/vir_de.cpp)      
+- [vir_de.cpp ](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/virtual/set3/vir_de.cpp)      
 
 （4）**虚函数可以为私有函数吗？**
 
@@ -69,8 +71,8 @@ static成员函数不属于任何类对象或类实例，所以即使给此函�
 
 代码学习：
 
-- [virtual_function.cpp](./set3/virtual_function.cpp)
-- [virtual_function1.cpp](./set3/virtual_function1.cpp)
+- [virtual_function.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/virtual/set3/virtual_function.cpp)
+- [virtual_function1.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/virtual/set3/virtual_function1.cpp)
 
 （5）**虚函数可以被内联吗？**
 
@@ -82,9 +84,9 @@ static成员函数不属于任何类对象或类实例，所以即使给此函�
 
 代码学习：
 
-- [virtual_inline.cpp](./set3/virtual_inline.cpp)
+- [virtual_inline.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/virtual/set3/virtual_inline.cpp)
 
-- [inline_virtual.cpp](./set3/inline_virtual.cpp)
+- [inline_virtual.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/virtual/set3/inline_virtual.cpp)
 
 ## 5.RTTI与dynamic_cast
 
@@ -94,9 +96,9 @@ RTTI（Run-Time Type Identification)，通过运行时类型信息程序能够�
 
 代码学习：
 
-- [rtti.cpp](./set4/rtti.cpp)
-- [warn_rtti.cpp](./set4/warn_rtti.cpp)
+- [rtti.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/virtual/set4/rtti.cpp)
+- [warn_rtti.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/virtual/set4/warn_rtti.cpp)
 
 ## 6.纯虚函数和抽象类
 
-见[纯虚函数和抽象类那些事](../abstract)
+见[纯虚函数和抽象类那些事](abstract.md)

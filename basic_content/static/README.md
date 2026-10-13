@@ -1,10 +1,12 @@
-# static那些事
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/static/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ static 静态成员与生存期
 
 ## 关于作者
 
 微信公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 当与不同类型一起使用时，Static关键字具有不同的含义。我们可以使用static关键字：
 
@@ -275,5 +277,23 @@ int main()
 {
     sayHello();
     return 0;
+}
+```
+### 6.static 的内部链接（限定访问范围）
+
+感谢 [issue #142](https://github.com/Light-City/CPlusPlusThings/issues/142) 指出：static 修饰全局变量/函数时，还起到**限定访问范围**的作用——将其链接性从外部链接（external linkage）改为内部链接（internal linkage），效果类似匿名命名空间：
+
+- 非 static 的全局变量：其他编译单元可以通过 `extern` 声明访问；
+- static 全局变量/函数：仅当前编译单元可见，`extern` 声明也无法链接到（上面的 undefined reference 正是这个原因）。
+
+现代 C++ 中更推荐用**匿名命名空间**表达"仅本文件可见"（对类型同样有效），但理解 static 的这一层含义在阅读旧代码时非常重要。
+
+```cpp
+// file1.cpp
+static int hidden = 42;          // 内部链接：其他文件 extern 不可见
+int visible = 1;                 // 外部链接：其他文件可 extern 访问
+
+namespace {                      // 匿名命名空间：等价且更现代的写法
+    int also_hidden = 7;
 }
 ```

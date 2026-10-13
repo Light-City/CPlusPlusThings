@@ -1,10 +1,12 @@
-# assert那些事
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/assert/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ assert 断言
 
 ## 关于作者：
 
 个人公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 
 
@@ -20,7 +22,7 @@ assert 宏的原型定义在 <assert.h>（C）、<cassert>（C++）中。其作�
 void assert(int expression);
 ```
 
-> 代码样例：[assert.c](./assert.c)
+> 代码样例：[assert.c](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/assert/assert.c)
 ```c
 #include <stdio.h> 
 #include <assert.h> 
@@ -58,4 +60,4 @@ assert: assert.c:13: main: Assertion 'x==7' failed.
 #define NDEBUG          // 加上这行，则 assert 不可用
 ```
 
-> 样例代码：[ignore_assert.c](./ignore_assert.c)
+> 样例代码：[ignore_assert.c](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/assert/ignore_assert.c)

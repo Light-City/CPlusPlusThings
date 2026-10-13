@@ -1,10 +1,12 @@
-# extern "C"
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/extern/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ extern 链接说明
 
 ## 关于作者：
 
 个人公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 ## 1.C++与C编译区别
 
@@ -118,11 +120,11 @@ int add(int x,int y);
 
 上述案例源代码见：
 
-- [add.h](extern_c++/add.h)
+- [add.h](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/extern/extern_c++/add.h)
 
-- [add.c](extern_c++/add.c)
+- [add.c](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/extern/extern_c++/add.c)
 
-- [add.cpp](extern_c++/add.cpp)
+- [add.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/extern/extern_c++/add.cpp)
 
 ## 2.C中调用C++函数
 
@@ -166,11 +168,11 @@ gcc add.c add.o -o main
 
 上述案例源代码见：
 
-- [add.h](extern_c/add.h)
+- [add.h](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/extern/extern_c/add.h)
 
-- [add.c](extern_c/add.c)
+- [add.c](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/extern/extern_c/add.c)
 
-- [add.cpp](extern_c/add.cpp)
+- [add.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/extern/extern_c/add.cpp)
 
 综上，总结出使用方法，在C语言的头文件中，对其外部函数只能指定为extern类型，C语言中不支持extern "C"声明，在.c文件中包含了extern "C"时会出现编译语法错误。所以使用extern "C"全部都放在于cpp程序相关文件或其头文件中。
 

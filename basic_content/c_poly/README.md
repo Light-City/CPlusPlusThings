@@ -1,10 +1,12 @@
-# C实现C++的面向对象特性
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/c-polymorphism/) 同步生成，网站版本含多语言与更新排版。
+
+# C 语言实现 C++ 多态
 
 ## 关于作者：
 
 个人公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 ## 1.C++实现案例
 
@@ -12,7 +14,7 @@ C++中的多态:在C++中会维护一张虚函数表，根据赋值兼容规则�
 
 如果一个父类的指针或者引用调用父类的虚函数则该父类的指针会在自己的虚函数表中查找自己的函数地址，如果该父类对象的指针或者引用指向的是子类的对象，而且该子类已经重写了父类的虚函数，则该指针会调用子类的已经重写的虚函数。
 
-学习案例代码见:[c++_examp.cpp](./c++_examp.cpp)
+学习案例代码见:[c++_examp.cpp](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/c_poly/c++_examp.cpp)
 
 
 
@@ -38,4 +40,4 @@ C语言中是没有class类这个概念的，但是有struct结构体，我们�
 
 
 
-学习案例代码见:[c_examp.c](./c_examp.c)
+学习案例代码见:[c_examp.c](https://github.com/Light-City/CPlusPlusThings/tree/master/basic_content/c_poly/c_examp.c)

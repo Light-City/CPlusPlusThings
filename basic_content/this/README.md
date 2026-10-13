@@ -1,10 +1,12 @@
-# this指针那些事
+> 本文档由 [C++那些事网站](https://light-city.github.io/stories_things/cpp-things/this/) 同步生成，网站版本含多语言与更新排版。
+
+# C++ this 指针
 
 ## 关于作者
 
 微信公众号：
 
-![](../img/wechat.jpg)
+![](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/img/wechat.jpg)
 
 ## 1.this指针
 
@@ -74,15 +76,15 @@ int main(){
 
 为了验证this指针是哪一个，现在在`add_age`处添加断点，运行后如下：
 
-![thiscontrust](./img/thiscontrust.png)
+![thiscontrust](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/basic_content/this/img/thiscontrust.png)
 
-![genthis](./img/genthis.png)
+![genthis](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/basic_content/this/img/genthis.png)
 
 会发现编译器自动为我们加上`A* const`，而不是`A const *this`！
 
 紧接着，上述还有个常函数，那么我们在对`get_age`添加断点，如下：
 
-![constthis](./img/constthis.png)
+![constthis](https://raw.githubusercontent.com/Light-City/CPlusPlusThings/master/basic_content/this/img/constthis.png)
 
 会发现编译器把上述的this，变为`const A* const`，这个大家也能想到，因为这个函数是const函数，那么针对const函数，它只能访问const变量与const函数，不能修改其他变量的值，所以需要一个this指向不能修改的变量，那就是`const A*`,又由于本身this是`const`指针，所以就为`const A* const`!
 
