@@ -6,8 +6,10 @@ class Person {
 public:
   typedef enum { BOY = 0, GIRL } SexType;
   Person(char *n, int a, SexType s) {
-    name = new char[strlen(n) + 1];
-    strcpy(name, n);
+    size_t len = strlen(n) + 1;
+    name = new char[len];
+    strncpy(name, n, len);
+    name[len - 1] = '\0';
     age = a;
     sex = s;
   }
